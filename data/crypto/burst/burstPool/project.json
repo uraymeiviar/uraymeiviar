@@ -1,0 +1,30 @@
+{
+  "id": "burst-pool",
+  "title": "Burstcoin Mining Pool & Cloud Infrastructure",
+  "featured": true,
+  "category": "Distributed Systems & Cloud",
+  "role": "Distributed Systems Engineer & Cloud Architect",
+  "tags": [
+    "Blockchain",
+    "Proof-of-Capacity",
+    "AWS",
+    "Google Cloud",
+    "C++",
+    "Node.js",
+    "High Availability",
+    "Crypto"
+  ],
+  "summary": "Multi-tenant Proof-of-Capacity mining pool aggregating global hard-drive deadlines, running high-performance C++ plotters, and orchestrating automated proportional payouts on AWS/GCP dual-cloud infrastructure.",
+  "highlights": [
+    "Multi-region AWS EC2 and GCP Compute Engine infrastructure delivering sub-25ms global miner latency and 99.99% uptime.",
+    "Automated Proof-of-Capacity deadline aggregation engine filtering lowest submitted disk nonces to forge blocks on-chain.",
+    "Proportional dividend payout engine distributing block rewards to hundreds of worldwide miners via automated RPC daemon scripts."
+  ],
+  "images": [
+    "udFKiTX.webp",
+    "nXdP7x1.webp"
+  ],
+  "links": [],
+  "timeline": "2014 – 2017",
+  "timespan": "2014 – 2017"
+}

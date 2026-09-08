@@ -1,0 +1,33 @@
+{
+  "id": "hawk",
+  "title": "BAe Hawk 209 Combat Trainer Simulator",
+  "featured": true,
+  "category": "Flight & Avionics",
+  "role": "Systems & Avionics Simulation Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Flight Simulator",
+    "Cockpit Displays",
+    "Real-Time",
+    "Avionics"
+  ],
+  "summary": "Tactical jet trainer simulator designed for advanced pilot operational training, combat readiness, and emergency procedures.",
+  "highlights": [
+    "Simulated cockpit instrumentation, navigation displays, and weapons delivery profiles.",
+    "Interfaced physical cockpit panels and flight control linkages with real-time math models.",
+    "Instructor Operator Station (IOS) control for failure injection, weather, and mission scenarios."
+  ],
+  "images": [
+    "data/T&E/hawk/IMG_20120426_114205.webp",
+    "data/T&E/hawk/IMG_20120426_120352.webp",
+    "data/T&E/hawk/IMG_20120426_121749.webp",
+    "data/T&E/hawk/IMG_20130110_142735.webp",
+    "data/T&E/hawk/11357611_459578634196777_582338419_n.webp",
+    "data/T&E/hawk/IMG_20120426_092959.webp",
+    "data/T&E/hawk/tumblr_m36rqcw5011ru2qado1_1280.webp"
+  ],
+  "links": [],
+  "timeline": "2008 – 2009",
+  "timespan": "2008 – 2009"
+}

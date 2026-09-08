@@ -1,0 +1,30 @@
+{
+  "id": "fss-a330",
+  "title": "Aerosoft Airbus A330 — Flight Management System (FMS) Core",
+  "featured": true,
+  "category": "Flight & Avionics",
+  "role": "FMS Core Systems Architect & Engineer",
+  "company": "Contracted / Aerosoft & FlightSim Studio AG",
+  "timeline": "2022 – 2023",
+  "tags": [
+    "FMS",
+    "Avionics",
+    "C++",
+    "ARINC-424",
+    "LNAV/VNAV",
+    "Airbus A330",
+    "MSFS SDK"
+  ],
+  "summary": "Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.",
+  "highlights": [
+    "Engineered real-time lateral navigation (LNAV) trajectory generation and ARINC-424 leg resolution (IF, TF, CF, DF, RF).",
+    "Developed Airbus MCDU (Multifunction Control and Display Unit) flight planning pages (F-PLN, INIT, PERF, DIR TO).",
+    "Vertical navigation (VNAV) profile solver: top-of-descent (TOD) calculation, step climbs, fuel burn estimation, and speed/altitude constraint adherence."
+  ],
+  "images": [
+    "data/fss/aerosoft-a330/Screenshot 2026-09-09 005607.webp",
+    "data/fss/aerosoft-a330/Screenshot 2026-09-09 005710.webp"
+  ],
+  "links": [],
+  "timespan": "2022 – 2023"
+}

@@ -1,0 +1,52 @@
+﻿# Uray Meiviar â€” Engineering Profile & Technical Architecture Index
+
+> Senior Simulation & Systems Software Engineer with 20+ years of experience in real-time military and civilian flight simulators, commercial transport aircraft avionics (FMS), real-time operating systems (RTOS), and distributed simulation protocols (IEEE 1278 DIS).
+
+## Comprehensive Biography & Dossier
+- [Uray Meiviar: Comprehensive Technical Biography](/data/profile/DESC.md): Full narrative chronicle from 1980s 8-bit computers and ITB mathematics to military defense simulators, the STMR Ethernet revolution, and SOYUT C4 strategic command.
+- [Engineering Chronicles & Technical Memoir Reader](/story.html): In-browser reader with table of contents and formatted architecture specifications.
+
+## Detailed Project Specifications & Architecture Documents
+- [Custom Guitar Electronics & Craft](/data/guitar/DESC.md): Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.
+- [Embraer E-Jets Family (MSFS)](/data/fss/fss-ejet/DESC.md): Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.
+- [Aerosoft Airbus A330 â€” Flight Management System (FMS) Core](/data/fss/aerosoft-a330/DESC.md): Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.
+- [Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)](/data/fss/asobo-glider-taurus/DESC.md): Co-development of the official Pipistrel Taurus self-launching motorized glider for Microsoft Flight Simulator under contract with Asobo Studio, engineering the retractable dorsal propeller mast deployment sequence, engine systems, and soaring instruments.
+- [AIR Avionics ACD-57 Multi-Function Radio & Altimeter (Official MSFS / Asobo)](/data/fss/asobo-radio-ACD57/DESC.md): Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.
+- [Becker AR6201 VHF Transceiver (Official MSFS / Asobo)](/data/fss/asobo-radio-AR6201/DESC.md): Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.
+- [Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo)](/data/fss/asobo-radio-VT02/DESC.md): Engineered the authentic Garrecht VT-02 Mode S / ADS-B transponder instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.
+- [SeaRey Elite Light Sport Amphibian Seaplane (MSFS)](/data/fss/fss-searey/DESC.md): Avionics and systems integration for the SeaRey Elite amphibious light sport seaplane in Microsoft Flight Simulator, integrating built-in MSFS glass cockpit avionics, electrical logic, and flight deck systems.
+- [chiagen - Standalone Chia Plotter & Event-Driven Plot Manager](/data/crypto/chiagen/DESC.md): High-performance native C++ standalone Chia generator and event-driven plot manager integrating madMAx43v3r and reference chiapos plotters in-process with real-time hardware telemetry and custom job scheduling.
+- [RKB Mobile Application](/data/bri/DESC.md): Mobile application developed in Flutter for Bank Rakyat Indonesia (BRI) supporting SME business ecosystem empowerment.
+- [Cryptolet - ESP32 Crypto Ticker & Portfolio Hardware](/data/crypto/cryptolet/DESC.md): Custom ESP32-based handheld and desktop hardware ticker with color TFT LCD displaying live cryptocurrency prices, multi-exchange candlestick charts, and captive portal Wi-Fi configuration.
+- [netEngine - High-Performance Reliable UDP Engine](/data/netengine/DESC.md): High-performance multiplayer networking engine designed in C# for Unity, implementing a custom reliable UDP protocol layer with zero-allocation buffers.
+- [High-Tech IoT Aeroponics & Carolina Reaper Lab](/data/tabulampot/DESC.md): Automated indoor aeroponic cultivation chamber engineered for Carolina Reaper peppers, featuring ultrasonic misting, custom liquid Peltier chillers, and closed-loop microcontroller environmental telemetry.
+- [nvstat - Linux NVIDIA GPU State & BIOS Telemetry CLI](/data/crypto/nvstat/DESC.md): Lightweight high-performance Linux CLI utility querying NVIDIA driver ioctls, NVML, and PCIe VBIOS subsystem descriptors to report real-time GPU power, thermals, clocks, and exact vendor hardware names.
+- [KCI Commuter Train Driving Simulator](/data/T&E/KCI/DESC.md): Clean-sheet civilian transit driving simulator developed for PT Kereta Commuter Indonesia (KCI) in a record 12-month turnaround, featuring parametric railway track authoring, Russian rolling stock dynamics integration, and Redis state distribution.
+- [High-Density GPU Computing Rigs](/data/crypto/miningRigs/DESC.md): 330 kVA industrial-grade multi-GPU computing cluster engineered in a private Bandung facility with custom power distribution and high-velocity ventilation.
+- [Architectural 3D CAD & Construction](/data/house/DESC.md): First-principles architectural design, 3D CAD modeling in Blender, and structural construction execution of a two-story home in Bandung.
+- [Burstcoin Mining Pool & Cloud Infrastructure](/data/crypto/burst/burstPool/DESC.md): Multi-tenant Proof-of-Capacity mining pool aggregating global hard-drive deadlines, running high-performance C++ plotters, and orchestrating automated proportional payouts on AWS/GCP dual-cloud infrastructure.
+- [RTOS - Real-Time Linux Simulation Environment](/data/T&E/rtos/DESC.md): Custom x86 Linux kernel distribution patched with PREEMPT_RT to provide deterministic soft real-time execution for high-frequency simulation loops.
+- [SOYUT Integrated Joint Battle Management Platform](/data/T&E/soyut/DESC.md): Comprehensive joint battle management simulation platform integrating Air, Land, and Maritime forces in unified operational theater exercises.
+- [Mathematics Challenge Festival (MCF)](/data/mcf/DESC.md): Invited guest speaker at the Mathematics Challenge Festival at Institut Teknologi Bandung (ITB), sharing software engineering and algorithmic applications of mathematics.
+- [Burstcoin Blockchain Explorer](/data/crypto/burst/burstExplorer/DESC.md): High-throughput real-time blockchain telemetry and asset ledger explorer parsing block generation deadlines, smart tokens, and global transaction metrics.
+- [Burstcoin Web Wallet & Decentralized Asset Exchange](/data/crypto/burst/burstWebWallet/DESC.md): Zero-trust client-side browser wallet and on-chain decentralized asset exchange (DEX) interface enabling instant user onboarding with in-memory Curve25519 signing.
+- [CryptoSlax - Custom Linux Distribution](/data/crypto/cryptoslax/DESC.md): Customized, ultra-lightweight (~100 MB) stateless Linux distribution engineered for PXE network boot, RAM execution, and 24/7 autonomous GPU clusters.
+- [F-16 Full Mission Flight Training Device (FTD)](/data/T&E/F16-FTD/DESC.md): High-fidelity supersonic fighter simulator replicating flight handling qualities, tactical cockpit avionics, and mission systems.
+- [CodeGraph - Visual Logic & State Graph Tool](/data/T&E/codegraph/DESC.md): In-house node-based visual programming environment built to rapidly author and inspect state machines and simulation logic.
+- [Tactical Intercom & Radio Simulation System](/data/T&E/commSystem/DESC.md): Integrated voice communication system simulating tactical radio channels, intercom hot-mics, frequency modulation, and radio propagation noise.
+- [Broken Glass Shader - Refraction & Diffraction Optical Surface](/data/unity/broken-glass-shader/DESC.md): Physically-inspired real-time broken glass surface shader for Unity3D featuring normal-mapped shattered crack patterns, optical refraction, chromatic diffraction, and Fresnel specular highlights.
+- [ObjectBrowser - Unity Reflection & Type Inspector](/data/unity/object-browser/DESC.md): Deep runtime and editor reflection inspector for Unity3D, exposing all properties, fields, methods, and complete base class inheritance hierarchies for any selected scene GameObject or project asset.
+- [STMR Multi-Type Armored Platoon Simulator](/data/T&E/stmr/DESC.md): Multi-vehicle tactical simulator simulating three distinct tank classes interoperating in unified platoon and team combat formations.
+- [NAS332 Super Puma Helicopter Simulator](/data/T&E/NAS332/DESC.md): Full-scale multi-mission tactical transport helicopter simulator with realistic rotor aerodynamics and cockpit systems.
+- [NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)](/data/numpadKey/DESC.md): Pioneering T9-style on-screen virtual keyboard for Android 1.0 on the historic HTC Dream (T-Mobile G1), enabling rapid one-handed touch typing on early small capacitive displays without sliding out the physical keyboard.
+- [BO-105 Light Twin Helicopter Simulator](/data/T&E/BO/DESC.md): Full flight simulator refurbishment and internal R&D testbed featuring motor control loading, tablet glass cockpit instrumentation, curved visual warping, and a VR-immersed motion platform.
+- [BAe Hawk 209 Combat Trainer Simulator](/data/T&E/hawk/DESC.md): Tactical jet trainer simulator designed for advanced pilot operational training, combat readiness, and emergency procedures.
+- [ACV-300 Armored Combat Vehicle Simulator](/data/T&E/acv/DESC.md): Tracked armored combat vehicle simulator designed for crew coordination, combat driving, turret operation, and tactical engagement.
+- [libDIS - IEEE 1278 Protocol Engine](/data/T&E/libDIS/DESC.md): In-house C++ library implementing the IEEE 1278 Distributed Interactive Simulation (DIS) protocol for low-latency networked simulation.
+- [Project G1 - 3D Anti-Gravity Tunnel Racing Engine](/data/G1/DESC.md): State-of-the-art anti-gravity space tunnel racing prototype engine written from scratch in C++ and DirectX 9 with custom HLSL shaders and procedural spline geometry.
+
+## Contact & Professional Links
+- Website: https://uray.dev
+- Email: me@uray.dev
+- LinkedIn: https://id.linkedin.com/in/meiviar
+- GitHub: https://github.com/uraymeiviar

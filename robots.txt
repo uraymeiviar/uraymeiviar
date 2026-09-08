@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# LLM and AI Agent Crawlers explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://uray.dev/sitemap.xml

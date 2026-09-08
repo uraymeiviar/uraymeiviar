@@ -1,0 +1,28 @@
+{
+  "id": "numpadkey",
+  "title": "NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)",
+  "featured": true,
+  "category": "Mobile & Operating Systems",
+  "role": "Mobile Systems & Android Java Developer",
+  "tags": [
+    "Android 1.0",
+    "Java",
+    "HTC Dream / G1",
+    "IME / Virtual Keyboard",
+    "T9 Keypad",
+    "Mobile UI",
+    "Early Android"
+  ],
+  "summary": "Pioneering T9-style on-screen virtual keyboard for Android 1.0 on the historic HTC Dream (T-Mobile G1), enabling rapid one-handed touch typing on early small capacitive displays without sliding out the physical keyboard.",
+  "highlights": [
+    "Engineered natively in pure Java for Android 1.0, developed before Google released official system IME / virtual keyboard frameworks in Android 1.5 Cupcake.",
+    "Intuitive 3x4 / 4x4 alphanumeric T9 keypad layout with multi-tap cycling, long-press accent/symbol popups, and dedicated punctuation.",
+    "Bypassed the need to open the bulky physical slider keyboard on the HTC Dream, enabling seamless one-handed messaging and text entry."
+  ],
+  "images": [
+    "beta2-screenshot.webp"
+  ],
+  "links": [],
+  "timeline": "2008 – 2009",
+  "timespan": "2008 – 2009"
+}

@@ -1,24 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uray Meiviar github</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        body { background: radial-gradient(circle at top right, #001f3f, #000814); }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uray Meiviar | Senior Simulation & Systems Engineer</title>
+  <meta name="description" content="Portfolio and CV of Uray Meiviar — Systems & Software Architect specializing in real-time flight simulators, Avionics, RTOS, Networking, and high-performance software.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Technical Index">
 </head>
-<body class="min-h-screen text-white flex items-center justify-center p-6">
-    <div class="max-w-2xl w-full">
-        <header class="mb-12">
-            <h1 class="text-4xl font-bold tracking-tight mb-2">uray.dev <span class="text-blue-500">/ git</span></h1>
-            <p class="text-gray-400">uray meiviar</p>
-        </header>
+<body>
 
-        <footer class="mt-12 pt-6 border-t border-white/5 text-center">
-            <a href="https://github.com/uraymeiviar" class="text-gray-500 hover:text-white text-sm transition-colors">github.com/uraymeiviar</a>
-        </footer>
+  <!-- Sticky Navigation Header -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="brand">
+        <a href="#" style="color: inherit; text-decoration: none;">uray<span class="accent">.dev</span></a>
+      </div>
+
+      <!--nav>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#competencies">Competencies</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="story.html" style="color: var(--accent-cyan); font-weight: 600;">Memoir ↗</a></li>
+          <li><a href="#education">Education</a></li>
+        </ul>
+      </nav> -->
+
+      <div class="header-actions">
+        <a class="btn btn-outline print-cv-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+          <span>Print/Save CV (PDF)</span>
+        </a>
+        <a href="mailto:me@uray.dev" class="btn btn-outline">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>me@uray.dev</span>
+        </a>
+      </div>
     </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="about">
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Profile Column (Name on top of Profile Picture) -->
+        <div class="hero-profile-col">
+          <h1 class="hero-title">Uray Meiviar</h1>
+          <div class="profile-card">
+            <div class="avatar-wrapper">
+              <img id="avatar-img" class="avatar-img" src="data/profile/IMG_20171020_111047-01.webp" alt="Uray Meiviar">
+              <button id="avatar-prev" class="avatar-nav-btn avatar-prev" type="button" aria-label="Previous photo">❮</button>
+              <button id="avatar-next" class="avatar-nav-btn avatar-next" type="button" aria-label="Next photo">❯</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Introduction -->
+        <div class="hero-content">
+
+          <div class="hero-subtitle">
+            <span>Systems & Software Architect</span>
+            <span style="color: var(--text-dim);">·</span>
+            <span>Aviation & Defense Systems</span>
+          </div>
+
+          <p class="hero-bio">
+            Systems and Software Architect with 20+ years of experience building mission-critical real-time simulation, high performance software, and high fidelity avionics software.
+          </p>
+          <p class="hero-bio" style="margin-top: -0.5rem;">
+            Developed and architected modern and high fidelity avionics simulation software — 
+            ARINC-424 navdata, ARINC-702A Advanced Flight Management System, Autopilot and Guidance system, Auto Flight Control, HUD, PFD, MCDU, and MFD,
+            including aircraft system simulation that covers ATA 21-37, 39, 40, 42, and 46
+          </p>
+          <p class="hero-bio" style="margin-top: -0.5rem;">
+            Veteran engineer of full-mission simulator (ACV300, FV101, AMX90), full flight simulators (NAS332, BAe Hawk 209, BO-105), Flight Trainer Device (F-16C/D, Xtra-330LX), 
+            Joint Simulation software following the Interoperability standard DIS IEEE-1278 or HLA IEEE-1516. 
+            Military Software for C4 (Command, Control, Communications, and Computers), as well as civilian electric rail transit (KCI Commuter Train Simulator)
+          </p>
+
+          <!--div class="hero-ctas">
+            <button class="btn btn-outline print-cv-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+              </svg>
+              <span>Print CV (PDF)</span>
+            </button>
+            <a href="mailto:me@uray.dev" class="btn btn-outline">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>me@uray.dev</span>
+            </a>
+          </div-->
+
+          <div class="hero-meta-bar">
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <a href="https://id.linkedin.com/in/meiviar" target="_blank" rel="noopener">linkedin.com/in/meiviar</a>
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              <a href="https://github.com/uraymeiviar" target="_blank" rel="noopener">github.com/uraymeiviar</a>
+            </div>
+
+            <div class="meta-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <span>Bandung, Indonesia (Global Remote)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Memoir Callout Banner -->
+      <!--div class="memoir-banner">
+        <div class="memoir-banner-content">
+          <span class="memoir-tag">AUTOBIOGRAPHICAL ENGINEERING CHRONICLES</span>
+          <h3>The Chronicles of a Systems Architect</h3>
+          <p>A comprehensive first-person technical memoir tracing the path from 8-bit DOS VGA assembly and pure ITB mathematics to supersonic fighter trainers, 330 kVA stateless GPU clusters, and transatlantic commercial widebody FMS navigation cores.</p>
+        </div>
+        <a href="story.html" class="btn btn-primary memoir-btn">
+          <span>Read Technical Memoir</span>
+          <span>→</span>
+        </a>
+      </div> -->
+    </div>
+  </section>
+
+  <!-- Competencies & Highlights -->
+  <!--section class="competency-section" id="competencies">
+    <div class="container">
+      <div class="stat-grid">
+        
+        <div class="stat-card">
+          <div class="stat-number">20+ Yrs</div>
+          <div class="stat-label">Real-Time Systems Architecture</div>
+          <div class="stat-desc">Low-level systems design, deterministic simulation loops, and mathematical models from DOS VGA assembly to modern C++20 and Wasm.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Full-Scope Simulators</div>
+          <div class="stat-desc">Supersonic fighter trainers, twin-turbine helicopters, armored cavalry platoons, and heavy electric commuter rail.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">FMS Core</div>
+          <div class="stat-label">Commercial Airliner Avionics</div>
+          <div class="stat-desc">Aerosoft Airbus A330 FMS navigation core, official Asobo Studio avionics, and FlightSim Studio AG Embraer E-Jets family.</div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-number">Stateless & RTOS</div>
+          <div class="stat-label">Zero-Trust Kernel & Networks</div>
+          <div class="stat-desc">CryptoSlax 100% diskless PXE OS, PREEMPT_RT deterministic kernels, IEEE 1278 DIS engine author, and zero-GC reliable UDP.</div>
+        </div>
+
+      </div>
+    </div>
+  </section-->
+
+  <!-- Career Experience Timeline -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Career History</span>
+        <h2 class="section-title">Work Experience</h2>
+        <p class="section-desc">Two decades of engineering mission-critical training devices, commercial transport aircraft avionics, and high-performance network architectures.</p>
+      </div>
+
+      <div class="timeline">
+        
+        <!-- FlightSim Studio AG & International Commercial Simulation -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Aircraft Systems & Simulation Engineer / FMS Architect</h3>
+                <div class="timeline-company">FlightSim Studio AG · Aerosoft · Asobo Studio Contracts</div>
+              </div>
+              <div class="timeline-period">2020 – Present (Ongoing)</div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.925rem;">
+              Core systems engineer responsible for full-scope airliner systems modeling, Flight Management Systems (FMS), autoflight guidance laws, and certified hardware avionics across modern commercial flight simulation.
+            </p>
+            <ul class="timeline-list">
+              <li>
+                <strong>Embraer E-Jets Family (E170, E175, E190, E195, E-Freighters):</strong> Ongoing flagship commercial transport program for MSFS. Comprehensive engineering across all systems: core FMS navigation, ARINC-424 cycle parsing, takeoff/climb performance computation ($V_1, V_R, V_2$), autopilot guidance (LNAV, VNAV PTH/FLCH), autoland CAT II/III, vector PFD/MFD displays, and multi-bus electrical/hydraulic simulation.
+              </li>
+              <li>
+                <strong>Aerosoft Airbus A330 (Contracted FMS Systems Architect):</strong> Individually contracted to architect and build the mathematical FMS brain for Aerosoft's flagship widebody. Engineered the ARINC-424 procedure leg engine (IF, TF, CF, DF, RF curved arcs), centrifugal turn anticipation lead distance ($D_{lead}$), Airbus MCDU flight planning (`INIT A/B`, `F-PLN`, trans-Atlantic `LIRF/KBOS` step climbs), backward-integrating Top-of-Descent (TOD) vertical navigation, and Navigation Display (ND) steering vectors.
+              </li>
+              <li>
+                <strong>Official Asobo Studio Hardware Avionics:</strong> Contracted by Asobo Studio (creators of MSFS) to engineer certified European avionics instruments for default simulator aircraft: <em>AIR Avionics ACD-57</em> (57mm radio/altimeter/transponder), <em>Becker AR6201</em> (8.33 kHz VHF transceiver with dual concentric knobs), and <em>Garrecht VT-02</em> (Mode S LCD transponder).
+              </li>
+              <li>
+                <strong>Pipistrel Taurus Motorized Glider:</strong> Co-developed the official Pipistrel Taurus motorized glider for Asobo Studio for the MSFS 40th Anniversary update, engineering the electro-mechanical retractable dorsal engine/propeller mast sequencer and soaring instruments.
+              </li>
+              <li>
+                <strong>SeaRey Elite Amphibian:</strong> Integrated MSFS built-in glass cockpit avionics (Garmin G3X) and amphibious hull/landing gear sub-systems (featuring Indonesian registration <code>PK-FSS</code>).
+              </li>
+              <li>
+                <strong>Stairport Sceneries (X-Plane):</strong> Recruited via T&E 3D artist network to develop native C/C++ plugins, engineering <em>World Aircraft</em> (dynamic AI airport ground and flight operations).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PT. Technology & Engineering Simulation -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Senior Systems & Simulation Engineer</h3>
+                <div class="timeline-company">PT. Technology & Engineering Simulation (T&E)</div>
+              </div>
+              <div class="timeline-period">Defense, Tactical & Transit Systems</div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.925rem;">
+              Developed full-mission military flight training devices, tactical armored vehicle simulators, joint strategic war games, and civilian transit simulators.
+            </p>
+            <ul class="timeline-list">
+              <li>
+                <strong>Supersonic & Tactical Flight Cockpits:</strong> Engineered BAe Hawk 209 combat trainer (MPD, audio, and tactical displays), NAS332 Super Puma FFS, BO-105 helicopter engineering lab (force-feedback control loading & collimated visual projection), and F-16 FTD subsystem integration.
+              </li>
+              <li>
+                <strong>Armored Cavalry & The Single-Cable Ethernet Revolution:</strong> Architected the STMR multi-type cavalry platoon simulator (Scorpion, Stormer, AMX-13). Eliminated proprietary aerospace wiring harness bottlenecks by inventing single-cable Ethernet distributed cabins powered by five-dollar COTS microcontrollers and CAN bus. Engineered ACV-300 armored vehicle simulator.
+              </li>
+              <li>
+                <strong>Project SOYUT (Joint Chiefs of Staff C4 War Games):</strong> Engineered a clean-sheet zero-trust diskless operating system (Linux From Scratch, PXE network boot, volatile RAM OverlayFS, disabled USB drivers) with geospatial Cesium3D WebGL, WebSockets, and WebRTC encrypted voice channels.
+              </li>
+              <li>
+                <strong>KCI Commuter Train Driving Simulator:</strong> Delivered clean-sheet electric rail simulator for PT Kereta Commuter Indonesia / PT KAI in a record 12-month turnaround. Integrated Russian train dynamics with custom web-based parametric railway editor (<code>railroad-editor-web</code>) and 1D Redis telemetry backend.
+              </li>
+              <li>
+                <strong>Core Simulation Engines:</strong> Authored <code>libDIS</code> (in-house C++ IEEE 1278 Distributed Interactive Simulation protocol library), <code>CommSystem</code> (low-latency VoIP tactical radio/intercom engine), <code>CodeGraph</code> (visual node-based execution editor), and PREEMPT_RT deterministic Linux kernels.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Freelance / Specialized Engineering -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Specialized Systems, Cloud & High-Density Engineering</h3>
+                <div class="timeline-company">Agate Studio · Bank Rakyat Indonesia · Custom Systems & Maker Projects</div>
+              </div>
+              <div class="timeline-period">Selected High-Impact Engagements</div>
+            </div>
+            <ul class="timeline-list">
+              <li>
+                <strong>Agate Studio (netEngine):</strong> Engineered a high-performance multiplayer networking engine in C# for Unity, implementing a custom reliable UDP protocol with sliding-window 32-bit ACK bitfield and exactly 0 bytes of GC memory allocation per frame during live gameplay.
+              </li>
+              <li>
+                <strong>Bank Rakyat Indonesia (RKB Enterprise App):</strong> Built cross-platform enterprise mobile banking application in Flutter/Dart with offline-first caching for micro and small enterprises across remote Indonesian regencies.
+              </li>
+              <li>
+                <strong>Stateless Datacenter & CryptoSlax:</strong> Designed 330 kVA 3-phase industrial mining facility, engineered <em>CryptoSlax</em> (modular 100% diskless PXE-booted Linux OS executing entirely from volatile RAM with OverlayFS), hand-optimized OpenCL/CUDA compute kernels in forked <code>cgminer</code>/<code>sgminer</code>, and deployed fault-tolerant AWS/GCP cloud backends for Burstcoin (blockchain explorer, web wallet, mining pool).
+              </li>
+              <li>
+                <strong>First-Principles Maker Projects:</strong> Designed and structurally modeled complete two-story residential home in Blender from scratch without architectural background, built automated indoor aeroponics cultivation chamber (Tabulampot Carolina Reaper) with custom dual-loop CPU waterblock Peltier nutrient chiller and closed-loop Arduino telemetry, and crafted custom hand-wired electric guitars.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Portfolio Section -->
+  <section class="section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Engineering Showcase</span>
+        <h2 class="section-title">Projects & Architecture</h2>
+        <p class="section-desc">Browse through commercial airliner avionics, defense flight/armor simulators, low-level networking, and hardware systems. Filter by category or click any tag to explore.</p>
+      </div>
+
+      <!-- Filter Controls -->
+      <div class="filter-wrapper">
+        <!-- Dynamic Category Filter -->
+        <div class="filter-row">
+          <span class="filter-label">Category:</span>
+          <div id="cat-bar" class="cat-bar">
+            <!-- Dynamically populated by app.js from all active project.json files -->
+          </div>
+        </div>
+
+        <!-- Dynamic Tag Bar -->
+        <div class="filter-row" style="margin-top: 0.5rem; align-items: flex-start;">
+          <span class="filter-label" style="padding-top: 0.3rem;">Tags:</span>
+          <div id="tag-bar" class="tag-bar">
+            <!-- Dynamically populated from all active project.json files -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Cards Grid -->
+      <div id="project-grid" class="project-grid">
+        <!-- Dynamically rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Speaking -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">Education & Speaking</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+        
+        <div class="timeline-content">
+          <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 0.25rem;">DEGREE</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700;">B.Sc. in Mathematics</h3>
+          <div style="color: var(--text-main); font-weight: 500; margin-top: 0.25rem;">Institut Teknologi Bandung (ITB)</div>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem; line-height: 1.6;">
+            Rigorous foundation in numerical analysis, computational mathematics, cryptography, mathematical modeling, and euclidian and non-euclidian geometry.
+          </p>
+        </div>
+
+        <div class="timeline-content">
+          <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 0.25rem;">GUEST SPEAKER</div>
+          <h3 style="font-size: 1.25rem; font-weight: 700;">Mathematics Challenge Festival (MCF)</h3>
+          <div style="color: var(--text-main); font-weight: 500; margin-top: 0.25rem;">Institut Teknologi Bandung (ITB)</div>
+          <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 0.5rem; line-height: 1.6;">
+            Invited industry guest speaker presenting on computational mathematics, algorithm design, and software engineering in mission-critical simulation.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Detail Modal Dialog -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-container">
+      <button id="modal-close-btn" class="modal-close-btn" aria-label="Close modal">✕</button>
+
+      <!-- Media Gallery -->
+      <div id="modal-gallery" class="modal-gallery">
+        <img id="gallery-img" class="gallery-main-img" src="" alt="Project media">
+        <div class="gallery-nav">
+          <button id="gallery-prev" class="gallery-btn" aria-label="Previous photo">❮</button>
+          <button id="gallery-next" class="gallery-btn" aria-label="Next photo">❯</button>
+        </div>
+        <div id="gallery-counter" class="gallery-counter">1 / 1</div>
+      </div>
+
+      <!-- Detail Body -->
+      <div class="modal-content-body">
+        <div class="modal-header-meta">
+          <h2 id="modal-title" class="modal-title"></h2>
+          <div id="modal-subtitle" class="modal-subtitle"></div>
+        </div>
+
+        <p id="modal-summary" class="modal-summary"></p>
+
+        <div id="modal-highlights-container">
+          <div class="modal-section-title">Technical Highlights & Implementation</div>
+          <ul id="modal-highlights" class="modal-highlights"></ul>
+        </div>
+
+        <div>
+          <div class="modal-section-title">Technical Tags</div>
+          <div id="modal-tags" style="display: flex; flex-wrap: wrap; gap: 0.4rem;"></div>
+        </div>
+
+        <div id="modal-links" style="display: flex; gap: 0.75rem; margin-top: 0.5rem;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <!--div>
+        <div class="footer-brand">
+          uray<span style="color: var(--accent-cyan)">.dev</span>
+        </div>
+        <p style="color: var(--text-dim); font-size: 0.85rem; margin-top: 0.25rem;">
+          Uray Meiviar · Systems & Simulation Engineering
+        </p>
+      </div-->
+
+      <div class="footer-links">
+        <a href="mailto:me@uray.dev">Email</a>
+        <a href="https://id.linkedin.com/in/meiviar" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/uraymeiviar" target="_blank" rel="noopener">GitHub</a>
+        <a href="story.html" title="Engineering Chronicles & Systems Philosophy">Memoir</a>
+        <button class="print-cv-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:0.925rem;">Print CV</button>
+      </div>
+
+      <div class="footer-copy">
+        <span>© 2026 Uray Meiviar. All rights reserved.</span>
+        <!--span>Built with pure HTML, modern CSS & vanilla JS. No frameworks.</span-->
+        <div class="footer-brand">
+          uray<span style="color: var(--accent-cyan)">.dev</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
 </body>
 </html>

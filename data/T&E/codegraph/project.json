@@ -1,0 +1,24 @@
+{
+  "id": "codegraph",
+  "title": "CodeGraph - Visual Logic & State Graph Tool",
+  "category": "Defense & Combat Simulation",
+  "role": "Software Tools Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Tools",
+    "Visual Programming",
+    "Architecture"
+  ],
+  "summary": "In-house node-based visual programming environment built to rapidly author and inspect state machines and simulation logic.",
+  "highlights": [
+    "Graph-based editor for defining logic trees, avionics mode transitions, and electrical switch paths.",
+    "Exported real-time executable bytecode/C++ logic executed directly by simulator cores."
+  ],
+  "images": [
+    "data/T&E/codegraph/IMG_20130624_114947.webp"
+  ],
+  "links": [],
+  "timeline": "2012 – 2014",
+  "timespan": "2012 – 2014"
+}

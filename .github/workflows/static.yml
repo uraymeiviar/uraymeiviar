@@ -31,6 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Auto-generate sitemap and project index
+        run: bash update-sitemap.sh
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

@@ -1,0 +1,28 @@
+{
+  "id": "asobo-glider-taurus",
+  "title": "Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)",
+  "featured": false,
+  "category": "Flight & Avionics",
+  "role": "Subsystems & Retraction Mechanism Engineer",
+  "company": "FlightSim Studio AG (Co-Development with Asobo Studio)",
+  "timeline": "2022",
+  "tags": [
+    "MSFS SDK",
+    "Asobo Studio",
+    "Pipistrel Taurus",
+    "Glider Systems",
+    "Mechanical Animation",
+    "Flight Sim"
+  ],
+  "summary": "Co-development of the official Pipistrel Taurus self-launching motorized glider for Microsoft Flight Simulator under contract with Asobo Studio, engineering the retractable dorsal propeller mast deployment sequence, engine systems, and soaring instruments.",
+  "highlights": [
+    "Engineered the electro-mechanical retraction and deployment sequencer for the retractable dorsal engine and propeller mast.",
+    "Modeled engine start/stop interlocks, propeller positioning brake, and aerodynamic drag penalty during mast extension.",
+    "Integrated soaring instruments, electrical bus switching, and engine telemetry gauges for official MSFS default aircraft."
+  ],
+  "images": [
+    "data/fss/asobo-glider-taurus/Screenshot 2026-09-09 005452.webp"
+  ],
+  "links": [],
+  "timespan": "2022"
+}

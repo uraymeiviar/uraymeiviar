@@ -1,0 +1,28 @@
+{
+  "id": "custom-guitar",
+  "title": "Custom Guitar Electronics & Craft",
+  "category": "Hardware & Maker",
+  "role": "Maker & Electronics Craft",
+  "tags": [
+    "Hardware",
+    "Electronics",
+    "Audio/DSP",
+    "Maker"
+  ],
+  "summary": "Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.",
+  "highlights": [
+    "Precision star grounding and copper cavity shielding for ultra-low noise floor.",
+    "Custom wiring schematics with high-tolerance CTS potentiometers and orange drop capacitors."
+  ],
+  "images": [
+    "data/guitar/wiring.webp",
+    "data/guitar/20250830_040754.webp",
+    "data/guitar/20250905_163617.webp",
+    "data/guitar/20251012_183213.webp",
+    "data/guitar/mid-july.webp",
+    "data/guitar/Screenshot 2026-09-06 184819.webp"
+  ],
+  "links": [],
+  "timeline": "2024 – Present",
+  "timespan": "2024 – Present"
+}

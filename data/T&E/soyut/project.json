@@ -1,0 +1,28 @@
+{
+  "id": "soyut",
+  "title": "SOYUT Integrated Joint Battle Management Platform",
+  "featured": true,
+  "category": "Defense & Combat Simulation",
+  "role": "Systems Architect & Battle Management Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "DIS/HLA",
+    "Tactical Systems",
+    "Networking",
+    "Distributed Systems"
+  ],
+  "summary": "Comprehensive joint battle management simulation platform integrating Air, Land, and Maritime forces in unified operational theater exercises.",
+  "highlights": [
+    "Joint theater command & control (C2) simulation connecting multi-domain operational units.",
+    "Distributed mission scenario execution with tactical radar, sensor, and reconnaissance data feeds.",
+    "Large-scale entity state synchronization across multi-station tactical command centers."
+  ],
+  "images": [
+    "data/T&E/soyut/IMG_20170419_235959.webp",
+    "data/T&E/soyut/IMG_20170420_025133.webp"
+  ],
+  "links": [],
+  "timeline": "2014 – 2017",
+  "timespan": "2014 – 2017"
+}

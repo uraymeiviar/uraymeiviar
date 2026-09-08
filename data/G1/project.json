@@ -1,0 +1,28 @@
+{
+  "id": "g1",
+  "title": "Project G1 - 3D Anti-Gravity Tunnel Racing Engine",
+  "featured": true,
+  "category": "Simulation & Defense",
+  "role": "Lead Graphics & Engine Programmer (PT. T&E Simulation R&D)",
+  "tags": [
+    "C++",
+    "DirectX 9",
+    "HLSL",
+    "3D Engine",
+    "Physics",
+    "R&D"
+  ],
+  "summary": "State-of-the-art anti-gravity space tunnel racing prototype engine written from scratch in C++ and DirectX 9 with custom HLSL shaders and procedural spline geometry.",
+  "highlights": [
+    "Clean-sheet 3D rendering pipeline using DirectX 9 and custom HLSL vertex/pixel shaders.",
+    "Procedural 3D tunnel geometry generation with dynamic lighting and wireframe energy rails.",
+    "Real-time camera spline interpolation with centrifugal roll and tilt dynamics.",
+    "In-cockpit futuristic HUD displaying dynamic targeting reticles and velocity vectors."
+  ],
+  "images": [
+    "data/G1/preview.webp"
+  ],
+  "links": [],
+  "timeline": "2006 – 2007",
+  "timespan": "2006 – 2007"
+}

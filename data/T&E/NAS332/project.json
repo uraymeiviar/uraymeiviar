@@ -1,0 +1,27 @@
+{
+  "id": "nas332",
+  "title": "NAS332 Super Puma Helicopter Simulator",
+  "category": "Flight & Avionics",
+  "role": "Lead Systems & Flight Dynamics Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Rotorcraft",
+    "Flight Dynamics",
+    "Cockpit Avionics",
+    "Real-Time"
+  ],
+  "summary": "Full-scale multi-mission tactical transport helicopter simulator with realistic rotor aerodynamics and cockpit systems.",
+  "highlights": [
+    "Rotorcraft aerodynamic simulation including ground effect, autorotation, and torque response.",
+    "Complete cockpit switchology, overhead electrical/fuel panels, and dual-pilot flight controls.",
+    "Motion and visual integration for low-altitude tactical navigation and landing operations."
+  ],
+  "images": [
+    "data/T&E/NAS332/IMG_1630.webp",
+    "data/T&E/NAS332/IMG_2244.webp"
+  ],
+  "links": [],
+  "timeline": "2008 – 2010",
+  "timespan": "2008 – 2010"
+}

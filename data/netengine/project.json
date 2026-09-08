@@ -1,0 +1,26 @@
+{
+  "id": "netengine",
+  "title": "netEngine - High-Performance Reliable UDP Engine",
+  "featured": true,
+  "category": "Systems & Enterprise",
+  "role": "Network Architect (Freelance for Agate Studio)",
+  "tags": [
+    "C#",
+    "Networking",
+    "UDP",
+    "Unity",
+    "Game Dev"
+  ],
+  "summary": "High-performance multiplayer networking engine designed in C# for Unity, implementing a custom reliable UDP protocol layer with zero-allocation buffers.",
+  "highlights": [
+    "Custom reliability layer over UDP with sliding-window ACK/NACK, packet sequencing, and congestion control.",
+    "Zero-garbage fixed memory buffer allocation preventing garbage collection hiccups during intense multiplayer matches.",
+    "Built-in NAT punchthrough and connection migration handling."
+  ],
+  "images": [
+    "data/netengine/105551411-452a9300-5d35-11eb-807a-d721e8954bb9.webp"
+  ],
+  "links": [],
+  "timeline": "2019 – 2020",
+  "timespan": "2019 – 2020"
+}

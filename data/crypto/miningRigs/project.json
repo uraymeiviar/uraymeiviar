@@ -1,0 +1,31 @@
+{
+  "id": "mining-rigs",
+  "title": "High-Density GPU Computing Rigs",
+  "category": "Systems & Infrastructure",
+  "role": "Hardware & Systems Architect",
+  "tags": [
+    "Hardware",
+    "Crypto",
+    "Power Systems",
+    "Linux"
+  ],
+  "summary": "330 kVA industrial-grade multi-GPU computing cluster engineered in a private Bandung facility with custom power distribution and high-velocity ventilation.",
+  "highlights": [
+    "330 kVA 3-phase industrial power drop with balanced phase distribution and server PSU DC rails.",
+    "Custom slotted-angle steel racking with high-flow negative-pressure industrial window ventilation.",
+    "Zero-touch stateless recovery combined with CryptoSlax across hundreds of 24/7 compute GPUs."
+  ],
+  "images": [
+    "data/crypto/miningRigs/gpu-frame.webp",
+    "data/crypto/miningRigs/minig-server.webp",
+    "data/crypto/miningRigs/IMG_20170521_155702.webp",
+    "data/crypto/miningRigs/IMG_20171217_232535.webp",
+    "data/crypto/miningRigs/IMG_20180510_163853.webp",
+    "data/crypto/miningRigs/IMG_20180510_163931.webp",
+    "data/crypto/miningRigs/IMG_20190428_164537.webp",
+    "data/crypto/miningRigs/rig2.webp"
+  ],
+  "links": [],
+  "timeline": "2013 – 2018",
+  "timespan": "2013 – 2018"
+}

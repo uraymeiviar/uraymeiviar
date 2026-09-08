@@ -1,0 +1,27 @@
+{
+  "id": "rtos",
+  "title": "RTOS - Real-Time Linux Simulation Environment",
+  "category": "Defense & Combat Simulation",
+  "role": "Systems & Kernel Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "Linux Kernel",
+    "Real-Time",
+    "C",
+    "x86",
+    "Operating Systems"
+  ],
+  "summary": "Custom x86 Linux kernel distribution patched with PREEMPT_RT to provide deterministic soft real-time execution for high-frequency simulation loops.",
+  "highlights": [
+    "Configured and tuned PREEMPT_RT kernel patches for low-jitter scheduling on commodity x86 hardware.",
+    "Dedicated CPU pinning and real-time thread priority scheduling for 60Hz/100Hz flight physics and I/O polling.",
+    "Eliminated non-deterministic latency spikes for mission-critical training devices."
+  ],
+  "images": [
+    "data/T&E/rtos/IMG20151118163323.webp",
+    "data/T&E/rtos/IMG20151118163346.webp"
+  ],
+  "links": [],
+  "timeline": "2014 – 2017",
+  "timespan": "2014 – 2017"
+}

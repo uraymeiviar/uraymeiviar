@@ -1,0 +1,30 @@
+{
+  "id": "asobo-radio-vt02",
+  "title": "Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo)",
+  "featured": false,
+  "category": "Flight & Avionics",
+  "role": "Avionics Device Software Engineer",
+  "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+  "timeline": "2022",
+  "tags": [
+    "Avionics",
+    "MSFS SDK",
+    "Asobo Studio",
+    "Transponder",
+    "Mode S",
+    "C++ / JS"
+  ],
+  "summary": "Engineered the authentic Garrecht VT-02 Mode S / ADS-B transponder instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+  "highlights": [
+    "Simulated certified Mode A/C/S transponder with active (>1234) and standby (SBY 0022) squawk code registers.",
+    "Integrated pressure altitude encoder displaying real-time Flight Level (FL000) telemetry.",
+    "Implemented authentic green backlit dot-matrix LCD display, VFR quick-select, and IDENT pulse transmission."
+  ],
+  "images": [
+    "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004009.webp",
+    "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004810.webp",
+    "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004844.webp"
+  ],
+  "links": [],
+  "timespan": "2022"
+}

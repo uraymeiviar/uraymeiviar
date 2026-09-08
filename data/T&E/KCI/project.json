@@ -1,0 +1,34 @@
+{
+  "id": "kci",
+  "title": "KCI Commuter Train Driving Simulator",
+  "featured": true,
+  "category": "Civilian & Transit",
+  "role": "Lead Systems Integration Architect",
+  "company": "PT. Technology & Engineering Simulation (T&E)",
+  "customer": "PT Kereta Commuter Indonesia (PT KCI / PT KAI)",
+  "tags": [
+    "C++",
+    "Transit Sim",
+    "Real-Time",
+    "Redis",
+    "Railway Engineering",
+    "Parametric CAD",
+    "Safety Systems"
+  ],
+  "summary": "Clean-sheet civilian transit driving simulator developed for PT Kereta Commuter Indonesia (KCI) in a record 12-month turnaround, featuring parametric railway track authoring, Russian rolling stock dynamics integration, and Redis state distribution.",
+  "highlights": [
+    "Pioneered entry into civilian rail simulation following military defense contracts, delivered in a record 1-year timeframe.",
+    "Integrated specialized Russian train dynamics software with 100% in-house physical hardware cabs, visual displays, and CommSystem audio.",
+    "Engineered custom web-based Railway Editor generating parametric, georeferenced rail splines (curvature, banking, micro-vibrations) over surveyed terrain.",
+    "Architected lightweight Redis in-memory backend for low-latency track geometry and train telemetry distribution along the route."
+  ],
+  "images": [
+    "data/T&E/KCI/05.webp",
+    "data/T&E/KCI/09.webp",
+    "data/T&E/KCI/IMG_20171107_150227.webp",
+    "data/T&E/KCI/Screenshot 2026-09-06 191201.webp"
+  ],
+  "links": [],
+  "timeline": "2017 – 2018",
+  "timespan": "2017 – 2018"
+}

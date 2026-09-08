@@ -1,0 +1,33 @@
+{
+  "id": "tabulampot-aeroponics",
+  "title": "High-Tech IoT Aeroponics & Carolina Reaper Lab",
+  "category": "Hardware & Maker",
+  "role": "Designer, Hardware Engineer & Embedded Architect",
+  "tags": [
+    "IoT",
+    "Embedded",
+    "Aeroponics",
+    "Arduino",
+    "Sensors",
+    "Hardware Hacking",
+    "Maker"
+  ],
+  "summary": "Automated indoor aeroponic cultivation chamber engineered for Carolina Reaper peppers, featuring ultrasonic misting, custom liquid Peltier chillers, and closed-loop microcontroller environmental telemetry.",
+  "highlights": [
+    "Cultivated imported Carolina Reaper chili peppers using soil-less ultrasonic high-frequency mist atomization.",
+    "Engineered custom nutrient chiller combining Peltier thermoelectric plates with PC CPU liquid cooling waterblocks.",
+    "Automated photoperiod and closed-loop environmental controls (temperature, pH, humidity) with Arduino and SBC relays."
+  ],
+  "images": [
+    "data/tabulampot/IMG_20180814_222848.webp",
+    "data/tabulampot/IMG_20180526_004433.webp",
+    "data/tabulampot/IMG_20180608_213512.webp",
+    "data/tabulampot/IMG_20180719_051935.webp",
+    "data/tabulampot/IMG_20180719_052143.webp",
+    "data/tabulampot/IMG_20180602_042601.webp",
+    "data/tabulampot/IMG_20180609_231552.webp"
+  ],
+  "links": [],
+  "timeline": "2018",
+  "timespan": "2018"
+}

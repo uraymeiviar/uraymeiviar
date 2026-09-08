@@ -1,0 +1,24 @@
+{
+  "id": "bri-rkb",
+  "title": "RKB Mobile Application",
+  "category": "Systems & Enterprise",
+  "role": "Mobile Developer & Architect",
+  "tags": [
+    "Flutter",
+    "Dart",
+    "Mobile",
+    "Fintech",
+    "Enterprise"
+  ],
+  "summary": "Mobile application developed in Flutter for Bank Rakyat Indonesia (BRI) supporting SME business ecosystem empowerment.",
+  "highlights": [
+    "Cross-platform mobile architecture with reactive state management.",
+    "Secure API integration with enterprise core banking backends."
+  ],
+  "images": [
+    "data/bri/IMG_20191107_170846.webp"
+  ],
+  "links": [],
+  "timeline": "2019 – 2020",
+  "timespan": "2019 – 2020"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "acv300",
+  "title": "ACV-300 Armored Combat Vehicle Simulator",
+  "category": "Defense & Combat Simulation",
+  "role": "Simulation Systems Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Combat Sim",
+    "Real-Time",
+    "Hardware-in-the-Loop"
+  ],
+  "summary": "Tracked armored combat vehicle simulator designed for crew coordination, combat driving, turret operation, and tactical engagement.",
+  "highlights": [
+    "Vehicle dynamics across complex cross-country terrains, obstacles, and gradient inclines.",
+    "Integrated driver cockpit controls and commander sights.",
+    "Networked participation in joint maneuvers via standardized simulation protocols."
+  ],
+  "images": [
+    "data/T&E/acv/DSC_0701.webp",
+    "data/T&E/acv/DSC_1082.webp"
+  ],
+  "links": [],
+  "timeline": "2007 – 2008",
+  "timespan": "2007 – 2008"
+}

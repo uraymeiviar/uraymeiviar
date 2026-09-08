@@ -1,0 +1,31 @@
+{
+  "id": "house-3d",
+  "title": "Architectural 3D CAD & Construction",
+  "category": "Hardware & Maker",
+  "role": "Designer & Project Lead",
+  "tags": [
+    "CAD/3D",
+    "Architecture",
+    "Design",
+    "Maker"
+  ],
+  "summary": "First-principles architectural design, 3D CAD modeling in Blender, and structural construction execution of a two-story home in Bandung.",
+  "highlights": [
+    "Self-taught architectural drafting and 3D structural modeling designed completely from scratch in Blender.",
+    "Engineered on-site construction realization on an 8x12-meter plot without formal architectural credentials.",
+    "Complete building lifecycle: engineered as a 330 kVA GPU datacenter, now thriving as a family-friendly home."
+  ],
+  "images": [
+    "data/house/render-rumah3.webp",
+    "data/house/image-floor.webp",
+    "data/house/DSC_0007.webp",
+    "data/house/IMG_20180113_165436.webp",
+    "data/house/IMG_20180113_165504.webp",
+    "data/house/IMG_20180814_162103.webp",
+    "data/house/IMG_5966.webp",
+    "data/house/IMG20230317102353.webp"
+  ],
+  "links": [],
+  "timeline": "2013 – 2018",
+  "timespan": "2013 – 2018"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "chiagen",
+  "title": "chiagen - Standalone Chia Plotter & Event-Driven Plot Manager",
+  "featured": true,
+  "category": "Systems & Infrastructure",
+  "role": "Systems Programmer & Performance Engineer",
+  "tags": [
+    "C++",
+    "Chia Network",
+    "Proof of Space",
+    "Multithreading",
+    "Dear ImGui",
+    "Systems Programming",
+    "Crypto",
+    "Performance Optimization"
+  ],
+  "summary": "High-performance native C++ standalone Chia generator and event-driven plot manager integrating madMAx43v3r and reference chiapos plotters in-process with real-time hardware telemetry and custom job scheduling.",
+  "highlights": [
+    "Direct in-process multithreaded compilation of madMAx43v3r and chiapos plotters, eliminating external process wrappers and enabling granular phase interception and pause/resume control.",
+    "Event-driven plot orchestration engine enabling reactive multi-stage pipelines that trigger staggered jobs upon specific phase completions or disk transfers.",
+    "Dual-mode interface providing an immediate-mode GUI (Dear ImGui) with real-time CPU/RAM/Disk I/O telemetry graphs alongside a full CLI mode for headless automated farming servers."
+  ],
+  "images": [
+    "screenshot.webp",
+    "screenshot2.webp"
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/uraymeiviar/chiagen"
+    }
+  ],
+  "timeline": "2021",
+  "timespan": "2021"
+}

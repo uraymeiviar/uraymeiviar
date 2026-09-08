@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Engineering Chronicles & Systems Philosophy | Uray Meiviar</title>
+  <meta name="description" content="Technical memoir, engineering chronicles, and systems architecture philosophy of Uray Meiviar.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+
+  <!-- KaTeX for high-fidelity LaTeX mathematics rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <link rel="stylesheet" href="css/katex/katex.min.css">
+
+  <!-- Highlight.js for code syntax highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/atom-one-dark.min.css">
+  <link rel="stylesheet" href="css/atom-one-dark.min.css">
+
+  <style>
+    :root {
+      --bg: #070a12;
+      --bg-card: #0d1322;
+      --border: rgba(255, 255, 255, 0.1);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --accent: #00d4ff;
+      --accent-blue: #3b82f6;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-serif: 'Charter', 'Bitstream Charter', 'Sitka Text', 'Cambria', Georgia, serif;
+      --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      line-height: 1.85;
+      background-image: 
+        radial-gradient(ellipse at 80% 0%, rgba(59, 130, 246, 0.08), transparent 50%),
+        radial-gradient(ellipse at 20% 30%, rgba(0, 212, 255, 0.05), transparent 40%);
+      background-attachment: fixed;
+      min-height: 100vh;
+      padding-bottom: 6rem;
+    }
+
+    /* Top Sticky Navigation Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      background: rgba(7, 10, 18, 0.88);
+      border-bottom: 1px solid var(--border);
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      gap: 1rem;
+    }
+
+    .top-bar a.back-link {
+      color: var(--text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: color 0.2s;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    .top-bar a.back-link:hover {
+      color: var(--accent);
+    }
+
+    .doc-selector-container {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      max-width: 420px;
+      flex: 1;
+    }
+
+    .doc-selector {
+      background: rgba(13, 19, 34, 0.9);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      padding: 0.35rem 0.65rem;
+      border-radius: 6px;
+      width: 100%;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .doc-selector:focus {
+      border-color: var(--accent);
+    }
+
+    .top-actions {
+      display: flex;
+      gap: 0.6rem;
+      align-items: center;
+    }
+
+    .btn-reader {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 0.35rem 0.85rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      font-family: var(--font-sans);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      white-space: nowrap;
+    }
+
+    .btn-reader:hover {
+      background: rgba(0, 212, 255, 0.15);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* Reading Container */
+    .reading-layout {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 0;
+    }
+
+    /* Quick TOC Drawer / Navigation */
+    .toc-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 3rem;
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+    }
+
+    .toc-title {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .toc-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 0.4rem 1.5rem;
+      padding: 0;
+      margin: 0;
+    }
+
+    .toc-list a {
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      display: block;
+      border-bottom: none;
+    }
+
+    .toc-list a:hover {
+      color: var(--accent);
+    }
+
+    /* Markdown Document Content Styling */
+    #doc-content {
+      animation: fadeIn 0.35s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-sans);
+      color: #fff;
+      line-height: 1.3;
+      letter-spacing: -0.015em;
+    }
+
+    h1 {
+      font-size: 2.35rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 1.65rem;
+      font-weight: 700;
+      margin-top: 3.5rem;
+      margin-bottom: 1.25rem;
+      color: #93c5fd;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      padding-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-top: 2.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--accent);
+    }
+
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: #cbd5e1;
+    }
+
+    p {
+      margin-bottom: 1.5rem;
+      color: #cbd5e1;
+    }
+
+    strong {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    em {
+      color: #93c5fd;
+      font-style: italic;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px dotted rgba(0, 212, 255, 0.4);
+      transition: all 0.2s;
+    }
+
+    a:hover {
+      color: #67e8f9;
+      border-bottom-color: var(--accent);
+    }
+
+    ul, ol {
+      margin-bottom: 1.5rem;
+      padding-left: 1.75rem;
+      color: #cbd5e1;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    blockquote {
+      border-left: 3px solid var(--accent);
+      background: rgba(0, 212, 255, 0.04);
+      padding: 1rem 1.5rem;
+      margin: 2rem 0;
+      border-radius: 0 8px 8px 0;
+      font-style: italic;
+      color: #e2e8f0;
+    }
+
+    blockquote p:last-child {
+      margin-bottom: 0;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 3.5rem 0;
+    }
+
+    code {
+      font-family: var(--font-mono);
+      font-size: 0.875em;
+      background: rgba(255, 255, 255, 0.08);
+      color: #67e8f9;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    pre {
+      background: #030712 !important;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin: 2rem 0;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #e2e8f0;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    pre code {
+      background: transparent !important;
+      padding: 0;
+      border: none;
+      color: inherit;
+    }
+
+    /* Figures, Images & Lightbox */
+    figure.doc-figure {
+      margin: 2.75rem auto;
+      text-align: center;
+    }
+
+    figure.doc-figure img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 0 auto 0.75rem auto;
+      display: block;
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.55);
+      cursor: zoom-in;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+
+    figure.doc-figure img:hover {
+      transform: scale(1.012);
+      border-color: rgba(0, 212, 255, 0.4);
+    }
+
+    figure.doc-figure video,
+    video.doc-video {
+      max-width: 100%;
+      width: 100%;
+      max-height: 560px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      margin: 0 auto 0.75rem auto;
+      display: block;
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.65);
+      background: #020617;
+      outline: none;
+      transition: border-color 0.2s ease;
+    }
+
+    figure.doc-figure video:hover,
+    video.doc-video:hover {
+      border-color: rgba(0, 212, 255, 0.4);
+    }
+
+    .video-actions {
+      display: flex;
+      justify-content: center;
+      margin: -0.25rem auto 0.75rem auto;
+      gap: 0.75rem;
+    }
+
+    .video-direct-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border);
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+
+    .video-direct-link:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(0, 212, 255, 0.08);
+      border-bottom-color: var(--accent);
+    }
+
+    .video-fallback-alert {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #fbbf24;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      border-radius: 6px;
+      padding: 0.5rem 0.75rem;
+      margin: 0.5rem auto;
+      max-width: 90%;
+      text-align: center;
+    }
+
+    figcaption {
+      font-family: var(--font-sans);
+      font-size: 0.85rem;
+      color: var(--text-dim);
+      font-style: italic;
+      line-height: 1.5;
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 2.5rem 0;
+      font-family: var(--font-sans);
+      font-size: 0.875rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      padding: 0.85rem 1.15rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    th {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--accent);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    /* Mathematics / KaTeX Styling */
+    .katex-display {
+      margin: 2rem 0 !important;
+      padding: 1.25rem 1.5rem !important;
+      background: rgba(13, 19, 34, 0.6) !important;
+      border: 1px solid rgba(0, 212, 255, 0.15) !important;
+      border-radius: 8px !important;
+      overflow-x: auto !important;
+      overflow-y: hidden !important;
+      text-align: center !important;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+    }
+
+    .katex-display .katex {
+      font-size: 1.2em !important;
+      color: #e0f2fe !important;
+    }
+
+    .katex {
+      color: #93c5fd;
+      font-size: 1.05em;
+    }
+
+    .katex-fallback-block {
+      background: rgba(13, 19, 34, 0.7);
+      border: 1px solid rgba(0, 212, 255, 0.2);
+      border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: #67e8f9;
+      overflow-x: auto;
+      text-align: center;
+    }
+
+    .katex-fallback-inline {
+      font-family: var(--font-mono);
+      color: #67e8f9;
+      background: rgba(0, 212, 255, 0.08);
+      padding: 0.1rem 0.35rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+
+    /* Fullscreen Lightbox Modal */
+    .lightbox-modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(3, 7, 18, 0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 2rem;
+      animation: fadeIn 0.2s ease;
+    }
+
+    .lightbox-modal.active {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 94vw;
+      max-height: 88vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-content img {
+      max-width: 94vw;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 10px 50px rgba(0, 0, 0, 0.9);
+      border: 1px solid var(--border);
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      color: #cbd5e1;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      text-align: center;
+      max-width: 800px;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--border);
+      color: #fff;
+      font-size: 1.75rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s;
+      line-height: 1;
+    }
+
+    .lightbox-close:hover {
+      background: rgba(239, 68, 68, 0.3);
+      border-color: #ef4444;
+      transform: scale(1.1);
+    }
+
+    /* Print Stylesheet */
+    @media print {
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        background: #fff !important;
+        color: #111827 !important;
+        font-size: 10.5pt !important;
+        line-height: 1.6 !important;
+      }
+
+      /* Explicit crisp dark typography for all textual elements on paper */
+      p, li, ul, ol, td, th, blockquote, span, a {
+        color: #111827 !important;
+      }
+
+      h1, h2, h3, h4, h5, h6, strong, b {
+        color: #000000 !important;
+      }
+
+      h1 {
+        font-size: 20pt !important;
+        border-bottom: 2px solid #1e293b !important;
+        margin-bottom: 1rem !important;
+        padding-bottom: 0.5rem !important;
+      }
+
+      h2 {
+        font-size: 14pt !important;
+        border-bottom: 1px solid #cbd5e1 !important;
+        margin-top: 2rem !important;
+        margin-bottom: 0.75rem !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+      }
+
+      h3 {
+        font-size: 12pt !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 0.5rem !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+      }
+
+      h4 {
+        font-size: 11pt !important;
+        margin-top: 1.25rem !important;
+        margin-bottom: 0.35rem !important;
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+      }
+
+      p {
+        margin-bottom: 1rem !important;
+      }
+
+      li {
+        margin-bottom: 0.35rem !important;
+      }
+
+      blockquote {
+        background: #f8fafc !important;
+        border-left: 3px solid #64748b !important;
+        color: #1e293b !important;
+        padding: 0.75rem 1.25rem !important;
+        margin: 1.25rem 0 !important;
+      }
+
+      blockquote p {
+        color: #1e293b !important;
+      }
+
+      hr {
+        border: none !important;
+        border-top: 1px solid #cbd5e1 !important;
+        margin: 2rem 0 !important;
+      }
+
+      pre {
+        border: 1px solid #cbd5e1 !important;
+        background: #f8fafc !important;
+        color: #0f172a !important;
+        padding: 0.85rem !important;
+        font-size: 8.5pt !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+      }
+
+      pre code {
+        background: transparent !important;
+        color: #0f172a !important;
+      }
+
+      code {
+        color: #0f172a !important;
+        background: #f1f5f9 !important;
+        border: 1px solid #e2e8f0 !important;
+        padding: 0.1rem 0.3rem !important;
+      }
+
+      table, thead, tbody, tfoot, tr, td {
+        background: #ffffff !important;
+        color: #111827 !important;
+      }
+
+      table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        border: 1px solid #cbd5e1 !important;
+        background: #ffffff !important;
+        margin: 1.5rem 0 !important;
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        box-shadow: none !important;
+      }
+
+      th {
+        background: #f1f5f9 !important;
+        color: #0f172a !important;
+        font-family: var(--font-mono) !important;
+        font-weight: 700 !important;
+        border: 1px solid #cbd5e1 !important;
+        padding: 0.6rem 0.85rem !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.05em !important;
+      }
+
+      td {
+        background: #ffffff !important;
+        color: #111827 !important;
+        border: 1px solid #e2e8f0 !important;
+        padding: 0.6rem 0.85rem !important;
+      }
+
+      tbody tr:nth-child(even) td {
+        background: #f8fafc !important;
+      }
+
+      tbody tr:hover td {
+        background: #f8fafc !important;
+      }
+
+      /* Hide UI Chrome */
+      .top-bar, .toc-box, .btn-reader, .lightbox-modal {
+        display: none !important;
+      }
+
+      .reading-layout {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+
+      figure.doc-figure {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+        margin: 1.5rem auto !important;
+        text-align: center !important;
+        display: block !important;
+      }
+
+      figure.doc-figure img {
+        max-width: 95% !important;
+        max-height: 520px !important;
+        height: auto !important;
+        display: block !important;
+        margin: 0 auto 0.5rem auto !important;
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+        border-radius: 4px !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+      }
+
+      figcaption {
+        color: #475569 !important;
+        font-size: 8.5pt !important;
+        font-style: italic !important;
+        margin-top: 0.35rem !important;
+      }
+
+      /* Completely skip and hide embedded videos in print */
+      figure.doc-video-figure,
+      .video-actions,
+      .video-fallback-alert,
+      video {
+        display: none !important;
+      }
+
+      .katex,
+      .katex-display,
+      .katex-html,
+      .katex .base {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        color: #000000 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="top-bar">
+    <a href="index.html" class="back-link">
+      <span>←</span>
+      <span>uray<span style="color: var(--accent)">.dev</span> / portfolio</span>
+    </a>
+
+    <!-- Quick Document Switcher -->
+    <div class="doc-selector-container">
+      <select id="doc-selector" class="doc-selector" title="Select document to read">
+        <option value="data/profile/DESC.md">📖 Full Biography & Engineering Memoir</option>
+      </select>
+    </div>
+
+    <div class="top-actions">
+      <a id="raw-link" href="#" target="_blank" class="btn-reader" title="View raw markdown source">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        <span>Raw MD</span>
+      </a>
+
+      <button class="btn-reader" id="btn-print-pdf" onclick="triggerPrintPDF()" title="Print or save as clean PDF">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <polyline points="6 9 6 2 18 2 18 9"></polyline>
+          <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+          <rect x="6" y="14" width="12" height="8"></rect>
+        </svg>
+        <span>Print PDF</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="reading-layout">
+    
+    <!-- Table of Contents Container -->
+    <nav id="toc-box" class="toc-box" style="display: none;">
+      <div class="toc-title">
+        <span>📑</span>
+        <span>Chapters & Table of Contents</span>
+      </div>
+      <ul id="toc-list" class="toc-list"></ul>
+    </nav>
+
+    <!-- Document Content Render Target -->
+    <article id="doc-content">
+      <div style="text-align: center; padding: 4rem; color: var(--text-dim); font-family: var(--font-mono);">
+        Loading technical documentation...
+      </div>
+    </article>
+
+  </main>
+
+  <!-- Fullscreen Image Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" onclick="closeLightbox()">
+    <button class="lightbox-close" onclick="closeLightbox()" title="Close (Escape)">×</button>
+    <div class="lightbox-content" onclick="event.stopPropagation()">
+      <img id="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Marked Markdown Parser (Local with CDN fallback) -->
+  <script src="js/marked.min.js"></script>
+  <script>
+    if (typeof marked === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- KaTeX Math Engine (Local with CDN fallback) -->
+  <script src="js/katex/katex.min.js"></script>
+  <script>
+    if (typeof katex === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- Highlight.js Syntax Highlighting (Local with CDN fallback) -->
+  <script src="js/highlight.min.js"></script>
+  <script>
+    if (typeof hljs === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"><\/script>');
+    }
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      initDocumentSwitcher();
+
+      const params = new URLSearchParams(window.location.search);
+      const targetFile = params.get('file') || 'data/profile/DESC.md';
+      
+      loadDocument(targetFile);
+
+      // Listen for browser popstate (back/forward)
+      window.addEventListener('popstate', () => {
+        const p = new URLSearchParams(window.location.search);
+        loadDocument(p.get('file') || 'data/profile/DESC.md', false);
+      });
+
+      // Escape key to close lightbox
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
+    });
+
+    async function initDocumentSwitcher() {
+      const selector = document.getElementById('doc-selector');
+      if (!selector) return;
+
+      try {
+        let manifestRes = await fetch('data/sitemap.json');
+        if (!manifestRes.ok) manifestRes = await fetch('data/projects.json');
+        if (!manifestRes.ok) return;
+        const folders = await manifestRes.json();
+
+        folders.forEach(folder => {
+          const descPath = `${folder}/DESC.md`;
+          const opt = document.createElement('option');
+          opt.value = descPath;
+          // Format human-friendly label
+          const cleanName = folder.replace('data/', '').replace('T&E/', 'T&E: ');
+          opt.textContent = `📄 ${cleanName}`;
+          selector.appendChild(opt);
+        });
+
+        selector.addEventListener('change', (e) => {
+          const newFile = e.target.value;
+          loadDocument(newFile, true);
+        });
+      } catch (err) {
+        console.warn('Could not populate doc selector:', err);
+      }
+    }
+
+    async function loadDocument(filePath, updateUrl = false) {
+      const container = document.getElementById('doc-content');
+      const rawLink = document.getElementById('raw-link');
+      const selector = document.getElementById('doc-selector');
+
+      if (rawLink) rawLink.href = filePath;
+      if (selector) selector.value = filePath;
+
+      if (updateUrl) {
+        const url = new URL(window.location);
+        url.searchParams.set('file', filePath);
+        window.history.pushState({}, '', url);
+      }
+
+      container.innerHTML = `
+        <div style="text-align: center; padding: 4rem; color: var(--text-dim); font-family: var(--font-mono);">
+          Loading technical documentation...
+        </div>
+      `;
+
+      try {
+        const res = await fetch(filePath);
+        if (!res.ok) throw new Error(`Could not fetch ${filePath} (HTTP ${res.status})`);
+        const markdown = await res.text();
+
+        renderDocument(markdown, filePath);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } catch (err) {
+        container.innerHTML = `
+          <div style="text-align: center; padding: 4rem; color: #ef4444; font-family: var(--font-mono);">
+            <h3>Document Not Found</h3>
+            <p style="margin-top: 0.5rem; color: var(--text-muted);">Failed to load: <code>${escapeHtml(filePath)}</code></p>
+            <button onclick="loadDocument('data/profile/DESC.md', true)" class="btn-reader" style="margin-top: 1rem;">Return to Biography</button>
+          </div>
+        `;
+      }
+    }
+
+    function renderDocument(markdown, filePath) {
+      const container = document.getElementById('doc-content');
+      const lastSlash = filePath.lastIndexOf('/');
+      const docDir = lastSlash !== -1 ? filePath.substring(0, lastSlash + 1) : '';
+
+      const mathBlocks = [];
+      const mathInlines = [];
+
+      // 1. Protect code blocks from math parsing
+      const codeBlocks = [];
+      let text = markdown.replace(/```[\s\S]*?```|`[^`\n]+`/g, (match) => {
+        codeBlocks.push(match);
+        return `%%%CODE_BLOCK_${codeBlocks.length - 1}%%%`;
+      });
+
+      // 2. Protect display math: $$ ... $$
+      text = text.replace(/\$\$([\s\S]+?)\$\$/g, (match, tex) => {
+        mathBlocks.push(tex.trim());
+        return `\n\n%%%MATH_BLOCK_${mathBlocks.length - 1}%%%\n\n`;
+      });
+
+      // 3. Protect inline math: $ ... $
+      text = text.replace(/(^|[^\$])\$([^\$\n]+?)\$(?!\$)/g, (match, prefix, tex) => {
+        mathInlines.push(tex.trim());
+        return `${prefix}%%%MATH_INLINE_${mathInlines.length - 1}%%%`;
+      });
+
+      // 4. Restore code blocks
+      text = text.replace(/%%%CODE_BLOCK_(\d+)%%%/g, (match, idx) => codeBlocks[idx]);
+
+      // 5. Preprocess image links: auto-encode unencoded spaces
+      text = text.replace(/!\[([^\]]*)\]\((<[^>]+>|[^)\r\n]+)\)/g, (match, alt, rawUrl) => {
+        let url = rawUrl.trim();
+        if (url.startsWith('<') && url.endsWith('>')) {
+          url = url.slice(1, -1).trim();
+        }
+        url = url.replace(/ /g, '%20');
+        return `![${alt}](${url})`;
+      });
+
+      // 6. Custom marked renderer for images & videos
+      const renderer = new marked.Renderer();
+      renderer.image = function({ href, title, text: alt }) {
+        let cleanHref = href || '';
+        try {
+          cleanHref = decodeURI(cleanHref);
+        } catch (e) {}
+
+        const resolvedPath = resolveRelativePath(docDir, cleanHref);
+        const finalSrc = encodeURI(resolvedPath);
+        const altText = alt || '';
+        const titleAttr = title ? ` title="${escapeHtml(title)}"` : '';
+        const caption = altText ? `<figcaption>${escapeHtml(altText)}</figcaption>` : '';
+
+        // Auto-detect video media
+        const isVideo = /\.(mp4|webm|ogg|mov|3gp|m4v)(\?.*)?$/i.test(cleanHref);
+        if (isVideo) {
+          const isWebm = /\.webm(\?.*)?$/i.test(cleanHref);
+          const mimeType = isWebm ? 'video/webm' : 'video/mp4';
+          return `<figure class="doc-figure doc-video-figure">
+            <video controls playsinline preload="auto" class="doc-video" src="${finalSrc}" data-resolved="true"${titleAttr}>
+              <source src="${finalSrc}" type="${mimeType}">
+              Your browser does not support HTML5 video playback.
+            </video>
+            <div class="video-actions">
+              <a href="${finalSrc}" target="_blank" class="video-direct-link" title="Open video directly in new tab or external player">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                Open video directly / Fullscreen
+              </a>
+            </div>
+            ${caption}
+          </figure>`;
+        }
+
+        return `<figure class="doc-figure">
+          <img src="${finalSrc}" alt="${escapeHtml(altText)}"${titleAttr} loading="eager" class="zoomable-img" onclick="openLightbox('${finalSrc}', '${escapeHtml(altText)}')">
+          ${caption}
+        </figure>`;
+      };
+
+      marked.use({ renderer, gfm: true, breaks: false });
+      let html = marked.parse(text);
+
+      // 7. Render display math with KaTeX
+      html = html.replace(/<p>\s*%%%MATH_BLOCK_(\d+)%%%\s*<\/p>|%%%MATH_BLOCK_(\d+)%%%/g, (match, id1, id2) => {
+        const id = id1 !== undefined ? id1 : id2;
+        const tex = mathBlocks[id];
+        if (typeof katex !== 'undefined') {
+          try {
+            return katex.renderToString(tex, { displayMode: true, throwOnError: false });
+          } catch (e) {
+            console.warn('KaTeX display render error:', e);
+          }
+        }
+        return `<div class="katex-fallback-block">$$${escapeHtml(tex)}$$</div>`;
+      });
+
+      // 8. Render inline math with KaTeX
+      html = html.replace(/%%%MATH_INLINE_(\d+)%%%/g, (match, id) => {
+        const tex = mathInlines[id];
+        if (typeof katex !== 'undefined') {
+          try {
+            return katex.renderToString(tex, { displayMode: false, throwOnError: false });
+          } catch (e) {
+            console.warn('KaTeX inline render error:', e);
+          }
+        }
+        return `<span class="katex-fallback-inline">$${escapeHtml(tex)}$</span>`;
+      });
+
+      container.innerHTML = html;
+
+      // Rebase and initialize video elements (skip already resolved videos from markdown)
+      container.querySelectorAll('video').forEach(video => {
+        if (!video.dataset.resolved) {
+          let src = video.getAttribute('src');
+          if (!src) {
+            const sourceEl = video.querySelector('source');
+            if (sourceEl) src = sourceEl.getAttribute('src');
+          }
+          if (src && !src.startsWith('http://') && !src.startsWith('https://') && !src.startsWith('/') && !src.startsWith('data:')) {
+            src = encodeURI(resolveRelativePath(docDir, decodeURI(src)));
+            video.src = src;
+            const sourceEl = video.querySelector('source');
+            if (sourceEl) sourceEl.src = src;
+          }
+          video.dataset.resolved = 'true';
+        }
+
+        video.addEventListener('error', () => {
+          console.warn('Video load encountered an error:', video.src, video.error);
+          const parent = video.closest('.doc-video-figure');
+          if (parent && !parent.querySelector('.video-fallback-alert')) {
+            const alert = document.createElement('div');
+            alert.className = 'video-fallback-alert';
+            alert.innerHTML = `⚠️ Video streaming stalled. If running locally, restart <code>http.bat</code> to enable HTTP 206 Range streaming, or <a href="${video.src}" target="_blank" style="color:var(--accent); text-decoration:underline;">click here to open/download video directly</a>.`;
+            parent.insertBefore(alert, parent.querySelector('.video-actions') || video.nextSibling);
+          }
+        });
+
+        try {
+          video.load();
+        } catch (e) {
+          console.warn('Video load invocation error:', e);
+        }
+      });
+
+      // 9. Highlight syntax on code blocks
+      container.querySelectorAll('pre code').forEach(block => {
+        if (typeof hljs !== 'undefined') {
+          hljs.highlightElement(block);
+        }
+      });
+
+      // 10. Update page title & Table of Contents
+      const firstH1 = container.querySelector('h1');
+      if (firstH1) {
+        document.title = `${firstH1.textContent} | Uray Meiviar`;
+      }
+      buildTableOfContents();
+    }
+
+    function resolveRelativePath(baseDir, relativePath) {
+      if (!relativePath || relativePath.startsWith('http://') || relativePath.startsWith('https://') || relativePath.startsWith('/') || relativePath.startsWith('data:')) {
+        return relativePath;
+      }
+      const combined = baseDir + relativePath;
+      const parts = combined.split('/');
+      const stack = [];
+      for (const part of parts) {
+        if (part === '' || part === '.') continue;
+        if (part === '..') {
+          if (stack.length > 0) stack.pop();
+        } else {
+          stack.push(part);
+        }
+      }
+      return stack.join('/');
+    }
+
+    function buildTableOfContents() {
+      const headings = document.querySelectorAll('#doc-content h2, #doc-content h3');
+      const tocList = document.getElementById('toc-list');
+      const tocBox = document.getElementById('toc-box');
+
+      if (!headings || headings.length < 2 || !tocList || !tocBox) {
+        if (tocBox) tocBox.style.display = 'none';
+        return;
+      }
+
+      tocList.innerHTML = '';
+      headings.forEach(h => {
+        if (!h.id) h.id = slugify(h.textContent);
+        const li = document.createElement('li');
+        const isSub = h.tagName === 'H3';
+        li.style.paddingLeft = isSub ? '1.25rem' : '0';
+        li.innerHTML = `<a href="#${h.id}">${h.textContent}</a>`;
+        tocList.appendChild(li);
+      });
+
+      tocBox.style.display = 'block';
+    }
+
+    /* Lightbox Functions */
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+
+      if (!modal || !img) return;
+
+      img.src = src;
+      img.alt = caption || 'High resolution technical preview';
+      if (cap) cap.textContent = caption || '';
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+
+    /* Print PDF with Full Image Pre-Decoding */
+    async function triggerPrintPDF() {
+      const btn = document.getElementById('btn-print-pdf');
+      const origHtml = btn ? btn.innerHTML : '';
+      if (btn) {
+        btn.innerHTML = `<span style="display:inline-flex; align-items:center; gap:0.35rem;">⏳ <span>Preloading Images...</span></span>`;
+        btn.disabled = true;
+      }
+
+      await preloadAllImagesForPrint();
+
+      if (btn) {
+        btn.innerHTML = origHtml;
+        btn.disabled = false;
+      }
+
+      window.print();
+    }
+
+    async function preloadAllImagesForPrint() {
+      const imgs = Array.from(document.querySelectorAll('#doc-content img'));
+      if (imgs.length === 0) return;
+
+      const promises = imgs.map(img => {
+        img.loading = 'eager';
+        if (img.complete && img.naturalWidth > 0) {
+          return Promise.resolve();
+        }
+        if ('decode' in img) {
+          return img.decode().catch(() => {});
+        }
+        return new Promise(resolve => {
+          img.onload = img.onerror = resolve;
+        });
+      });
+
+      await Promise.all(promises);
+      // Small pause to guarantee Chromium layout box recalculation
+      await new Promise(r => setTimeout(r, 200));
+    }
+
+    // Also safeguard manual Ctrl+P
+    window.addEventListener('beforeprint', () => {
+      document.querySelectorAll('#doc-content img').forEach(img => {
+        img.loading = 'eager';
+      });
+    });
+
+    function slugify(text) {
+      return text.toLowerCase()
+        .replace(/[^\w\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
+
+    function escapeHtml(str) {
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+  </script>
+</body>
+</html>

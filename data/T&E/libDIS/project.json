@@ -1,0 +1,26 @@
+{
+  "id": "libdis",
+  "title": "libDIS - IEEE 1278 Protocol Engine",
+  "category": "Defense & Combat Simulation",
+  "role": "Protocol Architect & Author",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "DIS/HLA",
+    "Networking",
+    "Protocols",
+    "Real-Time"
+  ],
+  "summary": "In-house C++ library implementing the IEEE 1278 Distributed Interactive Simulation (DIS) protocol for low-latency networked simulation.",
+  "highlights": [
+    "Full PDU serialization/deserialization (Entity State, Fire, Detonation, Collision, Radio Communications).",
+    "Dead reckoning algorithms (position, velocity, dead-reckoning extrapolation) for smooth cross-network entity movement.",
+    "Serves as the mission-critical networking backbone connecting aircraft, tank, and joint command simulators."
+  ],
+  "images": [
+    "data/T&E/libDIS/DSC_1033.webp"
+  ],
+  "links": [],
+  "timeline": "2007 – 2008",
+  "timespan": "2007 – 2008"
+}

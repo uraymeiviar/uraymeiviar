@@ -1,0 +1,30 @@
+{
+  "id": "burst-web-wallet",
+  "title": "Burstcoin Web Wallet & Decentralized Asset Exchange",
+  "featured": true,
+  "category": "Distributed Systems & Cloud",
+  "role": "Full-Stack Web3 Engineer & Cryptographic Architect",
+  "tags": [
+    "Blockchain",
+    "Cryptography",
+    "Curve25519",
+    "JavaScript",
+    "DeX",
+    "Web3",
+    "Security",
+    "Crypto"
+  ],
+  "summary": "Zero-trust client-side browser wallet and on-chain decentralized asset exchange (DEX) interface enabling instant user onboarding with in-memory Curve25519 signing.",
+  "highlights": [
+    "Zero-trust in-browser cryptography: client-side passphrase hashing via Curve25519 and SHA-256 ensuring private keys never leave local browser memory.",
+    "Decentralized Asset Exchange (DEX) orderbook interface supporting custom token issuance (BCPT) and automated profit-sharing dividends.",
+    "Eliminated cumbersome full-node synchronization requirements, drastically lowering onboarding friction for the Proof-of-Capacity cryptocurrency."
+  ],
+  "images": [
+    "BEE5I2k.webp",
+    "uidAvpZ - Imgur.webp"
+  ],
+  "links": [],
+  "timeline": "2014 – 2016",
+  "timespan": "2014 – 2016"
+}

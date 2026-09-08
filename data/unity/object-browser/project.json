@@ -1,0 +1,28 @@
+{
+  "id": "object-browser",
+  "title": "ObjectBrowser - Unity Reflection & Type Inspector",
+  "featured": true,
+  "category": "Game Engine & Tools",
+  "role": "Unity Tool Developer & Systems Programmer",
+  "tags": [
+    "Unity3D",
+    "C#",
+    ".NET Reflection",
+    "Unity Editor Extensions",
+    "Asset Store",
+    "Developer Tools"
+  ],
+  "summary": "Deep runtime and editor reflection inspector for Unity3D, exposing all properties, fields, methods, and complete base class inheritance hierarchies for any selected scene GameObject or project asset.",
+  "highlights": [
+    "Real-time deep .NET reflection across selected scene GameObjects and project assets, inspecting active components, properties, and methods.",
+    "Comprehensive inheritance chain visualization tracing hierarchy back through UnityEngine.Object to System.Object.",
+    "Method signature inspection extracting complete ParameterInfo, return types, and member flags directly within a docked Unity EditorWindow."
+  ],
+  "images": [
+    "object-browser-gameobject.webp",
+    "object-browser-asset.webp"
+  ],
+  "links": [],
+  "timeline": "2012",
+  "timespan": "2012"
+}

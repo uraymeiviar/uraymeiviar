@@ -1,0 +1,33 @@
+{
+  "id": "fss-ejet",
+  "title": "Embraer E-Jets Family (MSFS)",
+  "featured": true,
+  "category": "Flight & Avionics",
+  "role": "Core Systems & Avionics Engineer",
+  "company": "FlightSim Studio AG",
+  "timeline": "2020 - Present (4+ Years)",
+  "tags": [
+    "FMS",
+    "Autopilot",
+    "Flight Dynamics",
+    "Avionics",
+    "C++",
+    "Cockpit Systems",
+    "MSFS SDK"
+  ],
+  "summary": "Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.",
+  "highlights": [
+    "Flight Management System (FMS): Waypoint sequencing, lateral/vertical navigation, NavData ARINC-424 cycle parsing, and takeoff/climb performance calculation (V1, VR, V2, thrust limits).",
+    "Autopilot & Autoflight Management: Pitch/Roll guidance (LNAV, VNAV PTH/FLCH), ILS/Autoland CAT II/III approach tracking, and autothrottle system.",
+    "Cockpit Display Vector Rendering: Primary Flight Display (PFD) speed/altitude tapes, Multi-Function Display (MFD) moving map, and EICAS engine and alert messaging.",
+    "Deep Systems Simulation: Multi-bus AC/DC electrical distribution with bus tie logic, 3-circuit hydraulic system with engine/electric pumps and PTU, and pneumatic/pressurization loops."
+  ],
+  "images": [],
+  "links": [
+    {
+      "label": "FlightSim Studio",
+      "url": "https://www.flightsim-studio.com"
+    }
+  ],
+  "timespan": "2020 - Present (4+ Years)"
+}

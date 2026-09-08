@@ -1,0 +1,33 @@
+{
+  "id": "asobo-radio-ar6201",
+  "title": "Becker AR6201 VHF Transceiver (Official MSFS / Asobo)",
+  "featured": false,
+  "category": "Flight & Avionics",
+  "role": "Avionics Device Software Engineer",
+  "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+  "timeline": "2022",
+  "tags": [
+    "Avionics",
+    "MSFS SDK",
+    "Asobo Studio",
+    "VHF Radio",
+    "8.33 kHz",
+    "C++ / JS"
+  ],
+  "summary": "Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+  "highlights": [
+    "Faithfully simulated the certified Becker AR6201 8.33 kHz / 25 kHz VHF communications transceiver.",
+    "Engineered active/standby frequency exchange, dual concentric rotary tuning, memory channels, and squelch control.",
+    "Integrated power supply voltage monitoring, inter-communication (IC) modes, and MSFS SimVar two-way binding."
+  ],
+  "images": [
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004716.webp",
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004451.webp",
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004516.webp",
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004610.webp",
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004655.webp",
+    "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 003929.webp"
+  ],
+  "links": [],
+  "timespan": "2022"
+}

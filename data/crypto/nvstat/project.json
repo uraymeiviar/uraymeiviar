@@ -1,0 +1,28 @@
+{
+  "id": "nvstat",
+  "title": "nvstat - Linux NVIDIA GPU State & BIOS Telemetry CLI",
+  "featured": true,
+  "category": "Systems & Infrastructure",
+  "role": "Systems Programmer & Linux Infrastructure Engineer",
+  "tags": [
+    "Linux",
+    "NVIDIA",
+    "GPU",
+    "C/C++",
+    "Hardware Telemetry",
+    "Systems Programming",
+    "Crypto"
+  ],
+  "summary": "Lightweight high-performance Linux CLI utility querying NVIDIA driver ioctls, NVML, and PCIe VBIOS subsystem descriptors to report real-time GPU power, thermals, clocks, and exact vendor hardware names.",
+  "highlights": [
+    "Sub-millisecond execution replacing sluggish `nvidia-smi` queries for high-frequency cluster monitoring and automated watchdogs.",
+    "Direct PCIe subsystem vendor ID and VBIOS parsing to extract exact AIB partner board identities (MSI, ZOTAC, Founders Edition).",
+    "Color-coded ANSI terminal matrix displaying real-time power limits, fan speeds, core/memory clocks, and thermal warnings across 12+ GPU multi-card rigs."
+  ],
+  "images": [
+    "nvstat-screenshot.webp"
+  ],
+  "links": [],
+  "timeline": "2017 – 2018",
+  "timespan": "2017 – 2018"
+}

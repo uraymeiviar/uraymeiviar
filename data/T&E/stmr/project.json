@@ -1,0 +1,33 @@
+{
+  "id": "stmr",
+  "title": "STMR Multi-Type Armored Platoon Simulator",
+  "featured": true,
+  "category": "Defense & Combat Simulation",
+  "role": "Lead Distributed Simulation Architect",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "DIS/HLA",
+    "Networking",
+    "Real-Time",
+    "Combat Sim"
+  ],
+  "summary": "Multi-vehicle tactical simulator simulating three distinct tank classes interoperating in unified platoon and team combat formations.",
+  "highlights": [
+    "Multi-type armored vehicle simulation with synchronized gunner, driver, and commander stations.",
+    "Real-time inter-vehicle networking enabling cooperative platoon tactics in shared virtual terrain.",
+    "Ballistic trajectory computation, line-of-sight targeting, and damage modeling."
+  ],
+  "images": [
+    "data/T&E/stmr/DSC_0006.webp",
+    "data/T&E/stmr/IMG_20130618_105956.webp",
+    "data/T&E/stmr/IMG_20130618_110333.webp",
+    "data/T&E/stmr/IMG_20130618_115027.webp",
+    "data/T&E/stmr/IMG_20130622_031654.webp",
+    "data/T&E/stmr/ios2.webp",
+    "data/T&E/stmr/tumblr_merup6area1ru2qado1_1280.webp"
+  ],
+  "links": [],
+  "timeline": "2010 – 2012",
+  "timespan": "2010 – 2012"
+}

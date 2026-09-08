@@ -1,0 +1,25 @@
+{
+  "id": "mcf-itb",
+  "title": "Mathematics Challenge Festival (MCF)",
+  "category": "Academic & Speaking",
+  "role": "Guest Speaker",
+  "tags": [
+    "Mathematics",
+    "Academic",
+    "Speaking",
+    "Algorithms"
+  ],
+  "summary": "Invited guest speaker at the Mathematics Challenge Festival at Institut Teknologi Bandung (ITB), sharing software engineering and algorithmic applications of mathematics.",
+  "highlights": [
+    "Presented real-world applications of applied mathematics in software systems and simulation.",
+    "Engaged with students and faculty on computational mathematics in industry."
+  ],
+  "images": [
+    "data/mcf/IMG20160925065308.webp",
+    "data/mcf/IMG20160925085952.webp",
+    "data/mcf/IMG_1286.webp"
+  ],
+  "links": [],
+  "timeline": "2016",
+  "timespan": "2016"
+}

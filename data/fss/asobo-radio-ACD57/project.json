@@ -1,0 +1,32 @@
+{
+  "id": "asobo-radio-acd57",
+  "title": "AIR Avionics ACD-57 Multi-Function Radio & Altimeter (Official MSFS / Asobo)",
+  "featured": false,
+  "category": "Flight & Avionics",
+  "role": "Avionics Device Software Engineer",
+  "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+  "timeline": "2022",
+  "tags": [
+    "Avionics",
+    "MSFS SDK",
+    "Asobo Studio",
+    "Radio Navigation",
+    "C++ / JS",
+    "Altimeter"
+  ],
+  "summary": "Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+  "highlights": [
+    "Modeled authentic 57mm round display combining 8.33 kHz VHF COM transceiver, barometric altimeter tape, and transponder display.",
+    "Engineered barometric pressure calibration (hPa / inHg), altitude alert warnings, and flight level (FL) readouts.",
+    "Integrated menu navigation, frequency databases, and direct SimVar telemetry coupling for official MSFS aircraft."
+  ],
+  "images": [
+    "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 003849.webp",
+    "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004035.webp",
+    "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004055.webp",
+    "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004138.webp",
+    "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004210.webp"
+  ],
+  "links": [],
+  "timespan": "2022"
+}

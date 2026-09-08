@@ -1,0 +1,29 @@
+{
+  "id": "cryptolet",
+  "title": "Cryptolet - ESP32 Crypto Ticker & Portfolio Hardware",
+  "featured": true,
+  "category": "Hardware & Maker",
+  "role": "Embedded Systems Engineer & Hardware Maker",
+  "tags": [
+    "ESP32",
+    "Embedded C++",
+    "IoT",
+    "Hardware",
+    "Crypto",
+    "SPIFFS",
+    "REST API"
+  ],
+  "summary": "Custom ESP32-based handheld and desktop hardware ticker with color TFT LCD displaying live cryptocurrency prices, multi-exchange candlestick charts, and captive portal Wi-Fi configuration.",
+  "highlights": [
+    "Dual-core 240MHz ESP32 firmware written in C++ rendering real-time candlestick charts, moving averages, and multi-currency portfolio tracking.",
+    "Integrated SoftAP captive portal and SPIFFS flash filesystem for seamless over-the-air Wi-Fi and custom API endpoint setup.",
+    "Hardware user interface featuring tactile push-buttons, low-latency JSON REST parsing, and NTP time synchronization."
+  ],
+  "images": [
+    "IMG_0040.webp",
+    "IMG_0041.webp"
+  ],
+  "links": [],
+  "timeline": "2019 – 2020",
+  "timespan": "2019 – 2020"
+}

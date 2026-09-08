@@ -1,0 +1,29 @@
+{
+  "id": "burst-explorer",
+  "title": "Burstcoin Blockchain Explorer",
+  "featured": true,
+  "category": "Distributed Systems & Cloud",
+  "role": "Full-Stack Blockchain Engineer & Cloud Architect",
+  "tags": [
+    "Blockchain",
+    "Node.js",
+    "JavaScript",
+    "AWS",
+    "High Availability",
+    "Crypto"
+  ],
+  "summary": "High-throughput real-time blockchain telemetry and asset ledger explorer parsing block generation deadlines, smart tokens, and global transaction metrics.",
+  "highlights": [
+    "Real-time daemon RPC ingestion and parsing of 256-bit Shabal-hash Proof-of-Capacity block payloads.",
+    "Decentralized on-chain asset exchange tracking, token transfer indexing, and rich address telemetry.",
+    "Global high-availability multi-region cloud deployment on AWS EC2 and Google Cloud Platform."
+  ],
+  "images": [
+    "0A5BOVN.webp",
+    "1amoyJj.webp",
+    "4x5RIWA.webp"
+  ],
+  "links": [],
+  "timeline": "2014 – 2016",
+  "timespan": "2014 – 2016"
+}

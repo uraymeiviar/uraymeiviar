@@ -1,0 +1,40 @@
+{
+  "default": "data/profile/IMG_20171020_111047-01.webp",
+  "photos": [
+    {
+      "id": "early_days",
+      "file": "data/profile/apple2_early_days.webp",
+      "country": "Indonesia",
+      "flag": "🍎",
+      "caption": "Bandung, Indonesia · Where it all began on the Apple II (1980s)"
+    },
+    {
+      "id": "uk",
+      "file": "data/profile/EF2000.webp",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "caption": "United Kingdom · Aerospace & Defense"
+    },
+    {
+      "id": "japan",
+      "file": "data/profile/DSC_0825.webp",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "caption": "Tokyo, Japan · Technology & Systems"
+    },
+    {
+      "id": "russia",
+      "file": "data/profile/IMG_20171020_111047-01.webp",
+      "country": "Russia",
+      "flag": "🇷🇺",
+      "caption": "Zhukovsky / MAKS, Russia · Aviation"
+    },
+    {
+      "id": "us",
+      "file": "data/profile/P1020874.webp",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "caption": "United States · Engineering"
+    }
+  ]
+}

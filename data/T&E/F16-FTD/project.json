@@ -1,0 +1,28 @@
+{
+  "id": "f16-ftd",
+  "title": "F-16 Full Mission Flight Training Device (FTD)",
+  "featured": true,
+  "category": "Flight & Avionics",
+  "role": "Senior Simulator Systems Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Flight Simulator",
+    "Cockpit Avionics",
+    "Real-Time",
+    "DIS/HLA"
+  ],
+  "summary": "High-fidelity supersonic fighter simulator replicating flight handling qualities, tactical cockpit avionics, and mission systems.",
+  "highlights": [
+    "Real-time cockpit avionics, Heads-Up Display (HUD), and multi-function display simulation.",
+    "Hardware-in-the-loop (HIL) interface bridging physical cockpit instruments, stick, and throttle controls.",
+    "Multi-channel curved visual projection alignment and mission scenario injection."
+  ],
+  "images": [
+    "data/T&E/F16-FTD/_MG_5349.webp",
+    "data/T&E/F16-FTD/_MG_5350.webp"
+  ],
+  "links": [],
+  "timeline": "2013 – 2014",
+  "timespan": "2013 – 2014"
+}

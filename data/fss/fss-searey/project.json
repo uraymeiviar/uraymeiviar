@@ -1,0 +1,27 @@
+{
+  "id": "fss-searey",
+  "title": "SeaRey Elite Light Sport Amphibian Seaplane (MSFS)",
+  "featured": false,
+  "category": "Flight & Avionics",
+  "role": "Avionics & Systems Integration Engineer",
+  "company": "FlightSim Studio AG",
+  "timeline": "2022",
+  "tags": [
+    "MSFS SDK",
+    "Avionics Integration",
+    "Garmin G3X",
+    "Systems Simulation",
+    "Flight Sim"
+  ],
+  "summary": "Avionics and systems integration for the SeaRey Elite amphibious light sport seaplane in Microsoft Flight Simulator, integrating built-in MSFS glass cockpit avionics, electrical logic, and flight deck systems.",
+  "highlights": [
+    "Integrated MSFS built-in avionics suite with custom Garmin G3X glass cockpit layout and engine instrumentation.",
+    "Engineered electrical system logic, amphibious landing gear / bilge pump controls, and instrument bus switching.",
+    "Configured custom flight deck interaction models and calibrated real-time telemetry."
+  ],
+  "images": [
+    "data/fss/fss-searey/Screenshot 2026-09-09 005332.webp"
+  ],
+  "links": [],
+  "timespan": "2022"
+}

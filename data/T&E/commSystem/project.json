@@ -1,0 +1,27 @@
+{
+  "id": "commsystem",
+  "title": "Tactical Intercom & Radio Simulation System",
+  "category": "Defense & Combat Simulation",
+  "role": "Communications Systems Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Audio/DSP",
+    "Networking",
+    "Tactical Systems"
+  ],
+  "summary": "Integrated voice communication system simulating tactical radio channels, intercom hot-mics, frequency modulation, and radio propagation noise.",
+  "highlights": [
+    "Simulated UHF/VHF military radio networks with line-of-sight attenuation and frequency selection.",
+    "Low-latency VoIP streaming with push-to-talk (PTT) hardware switch integration.",
+    "Multi-crew cockpit intercom with selectable voice isolation modes."
+  ],
+  "images": [
+    "data/T&E/commSystem/IMG-20131023-WA0004.webp",
+    "data/T&E/commSystem/IMG_20110202_143357.webp",
+    "data/T&E/commSystem/IMG_20131001_123617.webp"
+  ],
+  "links": [],
+  "timeline": "2012 – 2014",
+  "timespan": "2012 – 2014"
+}

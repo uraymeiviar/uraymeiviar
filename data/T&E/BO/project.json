@@ -1,0 +1,30 @@
+{
+  "id": "bo105",
+  "title": "BO-105 Light Twin Helicopter Simulator",
+  "category": "Flight & Avionics",
+  "role": "Flight Simulation Software Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C++",
+    "Rotorcraft",
+    "Flight Simulator",
+    "Real-Time",
+    "Avionics",
+    "Motion Platform",
+    "Control Loading"
+  ],
+  "summary": "Full flight simulator refurbishment and internal R&D testbed featuring motor control loading, tablet glass cockpit instrumentation, curved visual warping, and a VR-immersed motion platform.",
+  "highlights": [
+    "Extracted BO-105 flight dynamics model into an internal R&D lab cockpit with iPad/tablet instrument cutouts.",
+    "Engineered electric motor control loading (active force feedback) on cyclic and collective sticks.",
+    "Integrated custom motion platform with VR visual immersion to evaluate tactile G-force and acceleration cueing."
+  ],
+  "images": [
+    "data/T&E/BO/helicopter-lab.webp",
+    "data/T&E/BO/vr-lab.webp",
+    "data/T&E/BO/IMG_20130823_183241.webp"
+  ],
+  "links": [],
+  "timeline": "2008 – 2009",
+  "timespan": "2008 – 2009"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "broken-glass-shader",
+  "title": "Broken Glass Shader - Refraction & Diffraction Optical Surface",
+  "featured": true,
+  "category": "Game Engine & Tools",
+  "role": "Graphics & Shader Programmer",
+  "tags": [
+    "Unity3D",
+    "ShaderLab",
+    "CG/HLSL",
+    "Graphics Programming",
+    "Refraction",
+    "Asset Store",
+    "Game Development"
+  ],
+  "summary": "Physically-inspired real-time broken glass surface shader for Unity3D featuring normal-mapped shattered crack patterns, optical refraction, chromatic diffraction, and Fresnel specular highlights.",
+  "highlights": [
+    "Realistic light refraction and chromatic diffraction driven by custom normal map displacement textures.",
+    "Adjustable glass tint, specular reflection falloff, and Fresnel sheen accentuating shattered shard edges and radial impact points.",
+    "Published on the Unity Asset Store as a lightweight, drop-in material compatible with forward and deferred rendering pipelines."
+  ],
+  "images": [
+    "broken-glass-preview.webp"
+  ],
+  "links": [],
+  "timeline": "2012",
+  "timespan": "2012"
+}

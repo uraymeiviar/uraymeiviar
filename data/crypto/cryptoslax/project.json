@@ -1,0 +1,27 @@
+{
+  "id": "cryptoslax",
+  "title": "CryptoSlax - Custom Linux Distribution",
+  "featured": true,
+  "category": "Systems & Infrastructure",
+  "role": "Systems & OS Engineer",
+  "tags": [
+    "Linux Kernel",
+    "Operating Systems",
+    "Crypto",
+    "Hardware"
+  ],
+  "summary": "Customized, ultra-lightweight (~100 MB) stateless Linux distribution engineered for PXE network boot, RAM execution, and 24/7 autonomous GPU clusters.",
+  "highlights": [
+    "100% diskless architecture booting via PXE/TFTP directly into volatile RAM with zero local storage.",
+    "Modular SquashFS and OverlayFS layer stacking for kernel, AMD/NVIDIA drivers, and mining binaries.",
+    "Complete immunity to hard power cuts and filesystem corruption; direct architectural prototype for Project SOYUT."
+  ],
+  "images": [
+    "data/crypto/cryptoslax/5642i21 (1).webp",
+    "data/crypto/cryptoslax/B9m2DbB.webp",
+    "data/crypto/cryptoslax/DSC_0003.webp"
+  ],
+  "links": [],
+  "timeline": "2013 – 2016",
+  "timespan": "2013 – 2016"
+}
