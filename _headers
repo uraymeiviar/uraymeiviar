@@ -2,6 +2,22 @@
 /*
   Access-Control-Allow-Origin: *
 
+# Agent Readiness Link Headers on Homepage (RFC 8288 & RFC 9727)
+/
+  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby"
+
+/index.html
+  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby"
+
+# API Catalog per RFC 9727
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; charset=utf-8
+
+# Auth.md for AI Agents
+/auth.md
+  Content-Type: text/markdown; charset=utf-8
+
+
 /data/profile/DESC.txt
   Content-Type: text/plain; charset=utf-8
 

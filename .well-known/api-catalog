@@ -1,0 +1,34 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://cv.uray.dev",
+      "api-catalog": [
+        {
+          "href": "https://cv.uray.dev/.well-known/api-catalog",
+          "type": "application/linkset+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "https://cv.uray.dev/llms.txt",
+          "type": "text/plain",
+          "title": "LLM Technical Index"
+        }
+      ],
+      "describedby": [
+        {
+          "href": "https://cv.uray.dev/data/profile/DESC.txt",
+          "type": "text/plain",
+          "title": "Comprehensive Technical Biography & Memoir"
+        }
+      ],
+      "service-desc": [
+        {
+          "href": "https://cv.uray.dev/sitemap.xml",
+          "type": "application/xml",
+          "title": "Sitemap"
+        }
+      ]
+    }
+  ]
+}
