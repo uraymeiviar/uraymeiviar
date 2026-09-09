@@ -2,6 +2,15 @@
 /*
   Access-Control-Allow-Origin: *
 
+/data/profile/DESC.txt
+  Content-Type: text/plain; charset=utf-8
+
+/memoir.txt
+  Content-Type: text/plain; charset=utf-8
+
+/story.txt
+  Content-Type: text/plain; charset=utf-8
+
 # Technical LLM Index
 /llms.txt
   Content-Type: text/plain; charset=utf-8

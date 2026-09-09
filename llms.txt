@@ -1,9 +1,10 @@
-﻿# Uray Meiviar â€” Engineering Profile & Technical Architecture Index
+# Uray Meiviar â€” Engineering Profile & Technical Architecture Index
 
 > Senior Simulation & Systems Software Engineer with 20+ years of experience in real-time military and civilian flight simulators, commercial transport aircraft avionics (FMS), real-time operating systems (RTOS), and distributed simulation protocols (IEEE 1278 DIS).
 
 ## Comprehensive Biography & Dossier
-- [Uray Meiviar: Comprehensive Technical Biography](/data/profile/DESC.md): Full narrative chronicle from 1980s 8-bit computers and ITB mathematics to military defense simulators, the STMR Ethernet revolution, and SOYUT C4 strategic command.
+- [Uray Meiviar: Comprehensive Technical Biography (Plain Text)](/data/profile/DESC.txt): Full narrative chronicle from 1980s 8-bit computers and ITB mathematics to military defense simulators, the STMR Ethernet revolution, and SOYUT C4 strategic command.
+- [Uray Meiviar: Comprehensive Technical Biography (Markdown)](/data/profile/DESC.md): Full narrative chronicle from 1980s 8-bit computers and ITB mathematics to military defense simulators, the STMR Ethernet revolution, and SOYUT C4 strategic command.
 - [Engineering Chronicles & Technical Memoir Reader](/story.html): In-browser reader with table of contents and formatted architecture specifications.
 
 ## Detailed Project Specifications & Architecture Documents
