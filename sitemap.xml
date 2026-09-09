@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://uray.dev/</loc>
@@ -37,11 +37,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/fss/asobo-glider-taurus/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://uray.dev/data/fss/asobo-radio-ACD57/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
@@ -57,17 +52,17 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://uray.dev/data/fss/asobo-glider-taurus/DESC.md</loc>
+    <lastmod>2026-09-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://uray.dev/data/fss/fss-searey/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/chiagen/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://uray.dev/data/bri/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -82,12 +77,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/tabulampot/DESC.md</loc>
+    <loc>https://uray.dev/data/bri/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/crypto/nvstat/DESC.md</loc>
+    <loc>https://uray.dev/data/tabulampot/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -97,12 +92,17 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/crypto/miningRigs/DESC.md</loc>
+    <loc>https://uray.dev/data/crypto/nvstat/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/house/DESC.md</loc>
+    <lastmod>2026-09-09</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://uray.dev/data/crypto/miningRigs/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -177,7 +177,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/numpadKey/DESC.md</loc>
+    <loc>https://uray.dev/data/T&E/hawk/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -187,7 +187,7 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://uray.dev/data/T&E/hawk/DESC.md</loc>
+    <loc>https://uray.dev/data/numpadKey/DESC.md</loc>
     <lastmod>2026-09-09</lastmod>
     <priority>0.8</priority>
   </url>
@@ -207,4 +207,3 @@
     <priority>0.8</priority>
   </url>
 </urlset>
-

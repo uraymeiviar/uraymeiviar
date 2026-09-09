@@ -17,6 +17,7 @@
     initProjects();
     initModalHandlers();
     initPrintCV();
+    initFilterToggle();
   });
 
   /* -------------------------------------------------------------------------- */
@@ -75,6 +76,25 @@
     const grid = document.getElementById('project-grid');
     if (!grid) return;
 
+    // 1. Attempt SSG Hydration from embedded #projects-data
+    const prebakedScript = document.getElementById('projects-data');
+    if (prebakedScript) {
+      try {
+        allProjects = JSON.parse(prebakedScript.textContent || '[]');
+      } catch (err) {
+        console.warn('Failed parsing embedded projects-data', err);
+      }
+    }
+
+    const preRenderedCards = grid.querySelectorAll('.project-card');
+    if (allProjects.length > 0 && preRenderedCards.length > 0) {
+      initCategoryFilterListeners();
+      initTagFilterListeners();
+      hydrateProjectCards();
+      return;
+    }
+
+    // 2. Dynamic Fallback: fetch manifests and render on client
     grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: #64748b; font-family: monospace;">Loading engineering catalog...</div>';
 
     try {
@@ -136,8 +156,52 @@
   }
 
   /* -------------------------------------------------------------------------- */
-  /* 3. Tags & Category Filter Bar                                              */
+  /* 3. Filter Listeners & Dynamic Filter Bar Generators                        */
   /* -------------------------------------------------------------------------- */
+  function initCategoryFilterListeners() {
+    const catBar = document.getElementById('cat-bar');
+    if (!catBar) return;
+    const buttons = catBar.querySelectorAll('.cat-filter-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentCategory = btn.getAttribute('data-cat') || 'all';
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        filterProjects();
+      });
+    });
+  }
+
+  function initTagFilterListeners() {
+    const tagBar = document.getElementById('tag-bar');
+    if (!tagBar) return;
+    const buttons = tagBar.querySelectorAll('.tag-btn');
+    const allBtn = tagBar.querySelector('.tag-btn[data-tag="all"]') || buttons[0];
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tag = btn.getAttribute('data-tag');
+        if (!tag || tag === 'all') {
+          currentTag = null;
+          buttons.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        } else {
+          if (currentTag === tag) {
+            currentTag = null;
+            btn.classList.remove('active');
+            if (allBtn) allBtn.classList.add('active');
+          } else {
+            currentTag = tag;
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            if (allBtn) allBtn.classList.remove('active');
+          }
+        }
+        filterProjects();
+      });
+    });
+  }
+
   function renderCategoryFilters() {
     const catBar = document.getElementById('cat-bar');
     if (!catBar) return;
@@ -152,17 +216,10 @@
 
     catBar.innerHTML = '';
 
-    // All Categories button
     const allBtn = document.createElement('button');
     allBtn.className = 'filter-btn cat-filter-btn active';
     allBtn.setAttribute('data-cat', 'all');
     allBtn.innerHTML = `All Domains <span style="opacity:0.6; font-size:0.75rem;">(${allProjects.length})</span>`;
-    allBtn.addEventListener('click', () => {
-      currentCategory = 'all';
-      document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
-      allBtn.classList.add('active');
-      renderProjects();
-    });
     catBar.appendChild(allBtn);
 
     sortedCats.forEach(cat => {
@@ -170,14 +227,11 @@
       btn.className = 'filter-btn cat-filter-btn';
       btn.setAttribute('data-cat', cat);
       btn.innerHTML = `${cat} <span style="opacity:0.6; font-size:0.75rem;">(${catCounts[cat]})</span>`;
-      btn.addEventListener('click', () => {
-        currentCategory = cat;
-        document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        renderProjects();
-      });
       catBar.appendChild(btn);
     });
+
+    initCategoryFilterListeners();
+    updateFilterSummary();
   }
 
   function renderTags() {
@@ -195,133 +249,177 @@
 
     tagBar.innerHTML = '';
     
-    // All Tags button
     const allBtn = document.createElement('button');
     allBtn.className = 'tag-btn active';
+    allBtn.setAttribute('data-tag', 'all');
     allBtn.textContent = 'All Tags';
-    allBtn.addEventListener('click', () => {
-      currentTag = null;
-      document.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('active'));
-      allBtn.classList.add('active');
-      renderProjects();
-    });
     tagBar.appendChild(allBtn);
 
     sortedTags.forEach(tag => {
       const btn = document.createElement('button');
       btn.className = 'tag-btn';
+      btn.setAttribute('data-tag', tag);
       btn.innerHTML = `${tag} <span style="opacity:0.6; font-size:0.65rem;">(${tagCounts[tag]})</span>`;
-      btn.addEventListener('click', () => {
-        if (currentTag === tag) {
-          currentTag = null;
-          btn.classList.remove('active');
-          allBtn.classList.add('active');
-        } else {
-          currentTag = tag;
-          document.querySelectorAll('.tag-btn').forEach(b => b.classList.remove('active'));
-          btn.classList.add('active');
-          allBtn.classList.remove('active');
-        }
-        renderProjects();
-      });
       tagBar.appendChild(btn);
+    });
+
+    initTagFilterListeners();
+    updateFilterSummary();
+  }
+
+  function updateFilterSummary() {
+    const badge = document.getElementById('filter-summary-badge');
+    const clearBtn = document.getElementById('filter-clear-btn');
+    if (!badge) return;
+
+    const isFiltered = currentCategory !== 'all' || currentTag !== null;
+
+    if (!isFiltered) {
+      badge.textContent = `All Domains (${allProjects.length})`;
+      badge.classList.remove('has-filter');
+      if (clearBtn) clearBtn.style.display = 'none';
+    } else {
+      const parts = [];
+      if (currentCategory !== 'all') {
+        parts.push(currentCategory);
+      }
+      if (currentTag) {
+        parts.push(`Tag: ${currentTag}`);
+      }
+      badge.textContent = parts.join(' · ');
+      badge.classList.add('has-filter');
+      if (clearBtn) clearBtn.style.display = 'inline-flex';
+    }
+  }
+
+  function resetFilters() {
+    currentCategory = 'all';
+    currentTag = null;
+
+    document.querySelectorAll('.cat-filter-btn').forEach(b => {
+      if (b.getAttribute('data-cat') === 'all') {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    document.querySelectorAll('.tag-btn').forEach((b, idx) => {
+      const tagAttr = b.getAttribute('data-tag');
+      if (tagAttr === 'all' || (!tagAttr && idx === 0)) {
+        b.classList.add('active');
+      } else {
+        b.classList.remove('active');
+      }
+    });
+
+    filterProjects();
+  }
+
+  function initFilterToggle() {
+    const wrapper = document.getElementById('filter-wrapper');
+    const toggleHeader = document.getElementById('filter-toggle-header');
+    const toggleHint = document.getElementById('filter-toggle-hint');
+    const clearBtn = document.getElementById('filter-clear-btn');
+
+    if (!wrapper || !toggleHeader) return;
+
+    const toggle = () => {
+      const isOpen = wrapper.classList.toggle('is-open');
+      toggleHeader.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      if (toggleHint) {
+        toggleHint.textContent = isOpen ? 'Hide Filters' : 'Show Filters';
+      }
+    };
+
+    toggleHeader.addEventListener('click', (e) => {
+      if (clearBtn && (e.target === clearBtn || clearBtn.contains(e.target))) {
+        return;
+      }
+      toggle();
+    });
+
+    toggleHeader.addEventListener('keydown', (e) => {
+      if (clearBtn && (e.target === clearBtn || clearBtn.contains(e.target))) {
+        return;
+      }
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle();
+      }
+    });
+
+    clearBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      resetFilters();
     });
   }
 
   /* -------------------------------------------------------------------------- */
-  /* 4. Render Project Cards                                                    */
+  /* 4. Project Cards Hydration, Sliding Carousels & In-Place Filtering        */
   /* -------------------------------------------------------------------------- */
   let activeSlideCleanups = [];
 
-  function renderProjects() {
+  function filterProjects() {
     const grid = document.getElementById('project-grid');
     if (!grid) return;
 
-    // Clean up any ongoing slide timers and listeners from previous render
-    activeSlideCleanups.forEach(fn => fn());
-    activeSlideCleanups = [];
+    const cards = grid.querySelectorAll('.project-card');
+    let visibleCount = 0;
 
-    const filtered = allProjects.filter(p => {
-      const matchCat = currentCategory === 'all' || p.category === currentCategory;
-      const matchTag = !currentTag || (p.tags && p.tags.includes(currentTag));
-      return matchCat && matchTag;
-    });
+    cards.forEach(card => {
+      const idx = parseInt(card.getAttribute('data-index'), 10);
+      const proj = !isNaN(idx) && allProjects[idx] ? allProjects[idx] : null;
 
-    if (filtered.length === 0) {
-      grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 4rem; color: #64748b; font-family: monospace;">No projects found matching the active filter.</div>';
-      return;
-    }
+      let matchCat = false;
+      let matchTag = false;
 
-    grid.innerHTML = '';
-    filtered.forEach(p => {
-      const card = document.createElement('article');
-      card.className = `project-card ${p.featured ? 'featured' : ''}`;
-      
-      const hasImages = p.images && p.images.length > 0;
-      const firstImage = hasImages ? p.images[0] : null;
-      const imageCount = hasImages ? p.images.length : 0;
-
-      let thumbHtml = '';
-      if (hasImages && imageCount > 1) {
-        const slidesHtml = p.images.map((img, idx) => `
-          <div class="project-thumb-slide">
-            <img src="${img}" alt="${p.title} - ${idx + 1}" loading="lazy">
-          </div>
-        `).join('') + `
-          <div class="project-thumb-slide">
-            <img src="${p.images[0]}" alt="${p.title} - 1" loading="lazy">
-          </div>
-        `;
-
-        thumbHtml = `
-          <div class="project-thumb">
-            <div class="project-thumb-track">
-              ${slidesHtml}
-            </div>
-            <span class="project-photo-count">📷 1 / ${imageCount}</span>
-          </div>
-        `;
-      } else if (hasImages) {
-        thumbHtml = `
-          <div class="project-thumb">
-            <img src="${firstImage}" alt="${p.title}" loading="lazy">
-          </div>
-        `;
+      if (proj) {
+        matchCat = currentCategory === 'all' || proj.category === currentCategory;
+        matchTag = !currentTag || (proj.tags && proj.tags.includes(currentTag));
       } else {
-        thumbHtml = `
-          <div class="project-thumb">
-            <div class="project-thumb-placeholder">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-              </svg>
-              <span>${p.featured ? '★ FLAGSHIP SYSTEMS' : 'PROJECT SHOWCASE'}</span>
-            </div>
-          </div>
-        `;
+        const cardCat = card.getAttribute('data-cat') || '';
+        const cardTags = (card.getAttribute('data-tags') || '').split(',').map(s => s.trim());
+        matchCat = currentCategory === 'all' || cardCat === currentCategory;
+        matchTag = !currentTag || cardTags.includes(currentTag);
       }
 
-      const tagsHtml = (p.tags || []).slice(0, 5).map(t => 
-        `<span class="card-tag">${t}</span>`
-      ).join('');
+      if (matchCat && matchTag) {
+        card.style.display = '';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
 
-      card.innerHTML = `
-        ${thumbHtml}
-        <div class="project-body">
-          <h3 class="project-title">${p.title}</h3>
-          <div class="project-role-line">${p.role || ''} ${(p.timeline || p.timespan || p.period) ? `· ${p.timeline || p.timespan || p.period}` : ''}</div>
-          <p class="project-summary">${p.summary || ''}</p>
-          <div class="project-tags">${tagsHtml}</div>
-        </div>
-        <div class="project-footer">
-          <span>${p.category || 'Engineering'}</span>
-        </div>
-      `;
+    let noProjectsMsg = document.getElementById('no-projects-msg');
+    if (visibleCount === 0) {
+      if (!noProjectsMsg) {
+        noProjectsMsg = document.createElement('div');
+        noProjectsMsg.id = 'no-projects-msg';
+        noProjectsMsg.style.cssText = 'grid-column: 1/-1; text-align: center; padding: 4rem; color: #64748b; font-family: monospace;';
+        noProjectsMsg.textContent = 'No projects found matching the active filter.';
+        grid.appendChild(noProjectsMsg);
+      } else {
+        noProjectsMsg.style.display = '';
+      }
+    } else if (noProjectsMsg) {
+      noProjectsMsg.style.display = 'none';
+    }
 
-      let getCurrentSlideIndex = () => 0;
+    updateFilterSummary();
+  }
 
-      if (hasImages && imageCount > 1) {
-        const track = card.querySelector('.project-thumb-track');
-        const countBadge = card.querySelector('.project-photo-count');
+  function setupCard(card, p) {
+    const hasImages = p.images && p.images.length > 0;
+    const imageCount = hasImages ? p.images.length : 0;
+    let getCurrentSlideIndex = () => 0;
+
+    if (hasImages && imageCount > 1) {
+      const track = card.querySelector('.project-thumb-track');
+      const countBadge = card.querySelector('.project-photo-count');
+
+      if (track) {
         let currentIndex = 0;
         let isTransitioning = false;
         let slideTimer = null;
@@ -330,6 +428,7 @@
 
         const nextSlide = () => {
           if (document.hidden || isTransitioning) return;
+          if (card.offsetParent === null) return;
           const modal = document.getElementById('project-modal');
           if (modal && modal.classList.contains('open')) return;
 
@@ -381,10 +480,111 @@
           card.removeEventListener('mouseleave', startTimer);
         });
       }
+    }
 
-      card.addEventListener('click', () => openModal(p, getCurrentSlideIndex()));
+    card.addEventListener('click', () => openModal(p, getCurrentSlideIndex()));
+  }
+
+  function hydrateProjectCards() {
+    const grid = document.getElementById('project-grid');
+    if (!grid) return;
+
+    activeSlideCleanups.forEach(fn => fn());
+    activeSlideCleanups = [];
+
+    const cards = grid.querySelectorAll('.project-card');
+    cards.forEach((card, idx) => {
+      const dataIdx = card.getAttribute('data-index');
+      const projectIndex = dataIdx !== null ? parseInt(dataIdx, 10) : idx;
+      const project = allProjects[projectIndex];
+      if (project) {
+        setupCard(card, project);
+      }
+    });
+  }
+
+  function renderProjects() {
+    const grid = document.getElementById('project-grid');
+    if (!grid) return;
+
+    activeSlideCleanups.forEach(fn => fn());
+    activeSlideCleanups = [];
+
+    grid.innerHTML = '';
+    allProjects.forEach((p, idx) => {
+      const card = document.createElement('article');
+      card.className = `project-card ${p.featured ? 'featured' : ''}`;
+      card.setAttribute('data-index', idx);
+      card.setAttribute('data-cat', p.category || 'Other');
+      card.setAttribute('data-tags', (p.tags || []).join(','));
+
+      const hasImages = p.images && p.images.length > 0;
+      const firstImage = hasImages ? p.images[0] : null;
+      const imageCount = hasImages ? p.images.length : 0;
+
+      let thumbHtml = '';
+      if (hasImages && imageCount > 1) {
+        const slidesHtml = p.images.map((img, i) => `
+          <div class="project-thumb-slide">
+            <img src="${img}" alt="${p.title} - ${i + 1}" loading="lazy">
+          </div>
+        `).join('') + `
+          <div class="project-thumb-slide">
+            <img src="${p.images[0]}" alt="${p.title} - 1" loading="lazy">
+          </div>
+        `;
+
+        thumbHtml = `
+          <div class="project-thumb">
+            <div class="project-thumb-track">
+              ${slidesHtml}
+            </div>
+            <span class="project-photo-count">📷 1 / ${imageCount}</span>
+          </div>
+        `;
+      } else if (hasImages) {
+        thumbHtml = `
+          <div class="project-thumb">
+            <img src="${firstImage}" alt="${p.title}" loading="lazy">
+          </div>
+        `;
+      } else {
+        thumbHtml = `
+          <div class="project-thumb">
+            <div class="project-thumb-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+              </svg>
+              <span>${p.featured ? '★ FLAGSHIP SYSTEMS' : 'PROJECT SHOWCASE'}</span>
+            </div>
+          </div>
+        `;
+      }
+
+      const tagsHtml = (p.tags || []).slice(0, 5).map(t => 
+        `<span class="card-tag">${t}</span>`
+      ).join('');
+
+      const timeDisplay = p.timeline || p.timespan || p.period || '';
+
+      card.innerHTML = `
+        ${thumbHtml}
+        <div class="project-body">
+          <h3 class="project-title">${p.title}</h3>
+          <div class="project-role-line">${p.role || ''} ${timeDisplay ? `· ${timeDisplay}` : ''}</div>
+          <p class="project-summary">${p.summary || ''}</p>
+          <div class="project-tags">${tagsHtml}</div>
+        </div>
+        <div class="project-footer">
+          <span>${p.category || 'Engineering'}</span>
+        </div>
+      `;
+
+      setupCard(card, p);
       grid.appendChild(card);
     });
+
+    filterProjects();
   }
 
   /* -------------------------------------------------------------------------- */

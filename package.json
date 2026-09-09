@@ -1,0 +1,17 @@
+{
+  "name": "uray-portfolio",
+  "version": "1.0.0",
+  "description": "Uray Meiviar - Systems & Avionics Engineering Portfolio",
+  "scripts": {
+    "build": "node build.js",
+    "start": "python serve.py 3000"
+  },
+  "keywords": [
+    "portfolio",
+    "avionics",
+    "simulation",
+    "systems-engineering"
+  ],
+  "author": "Uray Meiviar",
+  "license": "MIT"
+}

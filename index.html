@@ -23,7 +23,7 @@
   <header class="site-header">
     <div class="container nav-inner">
       <div class="brand">
-        <a href="#" style="color: inherit; text-decoration: none;">uray<span class="accent">.dev</span></a>
+        <a href="#" style="color: inherit; text-decoration: none;">uray<span class="accent">.dev</span>&nbsp;/&nbsp;portfolio</a>
       </div>
 
       <!--nav>
@@ -81,23 +81,24 @@
             <span>Systems & Software Architect</span>
             <span style="color: var(--text-dim);">·</span>
             <span>Aviation & Defense Systems</span>
+            <span style="color: var(--text-dim);">·</span>
+            <span>Mobile, Web & Cloud</span>
           </div>
 
           <p class="hero-bio">
             Systems and Software Architect with 20+ years of experience building mission-critical real-time simulation, high performance software, and high fidelity avionics software.
           </p>
           <p class="hero-bio" style="margin-top: -0.5rem;">
-            Developed and architected modern and high fidelity avionics simulation software — 
-            ARINC-424 navdata, ARINC-702A Advanced Flight Management System, Autopilot and Guidance system, Auto Flight Control, HUD, PFD, MCDU, and MFD,
-            including aircraft system simulation that covers ATA 21-37, 39, 40, 42, and 46
+            Driven by relentless curiosity and an obsession with how complex things work under the hood. 
+            Whether it's dissecting flight dynamics, writing low-level code, or building hardware with my own hands, 
+            I thrive on hard problems, unfamiliar territory, and the challenge of making things run faster and better than expected.
           </p>
           <p class="hero-bio" style="margin-top: -0.5rem;">
-            Veteran engineer of full-mission simulator (ACV300, FV101, AMX90), full flight simulators (NAS332, BAe Hawk 209, BO-105), Flight Trainer Device (F-16C/D, Xtra-330LX), 
-            Joint Simulation software following the Interoperability standard DIS IEEE-1278 or HLA IEEE-1516. 
-            Military Software for C4 (Command, Control, Communications, and Computers), as well as civilian electric rail transit (KCI Commuter Train Simulator)
+            My engineering philosophy is simple: don’t fear mistakes, just make sure to make better mistakes next time. 
+            Roadblocks are inevitable, but I live by the reality that:<br/><br/><span class="hero-bio-quote">for every complex problem there is a solution that is simple, fast and <strong>wrong</strong></span>.
           </p>
 
-          <!--div class="hero-ctas">
+          <!--div class="hero-ctas">    
             <button class="btn btn-outline print-cv-btn">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="6 9 6 2 18 2 18 9"></polyline>
@@ -198,7 +199,9 @@
       <div class="section-header">
         <span class="section-tag">Career History</span>
         <h2 class="section-title">Work Experience</h2>
-        <p class="section-desc">Two decades of engineering mission-critical training devices, commercial transport aircraft avionics, and high-performance network architectures.</p>
+        <p class="section-desc">Two decades of engineering mission-critical training devices, commercial transport aircraft avionics, 
+          and high-performance software and system architectures. Spanning diverse platforms and technologies across server, client, embedded, mobile, web, and cloud environments, 
+          alongside custom hardware, electronics, and craftsmanship.</p>
       </div>
 
       <div class="timeline">
@@ -209,32 +212,38 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Senior Aircraft Systems & Simulation Engineer / FMS Architect</h3>
+                <h3 class="timeline-role">Sim Aircraft Developer & Simulation Engineer / FMS Architect</h3>
                 <div class="timeline-company">FlightSim Studio AG · Aerosoft · Asobo Studio Contracts</div>
               </div>
-              <div class="timeline-period">2020 – Present (Ongoing)</div>
+              <div class="timeline-period">2022 – Present (Ongoing)</div>
             </div>
             <p style="color: var(--text-muted); font-size: 0.925rem;">
-              Core systems engineer responsible for full-scope airliner systems modeling, Flight Management Systems (FMS), autoflight guidance laws, and certified hardware avionics across modern commercial flight simulation.
+              Core systems engineer responsible for full-scope airliner systems modeling, Flight Management Systems (FMS), autoflight guidance laws, and avionics software across modern commercial flight simulation.
             </p>
             <ul class="timeline-list">
               <li>
-                <strong>Embraer E-Jets Family (E170, E175, E190, E195, E-Freighters):</strong> Ongoing flagship commercial transport program for MSFS. Comprehensive engineering across all systems: core FMS navigation, ARINC-424 cycle parsing, takeoff/climb performance computation ($V_1, V_R, V_2$), autopilot guidance (LNAV, VNAV PTH/FLCH), autoland CAT II/III, vector PFD/MFD displays, and multi-bus electrical/hydraulic simulation.
+                <strong>Embraer E-Jets Family (E170, E175, E190, E195, E-Freighters):</strong> Ongoing flagship commercial transport program for MSFS 2020 and 2024. 
+                Comprehensive engineering across all systems: <code>ARINC-702A</code> FMS navigation, <code>ARINC-424</code> navdata, aircraft performance calculation, navigation system, flight controls, 
+                autopilot guidance (LNAV, VNAV), autoland CAT II/III, PFD/MFD/HGS/EICAS displays, and aircraft system simulation that covers <code>ATA 21-37, 39, 40, 42</code>, and <code>46</code>.
               </li>
               <li>
-                <strong>Aerosoft Airbus A330 (Contracted FMS Systems Architect):</strong> Individually contracted to architect and build the mathematical FMS brain for Aerosoft's flagship widebody. Engineered the ARINC-424 procedure leg engine (IF, TF, CF, DF, RF curved arcs), centrifugal turn anticipation lead distance ($D_{lead}$), Airbus MCDU flight planning (`INIT A/B`, `F-PLN`, trans-Atlantic `LIRF/KBOS` step climbs), backward-integrating Top-of-Descent (TOD) vertical navigation, and Navigation Display (ND) steering vectors.
+                <strong>Aerosoft Airbus A330:</strong> Refurbished and rewrote the Airbus FMS core for Aerosoft's flagship widebody A330 on P3D and MSFS. 
+                Engineered ARINC-424 procedure and legs data, Vertical Profile, Lateral Flightplan, Aircraft Performance Calculations, Navigation System VHF/HF, and Airbus MCDU System.
               </li>
               <li>
-                <strong>Official Asobo Studio Hardware Avionics:</strong> Contracted by Asobo Studio (creators of MSFS) to engineer certified European avionics instruments for default simulator aircraft: <em>AIR Avionics ACD-57</em> (57mm radio/altimeter/transponder), <em>Becker AR6201</em> (8.33 kHz VHF transceiver with dual concentric knobs), and <em>Garrecht VT-02</em> (Mode S LCD transponder).
+                <strong>Asobo Studio Avionics:</strong> Contracted by Asobo Studio (creators of MSFS) to engineer certified European avionics instruments for default simulator aircraft: 
+                <code>AIR Avionics ACD-57</code> (57mm radio/altimeter/transponder), <code>Becker AR6201</code> (8.33 kHz VHF transceiver with dual concentric knobs), 
+                and <code>Garrecht VT-02</code> (Mode S LCD transponder).
               </li>
               <li>
-                <strong>Pipistrel Taurus Motorized Glider:</strong> Co-developed the official Pipistrel Taurus motorized glider for Asobo Studio for the MSFS 40th Anniversary update, engineering the electro-mechanical retractable dorsal engine/propeller mast sequencer and soaring instruments.
+                <strong>Pipistrel Taurus Motorized Glider:</strong> Co-developed the Pipistrel Taurus motorized glider for Asobo Studio for the MSFS 40th Anniversary update, 
+                engineering the electro-mechanical retractable dorsal engine/propeller mast sequencer and soaring instruments.
               </li>
               <li>
-                <strong>SeaRey Elite Amphibian:</strong> Integrated MSFS built-in glass cockpit avionics (Garmin G3X) and amphibious hull/landing gear sub-systems (featuring Indonesian registration <code>PK-FSS</code>).
+                <strong>SeaRey Elite Amphibian:</strong> Integrated MSFS built-in glass cockpit avionics (<code>Garmin G3X</code>) and amphibious hull/landing gear sub-systems.
               </li>
               <li>
-                <strong>Stairport Sceneries (X-Plane):</strong> Recruited via T&E 3D artist network to develop native C/C++ plugins, engineering <em>World Aircraft</em> (dynamic AI airport ground and flight operations).
+                <strong>Stairport Sceneries (X-Plane):</strong> Developed native C/C++ plugins, engineering <code>World Aircraft</code> (dynamic airport traffic and flight operations).
               </li>
             </ul>
           </div>
@@ -249,26 +258,38 @@
                 <h3 class="timeline-role">Senior Systems & Simulation Engineer</h3>
                 <div class="timeline-company">PT. Technology & Engineering Simulation (T&E)</div>
               </div>
-              <div class="timeline-period">Defense, Tactical & Transit Systems</div>
+              <div class="timeline-period">2008 - 2019</div>
             </div>
             <p style="color: var(--text-muted); font-size: 0.925rem;">
               Developed full-mission military flight training devices, tactical armored vehicle simulators, joint strategic war games, and civilian transit simulators.
             </p>
             <ul class="timeline-list">
               <li>
-                <strong>Supersonic & Tactical Flight Cockpits:</strong> Engineered BAe Hawk 209 combat trainer (MPD, audio, and tactical displays), NAS332 Super Puma FFS, BO-105 helicopter engineering lab (force-feedback control loading & collimated visual projection), and F-16 FTD subsystem integration.
+                <strong>Rotary Wing Simulator:</strong>                 
+                <code>NAS332</code> Super Puma FFS with full-motion 6-DOF hydraulic motion platform, 
+                <code>BO-105</code> helicopter engineering lab (force-feedback control loading & collimated visual projection).
               </li>
               <li>
-                <strong>Armored Cavalry & The Single-Cable Ethernet Revolution:</strong> Architected the STMR multi-type cavalry platoon simulator (Scorpion, Stormer, AMX-13). Eliminated proprietary aerospace wiring harness bottlenecks by inventing single-cable Ethernet distributed cabins powered by five-dollar COTS microcontrollers and CAN bus. Engineered ACV-300 armored vehicle simulator.
+                <strong>Fixed Wing Simulator:</strong> 
+                Engineered <code>BAe Hawk 209</code> combat trainer (MPD, audio, and tactical displays), VR-Based <code>Xtra-330LX</code> with 3-DOF motion platform, and <code>F-16C/D</code> FTD subsystem integration.
               </li>
               <li>
-                <strong>Project SOYUT (Joint Chiefs of Staff C4 War Games):</strong> Engineered a clean-sheet zero-trust diskless operating system (Linux From Scratch, PXE network boot, volatile RAM OverlayFS, disabled USB drivers) with geospatial Cesium3D WebGL, WebSockets, and WebRTC encrypted voice channels.
+                <strong>Ground Based Simulator:</strong> 
+                Architected the multi-type cavalry platoon simulator for fighting vehicles (<code>FV101</code>, <code>AMX-13</code>). 
+                Engineered <code>ACV-300</code> armored vehicle simulator with Joint Simulation capability compliant with DIS <code>IEEE-1278</code> standards.
+                Delivered a clean-sheet electric rail simulator for PT Kereta Commuter Indonesia / PT KAI in a record 12-month turnaround.
               </li>
               <li>
-                <strong>KCI Commuter Train Driving Simulator:</strong> Delivered clean-sheet electric rail simulator for PT Kereta Commuter Indonesia / PT KAI in a record 12-month turnaround. Integrated Russian train dynamics with custom web-based parametric railway editor (<code>railroad-editor-web</code>) and 1D Redis telemetry backend.
+                <strong>Tactical and Strategic War Simulator:</strong> Distributed system with diskless client (<code>PXE boot</code>) architecture, 
+                fully secured Bare Linux Server with PREEMPT_RT deterministic kernel and OverlayFS filesystem serving microservices for war simulation. 
+                Implemented geospatial visualization using Cesium3D WebGL, real-time communication via WebSockets, and secure voice channels with WebRTC encryption.
               </li>
               <li>
-                <strong>Core Simulation Engines:</strong> Authored <code>libDIS</code> (in-house C++ IEEE 1278 Distributed Interactive Simulation protocol library), <code>CommSystem</code> (low-latency VoIP tactical radio/intercom engine), <code>CodeGraph</code> (visual node-based execution editor), and PREEMPT_RT deterministic Linux kernels.
+                <strong>Core Simulation Engines:</strong> 
+                Authored <code>libDIS</code> (in-house C++ IEEE 1278 Distributed Interactive Simulation protocol library), 
+                <code>CommSystem</code> (low-latency VoIP tactical radio/intercom engine), 
+                in-house <code>Aural</code> system (node-based real-time audio processing engine supporting spatial audio, low-latency <code>ASIO</code>, and <code>VST</code>-compatible DSP), 
+                <code>CodeGraph</code> (visual node-based execution editor), and <code>PREEMPT_RT</code> with <code>OverlayFS</code> diskless Linux kernels.
               </li>
             </ul>
           </div>
@@ -280,25 +301,46 @@
           <div class="timeline-content">
             <div class="timeline-header">
               <div>
-                <h3 class="timeline-role">Specialized Systems, Cloud & High-Density Engineering</h3>
-                <div class="timeline-company">Agate Studio · Bank Rakyat Indonesia · Custom Systems & Maker Projects</div>
+                <h3 class="timeline-role">Specialized Systems, Cloud & Various Engineering</h3>
+                <div class="timeline-company">Agate Studio · Fintech · Custom Systems, Hobby & Maker Projects</div>
               </div>
-              <div class="timeline-period">Selected High-Impact Engagements</div>
+              <div class="timeline-period">2010 - 2022</div>
             </div>
             <ul class="timeline-list">
               <li>
-                <strong>Agate Studio (netEngine):</strong> Engineered a high-performance multiplayer networking engine in C# for Unity, implementing a custom reliable UDP protocol with sliding-window 32-bit ACK bitfield and exactly 0 bytes of GC memory allocation per frame during live gameplay.
+                <strong>Agate Studio (netEngine):</strong> Engineered a high-performance multiplayer networking engine in C# for Unity, 
+                implementing high performance custom UDP protocol with reliability layer, zero GC memory allocation, TURN/STUN NAT punch capability.
               </li>
               <li>
-                <strong>Bank Rakyat Indonesia (RKB Enterprise App):</strong> Built cross-platform enterprise mobile banking application in Flutter/Dart with offline-first caching for micro and small enterprises across remote Indonesian regencies.
+                <strong>Bank Rakyat Indonesia (RKB App):</strong> Built cross-platform mobile banking application in Flutter/Dart, with Go backend and various micro-service on nodeJS.
               </li>
               <li>
-                <strong>Stateless Datacenter & CryptoSlax:</strong> Designed 330 kVA 3-phase industrial mining facility, engineered <em>CryptoSlax</em> (modular 100% diskless PXE-booted Linux OS executing entirely from volatile RAM with OverlayFS), hand-optimized OpenCL/CUDA compute kernels in forked <code>cgminer</code>/<code>sgminer</code>, and deployed fault-tolerant AWS/GCP cloud backends for Burstcoin (blockchain explorer, web wallet, mining pool).
+                <strong>Stateless Datacenter & CryptoSlax:</strong> 
+                Designed 330 kVA 3-phase industrial mining facility, engineered <em>CryptoSlax</em> (modular 100% diskless PXE-booted Linux OS executing entirely from volatile RAM with OverlayFS), 
+                hand-optimized OpenCL/CUDA compute kernels in forked <code>cgminer</code>/<code>sgminer</code>, and deployed fault-tolerant AWS/GCP cloud backends for Burstcoin (blockchain explorer, web wallet, mining pool).
               </li>
               <li>
-                <strong>First-Principles Maker Projects:</strong> Designed and structurally modeled complete two-story residential home in Blender from scratch without architectural background, built automated indoor aeroponics cultivation chamber (Tabulampot Carolina Reaper) with custom dual-loop CPU waterblock Peltier nutrient chiller and closed-loop Arduino telemetry, and crafted custom hand-wired electric guitars.
+                <strong>First-Principles Maker Projects:</strong> Designed and structurally modeled complete two-story residential home in Blender from scratch, 
+                built automated indoor aeroponics cultivation chamber with custom dual-loop CPU waterblock Peltier nutrient chiller and closed-loop Arduino telemetry, and crafted custom hand-wired electric guitars.
               </li>
             </ul>
+          </div>
+        </div>
+
+        <!-- Undocumented & Formative Projects -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Early Explorations & Undocumented Archives</h3>
+                <div class="timeline-company">DOS · Windows 3.1 · OS/2 Warp · Windows 95 · Early Explorations</div>
+              </div>
+              <div class="timeline-period">Pre-2008</div>
+            </div>
+            <p style="color: var(--text-muted); font-size: 0.925rem; line-height: 1.8; text-align: justify; margin: 0;">
+              A significant portion of my early engineering journey remains undocumented or lost to time. Starting from the MS-DOS era, Windows 3.1, OS/2, and Windows 95, I built countless utilities, simple games, and creative weekend experiments that have since vanished with legacy magnetic media and aging hard drives. While the vast majority of these programs were authored in C and C++, I also programmed extensively in Pascal, developed commercial business software using Borland Delphi and C++Builder, crafted Java applications for university demonstrations, built numerous web projects in JavaScript, and tinkered with hardware interfaces and x86/x64 assembly. Alongside these were several custom 3D game engines that were never finished—each serving as an invaluable sandbox where I honed my understanding of low-level systems, mathematical modeling, and deterministic real-time execution from first principles.
+            </p>
           </div>
         </div>
 
@@ -315,28 +357,1143 @@
         <p class="section-desc">Browse through commercial airliner avionics, defense flight/armor simulators, low-level networking, and hardware systems. Filter by category or click any tag to explore.</p>
       </div>
 
-      <!-- Filter Controls -->
-      <div class="filter-wrapper">
-        <!-- Dynamic Category Filter -->
-        <div class="filter-row">
-          <span class="filter-label">Category:</span>
-          <div id="cat-bar" class="cat-bar">
-            <!-- Dynamically populated by app.js from all active project.json files -->
+      <!-- Filter Controls (Collapsible) -->
+      <div class="filter-wrapper" id="filter-wrapper">
+        <div class="filter-toggle-header" id="filter-toggle-header" role="button" tabindex="0" aria-expanded="false" aria-controls="filter-body-wrapper">
+          <div class="filter-toggle-info">
+            <svg class="filter-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            <span class="filter-toggle-title">Filter Projects</span>
+            <span class="filter-summary-badge" id="filter-summary-badge"><!-- SSG_SUMMARY_START -->All Domains (37)<!-- SSG_SUMMARY_END --></span>
+            <button type="button" class="filter-clear-btn" id="filter-clear-btn" title="Reset all filters" style="display: none;">
+              ✕ Clear
+            </button>
+          </div>
+          <div class="filter-toggle-action">
+            <span class="filter-toggle-hint" id="filter-toggle-hint">Show Filters</span>
+            <svg class="filter-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
           </div>
         </div>
 
-        <!-- Dynamic Tag Bar -->
-        <div class="filter-row" style="margin-top: 0.5rem; align-items: flex-start;">
-          <span class="filter-label" style="padding-top: 0.3rem;">Tags:</span>
-          <div id="tag-bar" class="tag-bar">
-            <!-- Dynamically populated from all active project.json files -->
+        <div class="filter-body-wrapper" id="filter-body-wrapper">
+          <div class="filter-body-inner">
+            <div class="filter-body">
+              <!-- Dynamic Category Filter -->
+              <div class="filter-row">
+                <span class="filter-label">Category:</span>
+                <div id="cat-bar" class="cat-bar">
+<!-- SSG_CAT_BAR_START -->
+            <button class="filter-btn cat-filter-btn active" data-cat="all">All Domains <span style="opacity:0.6; font-size:0.75rem;">(37)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Flight &amp; Avionics">Flight &amp; Avionics <span style="opacity:0.6; font-size:0.75rem;">(11)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Defense &amp; Combat Simulation">Defense &amp; Combat Simulation <span style="opacity:0.6; font-size:0.75rem;">(7)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Hardware &amp; Maker">Hardware &amp; Maker <span style="opacity:0.6; font-size:0.75rem;">(4)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Systems &amp; Infrastructure">Systems &amp; Infrastructure <span style="opacity:0.6; font-size:0.75rem;">(4)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Distributed Systems &amp; Cloud">Distributed Systems &amp; Cloud <span style="opacity:0.6; font-size:0.75rem;">(3)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Systems &amp; Enterprise">Systems &amp; Enterprise <span style="opacity:0.6; font-size:0.75rem;">(2)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Game Engine &amp; Tools">Game Engine &amp; Tools <span style="opacity:0.6; font-size:0.75rem;">(2)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Civilian &amp; Transit">Civilian &amp; Transit <span style="opacity:0.6; font-size:0.75rem;">(1)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Academic &amp; Speaking">Academic &amp; Speaking <span style="opacity:0.6; font-size:0.75rem;">(1)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Mobile &amp; Operating Systems">Mobile &amp; Operating Systems <span style="opacity:0.6; font-size:0.75rem;">(1)</span></button>
+            <button class="filter-btn cat-filter-btn" data-cat="Simulation &amp; Defense">Simulation &amp; Defense <span style="opacity:0.6; font-size:0.75rem;">(1)</span></button>
+          <!-- SSG_CAT_BAR_END -->
+                </div>
+              </div>
+
+              <!-- Dynamic Tag Bar -->
+              <div class="filter-row" style="margin-top: 0.5rem; align-items: flex-start;">
+                <span class="filter-label" style="padding-top: 0.3rem;">Tags:</span>
+                <div id="tag-bar" class="tag-bar">
+<!-- SSG_TAG_BAR_START -->
+            <button class="tag-btn active" data-tag="all">All Tags</button>
+            <button class="tag-btn" data-tag="C++">C++ <span style="opacity:0.6; font-size:0.65rem;">(16)</span></button>
+            <button class="tag-btn" data-tag="Real-Time">Real-Time <span style="opacity:0.6; font-size:0.65rem;">(9)</span></button>
+            <button class="tag-btn" data-tag="Crypto">Crypto <span style="opacity:0.6; font-size:0.65rem;">(8)</span></button>
+            <button class="tag-btn" data-tag="Avionics">Avionics <span style="opacity:0.6; font-size:0.65rem;">(7)</span></button>
+            <button class="tag-btn" data-tag="MSFS SDK">MSFS SDK <span style="opacity:0.6; font-size:0.65rem;">(7)</span></button>
+            <button class="tag-btn" data-tag="Networking">Networking <span style="opacity:0.6; font-size:0.65rem;">(5)</span></button>
+            <button class="tag-btn" data-tag="Hardware">Hardware <span style="opacity:0.6; font-size:0.65rem;">(4)</span></button>
+            <button class="tag-btn" data-tag="Asobo Studio">Asobo Studio <span style="opacity:0.6; font-size:0.65rem;">(4)</span></button>
+            <button class="tag-btn" data-tag="DIS/HLA">DIS/HLA <span style="opacity:0.6; font-size:0.65rem;">(4)</span></button>
+            <button class="tag-btn" data-tag="Maker">Maker <span style="opacity:0.6; font-size:0.65rem;">(3)</span></button>
+            <button class="tag-btn" data-tag="C++ / JS">C++ / JS <span style="opacity:0.6; font-size:0.65rem;">(3)</span></button>
+            <button class="tag-btn" data-tag="Blockchain">Blockchain <span style="opacity:0.6; font-size:0.65rem;">(3)</span></button>
+            <button class="tag-btn" data-tag="Flight Simulator">Flight Simulator <span style="opacity:0.6; font-size:0.65rem;">(3)</span></button>
+            <button class="tag-btn" data-tag="Audio/DSP">Audio/DSP <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="FMS">FMS <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Flight Dynamics">Flight Dynamics <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Flight Sim">Flight Sim <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Systems Programming">Systems Programming <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="IoT">IoT <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="C#">C# <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Linux">Linux <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Architecture">Architecture <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="AWS">AWS <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Node.js">Node.js <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="High Availability">High Availability <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Linux Kernel">Linux Kernel <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Operating Systems">Operating Systems <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Tactical Systems">Tactical Systems <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="JavaScript">JavaScript <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Cockpit Avionics">Cockpit Avionics <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Unity3D">Unity3D <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Asset Store">Asset Store <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Combat Sim">Combat Sim <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Rotorcraft">Rotorcraft <span style="opacity:0.6; font-size:0.65rem;">(2)</span></button>
+            <button class="tag-btn" data-tag="Electronics">Electronics <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Autopilot">Autopilot <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Cockpit Systems">Cockpit Systems <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="ARINC-424">ARINC-424 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="LNAV/VNAV">LNAV/VNAV <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Airbus A330">Airbus A330 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Radio Navigation">Radio Navigation <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Altimeter">Altimeter <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="VHF Radio">VHF Radio <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="8.33 kHz">8.33 kHz <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Transponder">Transponder <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Mode S">Mode S <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Pipistrel Taurus">Pipistrel Taurus <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Glider Systems">Glider Systems <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Mechanical Animation">Mechanical Animation <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Avionics Integration">Avionics Integration <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Garmin G3X">Garmin G3X <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Systems Simulation">Systems Simulation <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Chia Network">Chia Network <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Proof of Space">Proof of Space <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Multithreading">Multithreading <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Dear ImGui">Dear ImGui <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Performance Optimization">Performance Optimization <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="ESP32">ESP32 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Embedded C++">Embedded C++ <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="SPIFFS">SPIFFS <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="REST API">REST API <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="UDP">UDP <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Unity">Unity <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Game Dev">Game Dev <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Flutter">Flutter <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Dart">Dart <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Mobile">Mobile <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Fintech">Fintech <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Enterprise">Enterprise <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Embedded">Embedded <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Aeroponics">Aeroponics <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Arduino">Arduino <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Sensors">Sensors <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Hardware Hacking">Hardware Hacking <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Transit Sim">Transit Sim <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Redis">Redis <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Railway Engineering">Railway Engineering <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Parametric CAD">Parametric CAD <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Safety Systems">Safety Systems <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="NVIDIA">NVIDIA <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="GPU">GPU <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="C/C++">C/C++ <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Hardware Telemetry">Hardware Telemetry <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="CAD/3D">CAD/3D <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Design">Design <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Power Systems">Power Systems <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Proof-of-Capacity">Proof-of-Capacity <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Google Cloud">Google Cloud <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="C">C <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="x86">x86 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Distributed Systems">Distributed Systems <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Mathematics">Mathematics <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Academic">Academic <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Speaking">Speaking <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Algorithms">Algorithms <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Cryptography">Cryptography <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Curve25519">Curve25519 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="DeX">DeX <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Web3">Web3 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Security">Security <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Tools">Tools <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Visual Programming">Visual Programming <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="ShaderLab">ShaderLab <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="CG/HLSL">CG/HLSL <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Graphics Programming">Graphics Programming <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Refraction">Refraction <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Game Development">Game Development <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag=".NET Reflection">.NET Reflection <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Unity Editor Extensions">Unity Editor Extensions <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Developer Tools">Developer Tools <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Cockpit Displays">Cockpit Displays <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Motion Platform">Motion Platform <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Control Loading">Control Loading <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Android 1.0">Android 1.0 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Java">Java <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="HTC Dream / G1">HTC Dream / G1 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="IME / Virtual Keyboard">IME / Virtual Keyboard <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="T9 Keypad">T9 Keypad <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Mobile UI">Mobile UI <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Early Android">Early Android <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Hardware-in-the-Loop">Hardware-in-the-Loop <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Protocols">Protocols <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="DirectX 9">DirectX 9 <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="HLSL">HLSL <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="3D Engine">3D Engine <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="Physics">Physics <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+            <button class="tag-btn" data-tag="R&amp;D">R&amp;D <span style="opacity:0.6; font-size:0.65rem;">(1)</span></button>
+          <!-- SSG_TAG_BAR_END -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Project Cards Grid -->
       <div id="project-grid" class="project-grid">
-        <!-- Dynamically rendered by app.js -->
+<!-- SSG_PROJECT_CARDS_START -->
+        <article class="project-card " data-index="0" data-cat="Hardware &amp; Maker" data-tags="Hardware,Electronics,Audio/DSP,Maker">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/guitar/wiring.webp" alt="Custom Guitar Electronics &amp; Craft - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/20250830_040754.webp" alt="Custom Guitar Electronics &amp; Craft - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/20250905_163617.webp" alt="Custom Guitar Electronics &amp; Craft - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/20251012_183213.webp" alt="Custom Guitar Electronics &amp; Craft - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/mid-july.webp" alt="Custom Guitar Electronics &amp; Craft - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/Screenshot 2026-09-06 184819.webp" alt="Custom Guitar Electronics &amp; Craft - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/guitar/wiring.webp" alt="Custom Guitar Electronics &amp; Craft - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 6</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Custom Guitar Electronics &amp; Craft</h3>
+            <div class="project-role-line">Maker &amp; Electronics Craft · 2024 – Present</div>
+            <p class="project-summary">Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.</p>
+            <div class="project-tags"><span class="card-tag">Hardware</span><span class="card-tag">Electronics</span><span class="card-tag">Audio/DSP</span><span class="card-tag">Maker</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Hardware &amp; Maker</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="1" data-cat="Flight &amp; Avionics" data-tags="FMS,Autopilot,Flight Dynamics,Avionics,C++,Cockpit Systems,MSFS SDK">
+          <div class="project-thumb">
+          <div class="project-thumb-placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span>★ FLAGSHIP SYSTEMS</span>
+          </div>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Embraer E-Jets Family (MSFS)</h3>
+            <div class="project-role-line">Core Systems &amp; Avionics Engineer · 2020 - Present (4+ Years)</div>
+            <p class="project-summary">Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.</p>
+            <div class="project-tags"><span class="card-tag">FMS</span><span class="card-tag">Autopilot</span><span class="card-tag">Flight Dynamics</span><span class="card-tag">Avionics</span><span class="card-tag">C++</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="2" data-cat="Flight &amp; Avionics" data-tags="FMS,Avionics,C++,ARINC-424,LNAV/VNAV,Airbus A330,MSFS SDK">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/fss/aerosoft-a330/Screenshot 2026-09-09 005607.webp" alt="Aerosoft Airbus A330 — Flight Management System (FMS) Core - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/aerosoft-a330/Screenshot 2026-09-09 005710.webp" alt="Aerosoft Airbus A330 — Flight Management System (FMS) Core - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/aerosoft-a330/Screenshot 2026-09-09 005607.webp" alt="Aerosoft Airbus A330 — Flight Management System (FMS) Core - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Aerosoft Airbus A330 — Flight Management System (FMS) Core</h3>
+            <div class="project-role-line">FMS Core Systems Architect &amp; Engineer · 2022 – 2023</div>
+            <p class="project-summary">Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.</p>
+            <div class="project-tags"><span class="card-tag">FMS</span><span class="card-tag">Avionics</span><span class="card-tag">C++</span><span class="card-tag">ARINC-424</span><span class="card-tag">LNAV/VNAV</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="3" data-cat="Flight &amp; Avionics" data-tags="Avionics,MSFS SDK,Asobo Studio,Radio Navigation,C++ / JS,Altimeter">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 003849.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004035.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004055.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004138.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004210.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 003849.webp" alt="AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 5</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">AIR Avionics ACD-57 Multi-Function Radio &amp; Altimeter (Official MSFS / Asobo)</h3>
+            <div class="project-role-line">Avionics Device Software Engineer · 2022</div>
+            <p class="project-summary">Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.</p>
+            <div class="project-tags"><span class="card-tag">Avionics</span><span class="card-tag">MSFS SDK</span><span class="card-tag">Asobo Studio</span><span class="card-tag">Radio Navigation</span><span class="card-tag">C++ / JS</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="4" data-cat="Flight &amp; Avionics" data-tags="Avionics,MSFS SDK,Asobo Studio,VHF Radio,8.33 kHz,C++ / JS">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004716.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004451.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004516.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004610.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004655.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 003929.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004716.webp" alt="Becker AR6201 VHF Transceiver (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 6</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Becker AR6201 VHF Transceiver (Official MSFS / Asobo)</h3>
+            <div class="project-role-line">Avionics Device Software Engineer · 2022</div>
+            <p class="project-summary">Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.</p>
+            <div class="project-tags"><span class="card-tag">Avionics</span><span class="card-tag">MSFS SDK</span><span class="card-tag">Asobo Studio</span><span class="card-tag">VHF Radio</span><span class="card-tag">8.33 kHz</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="5" data-cat="Flight &amp; Avionics" data-tags="Avionics,MSFS SDK,Asobo Studio,Transponder,Mode S,C++ / JS">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004009.webp" alt="Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004810.webp" alt="Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo) - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004844.webp" alt="Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo) - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004009.webp" alt="Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo) - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo)</h3>
+            <div class="project-role-line">Avionics Device Software Engineer · 2022</div>
+            <p class="project-summary">Engineered the authentic Garrecht VT-02 Mode S / ADS-B transponder instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.</p>
+            <div class="project-tags"><span class="card-tag">Avionics</span><span class="card-tag">MSFS SDK</span><span class="card-tag">Asobo Studio</span><span class="card-tag">Transponder</span><span class="card-tag">Mode S</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="6" data-cat="Flight &amp; Avionics" data-tags="MSFS SDK,Asobo Studio,Pipistrel Taurus,Glider Systems,Mechanical Animation,Flight Sim">
+          <div class="project-thumb">
+          <img src="data/fss/asobo-glider-taurus/Screenshot 2026-09-09 005452.webp" alt="Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)</h3>
+            <div class="project-role-line">Subsystems &amp; Retraction Mechanism Engineer · 2022</div>
+            <p class="project-summary">Co-development of the official Pipistrel Taurus self-launching motorized glider for Microsoft Flight Simulator under contract with Asobo Studio, engineering the retractable dorsal propeller mast deployment sequence, engine systems, and soaring instruments.</p>
+            <div class="project-tags"><span class="card-tag">MSFS SDK</span><span class="card-tag">Asobo Studio</span><span class="card-tag">Pipistrel Taurus</span><span class="card-tag">Glider Systems</span><span class="card-tag">Mechanical Animation</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="7" data-cat="Flight &amp; Avionics" data-tags="MSFS SDK,Avionics Integration,Garmin G3X,Systems Simulation,Flight Sim">
+          <div class="project-thumb">
+          <img src="data/fss/fss-searey/Screenshot 2026-09-09 005332.webp" alt="SeaRey Elite Light Sport Amphibian Seaplane (MSFS)" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">SeaRey Elite Light Sport Amphibian Seaplane (MSFS)</h3>
+            <div class="project-role-line">Avionics &amp; Systems Integration Engineer · 2022</div>
+            <p class="project-summary">Avionics and systems integration for the SeaRey Elite amphibious light sport seaplane in Microsoft Flight Simulator, integrating built-in MSFS glass cockpit avionics, electrical logic, and flight deck systems.</p>
+            <div class="project-tags"><span class="card-tag">MSFS SDK</span><span class="card-tag">Avionics Integration</span><span class="card-tag">Garmin G3X</span><span class="card-tag">Systems Simulation</span><span class="card-tag">Flight Sim</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="8" data-cat="Systems &amp; Infrastructure" data-tags="C++,Chia Network,Proof of Space,Multithreading,Dear ImGui,Systems Programming,Crypto,Performance Optimization">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/chiagen/screenshot.webp" alt="chiagen - Standalone Chia Plotter &amp; Event-Driven Plot Manager - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/chiagen/screenshot2.webp" alt="chiagen - Standalone Chia Plotter &amp; Event-Driven Plot Manager - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/chiagen/screenshot.webp" alt="chiagen - Standalone Chia Plotter &amp; Event-Driven Plot Manager - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">chiagen - Standalone Chia Plotter &amp; Event-Driven Plot Manager</h3>
+            <div class="project-role-line">Systems Programmer &amp; Performance Engineer · 2021</div>
+            <p class="project-summary">High-performance native C++ standalone Chia generator and event-driven plot manager integrating madMAx43v3r and reference chiapos plotters in-process with real-time hardware telemetry and custom job scheduling.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Chia Network</span><span class="card-tag">Proof of Space</span><span class="card-tag">Multithreading</span><span class="card-tag">Dear ImGui</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Infrastructure</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="9" data-cat="Hardware &amp; Maker" data-tags="ESP32,Embedded C++,IoT,Hardware,Crypto,SPIFFS,REST API">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptolet/IMG_0040.webp" alt="Cryptolet - ESP32 Crypto Ticker &amp; Portfolio Hardware - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptolet/IMG_0041.webp" alt="Cryptolet - ESP32 Crypto Ticker &amp; Portfolio Hardware - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptolet/IMG_0040.webp" alt="Cryptolet - ESP32 Crypto Ticker &amp; Portfolio Hardware - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Cryptolet - ESP32 Crypto Ticker &amp; Portfolio Hardware</h3>
+            <div class="project-role-line">Embedded Systems Engineer &amp; Hardware Maker · 2019 – 2020</div>
+            <p class="project-summary">Custom ESP32-based handheld and desktop hardware ticker with color TFT LCD displaying live cryptocurrency prices, multi-exchange candlestick charts, and captive portal Wi-Fi configuration.</p>
+            <div class="project-tags"><span class="card-tag">ESP32</span><span class="card-tag">Embedded C++</span><span class="card-tag">IoT</span><span class="card-tag">Hardware</span><span class="card-tag">Crypto</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Hardware &amp; Maker</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="10" data-cat="Systems &amp; Enterprise" data-tags="C#,Networking,UDP,Unity,Game Dev">
+          <div class="project-thumb">
+          <img src="data/netengine/105551411-452a9300-5d35-11eb-807a-d721e8954bb9.webp" alt="netEngine - High-Performance Reliable UDP Engine" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">netEngine - High-Performance Reliable UDP Engine</h3>
+            <div class="project-role-line">Network Architect (Freelance for Agate Studio) · 2019 – 2020</div>
+            <p class="project-summary">High-performance multiplayer networking engine designed in C# for Unity, implementing a custom reliable UDP protocol layer with zero-allocation buffers.</p>
+            <div class="project-tags"><span class="card-tag">C#</span><span class="card-tag">Networking</span><span class="card-tag">UDP</span><span class="card-tag">Unity</span><span class="card-tag">Game Dev</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Enterprise</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="11" data-cat="Systems &amp; Enterprise" data-tags="Flutter,Dart,Mobile,Fintech,Enterprise">
+          <div class="project-thumb">
+          <img src="data/bri/IMG_20191107_170846.webp" alt="RKB Mobile Application" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">RKB Mobile Application</h3>
+            <div class="project-role-line">Mobile Developer &amp; Architect · 2019 – 2020</div>
+            <p class="project-summary">Mobile application developed in Flutter for Bank Rakyat Indonesia (BRI) supporting SME business ecosystem empowerment.</p>
+            <div class="project-tags"><span class="card-tag">Flutter</span><span class="card-tag">Dart</span><span class="card-tag">Mobile</span><span class="card-tag">Fintech</span><span class="card-tag">Enterprise</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Enterprise</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="12" data-cat="Hardware &amp; Maker" data-tags="IoT,Embedded,Aeroponics,Arduino,Sensors,Hardware Hacking,Maker">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180814_222848.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180526_004433.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180608_213512.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180719_051935.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180719_052143.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180602_042601.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180609_231552.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 7" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/tabulampot/IMG_20180814_222848.webp" alt="High-Tech IoT Aeroponics &amp; Carolina Reaper Lab - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 7</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">High-Tech IoT Aeroponics &amp; Carolina Reaper Lab</h3>
+            <div class="project-role-line">Designer, Hardware Engineer &amp; Embedded Architect · 2018</div>
+            <p class="project-summary">Automated indoor aeroponic cultivation chamber engineered for Carolina Reaper peppers, featuring ultrasonic misting, custom liquid Peltier chillers, and closed-loop microcontroller environmental telemetry.</p>
+            <div class="project-tags"><span class="card-tag">IoT</span><span class="card-tag">Embedded</span><span class="card-tag">Aeroponics</span><span class="card-tag">Arduino</span><span class="card-tag">Sensors</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Hardware &amp; Maker</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="13" data-cat="Civilian &amp; Transit" data-tags="C++,Transit Sim,Real-Time,Redis,Railway Engineering,Parametric CAD,Safety Systems">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/KCI/05.webp" alt="KCI Commuter Train Driving Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/KCI/09.webp" alt="KCI Commuter Train Driving Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/KCI/IMG_20171107_150227.webp" alt="KCI Commuter Train Driving Simulator - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/KCI/Screenshot 2026-09-06 191201.webp" alt="KCI Commuter Train Driving Simulator - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/KCI/05.webp" alt="KCI Commuter Train Driving Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 4</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">KCI Commuter Train Driving Simulator</h3>
+            <div class="project-role-line">Lead Systems Integration Architect · 2017 – 2018</div>
+            <p class="project-summary">Clean-sheet civilian transit driving simulator developed for PT Kereta Commuter Indonesia (KCI) in a record 12-month turnaround, featuring parametric railway track authoring, Russian rolling stock dynamics integration, and Redis state distribution.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Transit Sim</span><span class="card-tag">Real-Time</span><span class="card-tag">Redis</span><span class="card-tag">Railway Engineering</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Civilian &amp; Transit</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="14" data-cat="Systems &amp; Infrastructure" data-tags="Linux,NVIDIA,GPU,C/C++,Hardware Telemetry,Systems Programming,Crypto">
+          <div class="project-thumb">
+          <img src="data/crypto/nvstat/nvstat-screenshot.webp" alt="nvstat - Linux NVIDIA GPU State &amp; BIOS Telemetry CLI" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">nvstat - Linux NVIDIA GPU State &amp; BIOS Telemetry CLI</h3>
+            <div class="project-role-line">Systems Programmer &amp; Linux Infrastructure Engineer · 2017 – 2018</div>
+            <p class="project-summary">Lightweight high-performance Linux CLI utility querying NVIDIA driver ioctls, NVML, and PCIe VBIOS subsystem descriptors to report real-time GPU power, thermals, clocks, and exact vendor hardware names.</p>
+            <div class="project-tags"><span class="card-tag">Linux</span><span class="card-tag">NVIDIA</span><span class="card-tag">GPU</span><span class="card-tag">C/C++</span><span class="card-tag">Hardware Telemetry</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Infrastructure</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="15" data-cat="Hardware &amp; Maker" data-tags="CAD/3D,Architecture,Design,Maker">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/house/render-rumah3.webp" alt="Architectural 3D CAD &amp; Construction - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/image-floor.webp" alt="Architectural 3D CAD &amp; Construction - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/DSC_0007.webp" alt="Architectural 3D CAD &amp; Construction - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/IMG_20180113_165436.webp" alt="Architectural 3D CAD &amp; Construction - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/IMG_20180113_165504.webp" alt="Architectural 3D CAD &amp; Construction - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/IMG_20180814_162103.webp" alt="Architectural 3D CAD &amp; Construction - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/IMG_5966.webp" alt="Architectural 3D CAD &amp; Construction - 7" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/IMG20230317102353.webp" alt="Architectural 3D CAD &amp; Construction - 8" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/house/render-rumah3.webp" alt="Architectural 3D CAD &amp; Construction - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 8</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Architectural 3D CAD &amp; Construction</h3>
+            <div class="project-role-line">Designer &amp; Project Lead · 2013 – 2018</div>
+            <p class="project-summary">First-principles architectural design, 3D CAD modeling in Blender, and structural construction execution of a two-story home in Bandung.</p>
+            <div class="project-tags"><span class="card-tag">CAD/3D</span><span class="card-tag">Architecture</span><span class="card-tag">Design</span><span class="card-tag">Maker</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Hardware &amp; Maker</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="16" data-cat="Systems &amp; Infrastructure" data-tags="Hardware,Crypto,Power Systems,Linux">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/gpu-frame.webp" alt="High-Density GPU Computing Rigs - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/minig-server.webp" alt="High-Density GPU Computing Rigs - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/IMG_20170521_155702.webp" alt="High-Density GPU Computing Rigs - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/IMG_20171217_232535.webp" alt="High-Density GPU Computing Rigs - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/IMG_20180510_163853.webp" alt="High-Density GPU Computing Rigs - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/IMG_20180510_163931.webp" alt="High-Density GPU Computing Rigs - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/IMG_20190428_164537.webp" alt="High-Density GPU Computing Rigs - 7" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/rig2.webp" alt="High-Density GPU Computing Rigs - 8" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/miningRigs/gpu-frame.webp" alt="High-Density GPU Computing Rigs - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 8</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">High-Density GPU Computing Rigs</h3>
+            <div class="project-role-line">Hardware &amp; Systems Architect · 2013 – 2018</div>
+            <p class="project-summary">330 kVA industrial-grade multi-GPU computing cluster engineered in a private Bandung facility with custom power distribution and high-velocity ventilation.</p>
+            <div class="project-tags"><span class="card-tag">Hardware</span><span class="card-tag">Crypto</span><span class="card-tag">Power Systems</span><span class="card-tag">Linux</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Infrastructure</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="17" data-cat="Distributed Systems &amp; Cloud" data-tags="Blockchain,Proof-of-Capacity,AWS,Google Cloud,C++,Node.js,High Availability,Crypto">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstPool/udFKiTX.webp" alt="Burstcoin Mining Pool &amp; Cloud Infrastructure - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstPool/nXdP7x1.webp" alt="Burstcoin Mining Pool &amp; Cloud Infrastructure - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstPool/udFKiTX.webp" alt="Burstcoin Mining Pool &amp; Cloud Infrastructure - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Burstcoin Mining Pool &amp; Cloud Infrastructure</h3>
+            <div class="project-role-line">Distributed Systems Engineer &amp; Cloud Architect · 2014 – 2017</div>
+            <p class="project-summary">Multi-tenant Proof-of-Capacity mining pool aggregating global hard-drive deadlines, running high-performance C++ plotters, and orchestrating automated proportional payouts on AWS/GCP dual-cloud infrastructure.</p>
+            <div class="project-tags"><span class="card-tag">Blockchain</span><span class="card-tag">Proof-of-Capacity</span><span class="card-tag">AWS</span><span class="card-tag">Google Cloud</span><span class="card-tag">C++</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Distributed Systems &amp; Cloud</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="18" data-cat="Defense &amp; Combat Simulation" data-tags="Linux Kernel,Real-Time,C,x86,Operating Systems">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/rtos/IMG20151118163323.webp" alt="RTOS - Real-Time Linux Simulation Environment - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/rtos/IMG20151118163346.webp" alt="RTOS - Real-Time Linux Simulation Environment - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/rtos/IMG20151118163323.webp" alt="RTOS - Real-Time Linux Simulation Environment - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">RTOS - Real-Time Linux Simulation Environment</h3>
+            <div class="project-role-line">Systems &amp; Kernel Engineer · 2014 – 2017</div>
+            <p class="project-summary">Custom x86 Linux kernel distribution patched with PREEMPT_RT to provide deterministic soft real-time execution for high-frequency simulation loops.</p>
+            <div class="project-tags"><span class="card-tag">Linux Kernel</span><span class="card-tag">Real-Time</span><span class="card-tag">C</span><span class="card-tag">x86</span><span class="card-tag">Operating Systems</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="19" data-cat="Defense &amp; Combat Simulation" data-tags="C++,DIS/HLA,Tactical Systems,Networking,Distributed Systems">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/soyut/IMG_20170419_235959.webp" alt="SOYUT Integrated Joint Battle Management Platform - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/soyut/IMG_20170420_025133.webp" alt="SOYUT Integrated Joint Battle Management Platform - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/soyut/IMG_20170419_235959.webp" alt="SOYUT Integrated Joint Battle Management Platform - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">SOYUT Integrated Joint Battle Management Platform</h3>
+            <div class="project-role-line">Systems Architect &amp; Battle Management Engineer · 2014 – 2017</div>
+            <p class="project-summary">Comprehensive joint battle management simulation platform integrating Air, Land, and Maritime forces in unified operational theater exercises.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">DIS/HLA</span><span class="card-tag">Tactical Systems</span><span class="card-tag">Networking</span><span class="card-tag">Distributed Systems</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="20" data-cat="Academic &amp; Speaking" data-tags="Mathematics,Academic,Speaking,Algorithms">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/mcf/IMG20160925065308.webp" alt="Mathematics Challenge Festival (MCF) - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/mcf/IMG20160925085952.webp" alt="Mathematics Challenge Festival (MCF) - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/mcf/IMG_1286.webp" alt="Mathematics Challenge Festival (MCF) - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/mcf/IMG20160925065308.webp" alt="Mathematics Challenge Festival (MCF) - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Mathematics Challenge Festival (MCF)</h3>
+            <div class="project-role-line">Guest Speaker · 2016</div>
+            <p class="project-summary">Invited guest speaker at the Mathematics Challenge Festival at Institut Teknologi Bandung (ITB), sharing software engineering and algorithmic applications of mathematics.</p>
+            <div class="project-tags"><span class="card-tag">Mathematics</span><span class="card-tag">Academic</span><span class="card-tag">Speaking</span><span class="card-tag">Algorithms</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Academic &amp; Speaking</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="21" data-cat="Distributed Systems &amp; Cloud" data-tags="Blockchain,Node.js,JavaScript,AWS,High Availability,Crypto">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstExplorer/0A5BOVN.webp" alt="Burstcoin Blockchain Explorer - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstExplorer/1amoyJj.webp" alt="Burstcoin Blockchain Explorer - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstExplorer/4x5RIWA.webp" alt="Burstcoin Blockchain Explorer - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstExplorer/0A5BOVN.webp" alt="Burstcoin Blockchain Explorer - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Burstcoin Blockchain Explorer</h3>
+            <div class="project-role-line">Full-Stack Blockchain Engineer &amp; Cloud Architect · 2014 – 2016</div>
+            <p class="project-summary">High-throughput real-time blockchain telemetry and asset ledger explorer parsing block generation deadlines, smart tokens, and global transaction metrics.</p>
+            <div class="project-tags"><span class="card-tag">Blockchain</span><span class="card-tag">Node.js</span><span class="card-tag">JavaScript</span><span class="card-tag">AWS</span><span class="card-tag">High Availability</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Distributed Systems &amp; Cloud</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="22" data-cat="Distributed Systems &amp; Cloud" data-tags="Blockchain,Cryptography,Curve25519,JavaScript,DeX,Web3,Security,Crypto">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstWebWallet/BEE5I2k.webp" alt="Burstcoin Web Wallet &amp; Decentralized Asset Exchange - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstWebWallet/uidAvpZ - Imgur.webp" alt="Burstcoin Web Wallet &amp; Decentralized Asset Exchange - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/burst/burstWebWallet/BEE5I2k.webp" alt="Burstcoin Web Wallet &amp; Decentralized Asset Exchange - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Burstcoin Web Wallet &amp; Decentralized Asset Exchange</h3>
+            <div class="project-role-line">Full-Stack Web3 Engineer &amp; Cryptographic Architect · 2014 – 2016</div>
+            <p class="project-summary">Zero-trust client-side browser wallet and on-chain decentralized asset exchange (DEX) interface enabling instant user onboarding with in-memory Curve25519 signing.</p>
+            <div class="project-tags"><span class="card-tag">Blockchain</span><span class="card-tag">Cryptography</span><span class="card-tag">Curve25519</span><span class="card-tag">JavaScript</span><span class="card-tag">DeX</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Distributed Systems &amp; Cloud</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="23" data-cat="Systems &amp; Infrastructure" data-tags="Linux Kernel,Operating Systems,Crypto,Hardware">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptoslax/5642i21 (1).webp" alt="CryptoSlax - Custom Linux Distribution - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptoslax/B9m2DbB.webp" alt="CryptoSlax - Custom Linux Distribution - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptoslax/DSC_0003.webp" alt="CryptoSlax - Custom Linux Distribution - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/crypto/cryptoslax/5642i21 (1).webp" alt="CryptoSlax - Custom Linux Distribution - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">CryptoSlax - Custom Linux Distribution</h3>
+            <div class="project-role-line">Systems &amp; OS Engineer · 2013 – 2016</div>
+            <p class="project-summary">Customized, ultra-lightweight (~100 MB) stateless Linux distribution engineered for PXE network boot, RAM execution, and 24/7 autonomous GPU clusters.</p>
+            <div class="project-tags"><span class="card-tag">Linux Kernel</span><span class="card-tag">Operating Systems</span><span class="card-tag">Crypto</span><span class="card-tag">Hardware</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Systems &amp; Infrastructure</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="24" data-cat="Flight &amp; Avionics" data-tags="C++,Flight Simulator,Cockpit Avionics,Real-Time,DIS/HLA">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/F16-FTD/_MG_5349.webp" alt="F-16 Full Mission Flight Training Device (FTD) - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/F16-FTD/_MG_5350.webp" alt="F-16 Full Mission Flight Training Device (FTD) - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/F16-FTD/_MG_5349.webp" alt="F-16 Full Mission Flight Training Device (FTD) - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">F-16 Full Mission Flight Training Device (FTD)</h3>
+            <div class="project-role-line">Senior Simulator Systems Engineer · 2013 – 2014</div>
+            <p class="project-summary">High-fidelity supersonic fighter simulator replicating flight handling qualities, tactical cockpit avionics, and mission systems.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Flight Simulator</span><span class="card-tag">Cockpit Avionics</span><span class="card-tag">Real-Time</span><span class="card-tag">DIS/HLA</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="25" data-cat="Defense &amp; Combat Simulation" data-tags="C++,Tools,Visual Programming,Architecture">
+          <div class="project-thumb">
+          <img src="data/T&amp;E/codegraph/IMG_20130624_114947.webp" alt="CodeGraph - Visual Logic &amp; State Graph Tool" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">CodeGraph - Visual Logic &amp; State Graph Tool</h3>
+            <div class="project-role-line">Software Tools Engineer · 2012 – 2014</div>
+            <p class="project-summary">In-house node-based visual programming environment built to rapidly author and inspect state machines and simulation logic.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Tools</span><span class="card-tag">Visual Programming</span><span class="card-tag">Architecture</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="26" data-cat="Defense &amp; Combat Simulation" data-tags="C++,Audio/DSP,Networking,Tactical Systems">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/commSystem/IMG-20131023-WA0004.webp" alt="Tactical Intercom &amp; Radio Simulation System - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/commSystem/IMG_20110202_143357.webp" alt="Tactical Intercom &amp; Radio Simulation System - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/commSystem/IMG_20131001_123617.webp" alt="Tactical Intercom &amp; Radio Simulation System - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/commSystem/IMG-20131023-WA0004.webp" alt="Tactical Intercom &amp; Radio Simulation System - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Tactical Intercom &amp; Radio Simulation System</h3>
+            <div class="project-role-line">Communications Systems Engineer · 2012 – 2014</div>
+            <p class="project-summary">Integrated voice communication system simulating tactical radio channels, intercom hot-mics, frequency modulation, and radio propagation noise.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Audio/DSP</span><span class="card-tag">Networking</span><span class="card-tag">Tactical Systems</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="27" data-cat="Game Engine &amp; Tools" data-tags="Unity3D,ShaderLab,CG/HLSL,Graphics Programming,Refraction,Asset Store,Game Development">
+          <div class="project-thumb">
+          <img src="data/unity/broken-glass-shader/broken-glass-preview.webp" alt="Broken Glass Shader - Refraction &amp; Diffraction Optical Surface" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Broken Glass Shader - Refraction &amp; Diffraction Optical Surface</h3>
+            <div class="project-role-line">Graphics &amp; Shader Programmer · 2012</div>
+            <p class="project-summary">Physically-inspired real-time broken glass surface shader for Unity3D featuring normal-mapped shattered crack patterns, optical refraction, chromatic diffraction, and Fresnel specular highlights.</p>
+            <div class="project-tags"><span class="card-tag">Unity3D</span><span class="card-tag">ShaderLab</span><span class="card-tag">CG/HLSL</span><span class="card-tag">Graphics Programming</span><span class="card-tag">Refraction</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Game Engine &amp; Tools</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="28" data-cat="Game Engine &amp; Tools" data-tags="Unity3D,C#,.NET Reflection,Unity Editor Extensions,Asset Store,Developer Tools">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/unity/object-browser/object-browser-gameobject.webp" alt="ObjectBrowser - Unity Reflection &amp; Type Inspector - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/unity/object-browser/object-browser-asset.webp" alt="ObjectBrowser - Unity Reflection &amp; Type Inspector - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/unity/object-browser/object-browser-gameobject.webp" alt="ObjectBrowser - Unity Reflection &amp; Type Inspector - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">ObjectBrowser - Unity Reflection &amp; Type Inspector</h3>
+            <div class="project-role-line">Unity Tool Developer &amp; Systems Programmer · 2012</div>
+            <p class="project-summary">Deep runtime and editor reflection inspector for Unity3D, exposing all properties, fields, methods, and complete base class inheritance hierarchies for any selected scene GameObject or project asset.</p>
+            <div class="project-tags"><span class="card-tag">Unity3D</span><span class="card-tag">C#</span><span class="card-tag">.NET Reflection</span><span class="card-tag">Unity Editor Extensions</span><span class="card-tag">Asset Store</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Game Engine &amp; Tools</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="29" data-cat="Defense &amp; Combat Simulation" data-tags="C++,DIS/HLA,Networking,Real-Time,Combat Sim">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/DSC_0006.webp" alt="STMR Multi-Type Armored Platoon Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/IMG_20130618_105956.webp" alt="STMR Multi-Type Armored Platoon Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/IMG_20130618_110333.webp" alt="STMR Multi-Type Armored Platoon Simulator - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/IMG_20130618_115027.webp" alt="STMR Multi-Type Armored Platoon Simulator - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/IMG_20130622_031654.webp" alt="STMR Multi-Type Armored Platoon Simulator - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/ios2.webp" alt="STMR Multi-Type Armored Platoon Simulator - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/tumblr_merup6area1ru2qado1_1280.webp" alt="STMR Multi-Type Armored Platoon Simulator - 7" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/stmr/DSC_0006.webp" alt="STMR Multi-Type Armored Platoon Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 7</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">STMR Multi-Type Armored Platoon Simulator</h3>
+            <div class="project-role-line">Lead Distributed Simulation Architect · 2010 – 2012</div>
+            <p class="project-summary">Multi-vehicle tactical simulator simulating three distinct tank classes interoperating in unified platoon and team combat formations.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">DIS/HLA</span><span class="card-tag">Networking</span><span class="card-tag">Real-Time</span><span class="card-tag">Combat Sim</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="30" data-cat="Flight &amp; Avionics" data-tags="C++,Rotorcraft,Flight Dynamics,Cockpit Avionics,Real-Time">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/NAS332/IMG_1630.webp" alt="NAS332 Super Puma Helicopter Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/NAS332/IMG_2244.webp" alt="NAS332 Super Puma Helicopter Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/NAS332/IMG_1630.webp" alt="NAS332 Super Puma Helicopter Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">NAS332 Super Puma Helicopter Simulator</h3>
+            <div class="project-role-line">Lead Systems &amp; Flight Dynamics Engineer · 2008 – 2010</div>
+            <p class="project-summary">Full-scale multi-mission tactical transport helicopter simulator with realistic rotor aerodynamics and cockpit systems.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Rotorcraft</span><span class="card-tag">Flight Dynamics</span><span class="card-tag">Cockpit Avionics</span><span class="card-tag">Real-Time</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="31" data-cat="Flight &amp; Avionics" data-tags="C++,Flight Simulator,Cockpit Displays,Real-Time,Avionics">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20120426_114205.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20120426_120352.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20120426_121749.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20130110_142735.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 4" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/11357611_459578634196777_582338419_n.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 5" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20120426_092959.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 6" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/tumblr_m36rqcw5011ru2qado1_1280.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 7" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/hawk/IMG_20120426_114205.webp" alt="BAe Hawk 209 Combat Trainer Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 7</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">BAe Hawk 209 Combat Trainer Simulator</h3>
+            <div class="project-role-line">Systems &amp; Avionics Simulation Engineer · 2008 – 2009</div>
+            <p class="project-summary">Tactical jet trainer simulator designed for advanced pilot operational training, combat readiness, and emergency procedures.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Flight Simulator</span><span class="card-tag">Cockpit Displays</span><span class="card-tag">Real-Time</span><span class="card-tag">Avionics</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="32" data-cat="Flight &amp; Avionics" data-tags="C++,Rotorcraft,Flight Simulator,Real-Time,Avionics,Motion Platform,Control Loading">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/BO/helicopter-lab.webp" alt="BO-105 Light Twin Helicopter Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/BO/vr-lab.webp" alt="BO-105 Light Twin Helicopter Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/BO/IMG_20130823_183241.webp" alt="BO-105 Light Twin Helicopter Simulator - 3" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/BO/helicopter-lab.webp" alt="BO-105 Light Twin Helicopter Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 3</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">BO-105 Light Twin Helicopter Simulator</h3>
+            <div class="project-role-line">Flight Simulation Software Engineer · 2008 – 2009</div>
+            <p class="project-summary">Full flight simulator refurbishment and internal R&amp;D testbed featuring motor control loading, tablet glass cockpit instrumentation, curved visual warping, and a VR-immersed motion platform.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Rotorcraft</span><span class="card-tag">Flight Simulator</span><span class="card-tag">Real-Time</span><span class="card-tag">Avionics</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Flight &amp; Avionics</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="33" data-cat="Mobile &amp; Operating Systems" data-tags="Android 1.0,Java,HTC Dream / G1,IME / Virtual Keyboard,T9 Keypad,Mobile UI,Early Android">
+          <div class="project-thumb">
+          <img src="data/numpadKey/beta2-screenshot.webp" alt="NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)</h3>
+            <div class="project-role-line">Mobile Systems &amp; Android Java Developer · 2008 – 2009</div>
+            <p class="project-summary">Pioneering T9-style on-screen virtual keyboard for Android 1.0 on the historic HTC Dream (T-Mobile G1), enabling rapid one-handed touch typing on early small capacitive displays without sliding out the physical keyboard.</p>
+            <div class="project-tags"><span class="card-tag">Android 1.0</span><span class="card-tag">Java</span><span class="card-tag">HTC Dream / G1</span><span class="card-tag">IME / Virtual Keyboard</span><span class="card-tag">T9 Keypad</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Mobile &amp; Operating Systems</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="34" data-cat="Defense &amp; Combat Simulation" data-tags="C++,Combat Sim,Real-Time,Hardware-in-the-Loop">
+          <div class="project-thumb">
+          <div class="project-thumb-track">
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/acv/DSC_0701.webp" alt="ACV-300 Armored Combat Vehicle Simulator - 1" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/acv/DSC_1082.webp" alt="ACV-300 Armored Combat Vehicle Simulator - 2" loading="lazy">
+          </div>
+          <div class="project-thumb-slide">
+            <img src="data/T&amp;E/acv/DSC_0701.webp" alt="ACV-300 Armored Combat Vehicle Simulator - 1" loading="lazy">
+          </div>
+          </div>
+          <span class="project-photo-count">📷 1 / 2</span>
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">ACV-300 Armored Combat Vehicle Simulator</h3>
+            <div class="project-role-line">Simulation Systems Engineer · 2007 – 2008</div>
+            <p class="project-summary">Tracked armored combat vehicle simulator designed for crew coordination, combat driving, turret operation, and tactical engagement.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">Combat Sim</span><span class="card-tag">Real-Time</span><span class="card-tag">Hardware-in-the-Loop</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card " data-index="35" data-cat="Defense &amp; Combat Simulation" data-tags="C++,DIS/HLA,Networking,Protocols,Real-Time">
+          <div class="project-thumb">
+          <img src="data/T&amp;E/libDIS/DSC_1033.webp" alt="libDIS - IEEE 1278 Protocol Engine" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">libDIS - IEEE 1278 Protocol Engine</h3>
+            <div class="project-role-line">Protocol Architect &amp; Author · 2007 – 2008</div>
+            <p class="project-summary">In-house C++ library implementing the IEEE 1278 Distributed Interactive Simulation (DIS) protocol for low-latency networked simulation.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">DIS/HLA</span><span class="card-tag">Networking</span><span class="card-tag">Protocols</span><span class="card-tag">Real-Time</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Defense &amp; Combat Simulation</span>
+          </div>
+        </article>
+        <article class="project-card featured" data-index="36" data-cat="Simulation &amp; Defense" data-tags="C++,DirectX 9,HLSL,3D Engine,Physics,R&amp;D">
+          <div class="project-thumb">
+          <img src="data/G1/preview.webp" alt="Project G1 - 3D Anti-Gravity Tunnel Racing Engine" loading="lazy">
+        </div>
+          <div class="project-body">
+            <h3 class="project-title">Project G1 - 3D Anti-Gravity Tunnel Racing Engine</h3>
+            <div class="project-role-line">Lead Graphics &amp; Engine Programmer (PT. T&amp;E Simulation R&amp;D) · 2006 – 2007</div>
+            <p class="project-summary">State-of-the-art anti-gravity space tunnel racing prototype engine written from scratch in C++ and DirectX 9 with custom HLSL shaders and procedural spline geometry.</p>
+            <div class="project-tags"><span class="card-tag">C++</span><span class="card-tag">DirectX 9</span><span class="card-tag">HLSL</span><span class="card-tag">3D Engine</span><span class="card-tag">Physics</span></div>
+          </div>
+          <div class="project-footer">
+            <span>Simulation &amp; Defense</span>
+          </div>
+        </article>
+      <!-- SSG_PROJECT_CARDS_END -->
       </div>
     </div>
   </section>
@@ -428,7 +1585,7 @@
         <a href="mailto:me@uray.dev">Email</a>
         <a href="https://id.linkedin.com/in/meiviar" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://github.com/uraymeiviar" target="_blank" rel="noopener">GitHub</a>
-        <a href="story" title="Engineering Chronicles & Systems Philosophy">Memoir</a>
+        <a href="story.html" title="Engineering Chronicles & Systems Philosophy">Memoir</a>
         <a href="/data/profile/DESC.txt" style="display: none;" rel="alternate" type="text/plain" title="Comprehensive Technical Biography & Memoir (Text)">Technical Memoir</a>
         <a href="/data/profile/DESC.md" style="display: none;" rel="alternate" type="text/plain" title="Comprehensive Technical Biography & Memoir (Markdown)">Technical Memoir (Markdown)</a>
         <button class="print-cv-btn" style="background:none; border:none; color:var(--text-muted); cursor:pointer; font-size:0.925rem;">Print CV</button>
@@ -444,6 +1601,9 @@
     </div>
   </footer>
 
+  <!-- SSG_DATA_START -->
+  <script id="projects-data" type="application/json">[{"id":"custom-guitar","title":"Custom Guitar Electronics & Craft","category":"Hardware & Maker","role":"Maker & Electronics Craft","tags":["Hardware","Electronics","Audio/DSP","Maker"],"summary":"Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.","highlights":["Precision star grounding and copper cavity shielding for ultra-low noise floor.","Custom wiring schematics with high-tolerance CTS potentiometers and orange drop capacitors."],"images":["data/guitar/wiring.webp","data/guitar/20250830_040754.webp","data/guitar/20250905_163617.webp","data/guitar/20251012_183213.webp","data/guitar/mid-july.webp","data/guitar/Screenshot 2026-09-06 184819.webp"],"links":[],"timeline":"2024 – Present","timespan":"2024 – Present","_folder":"data/guitar"},{"id":"fss-ejet","title":"Embraer E-Jets Family (MSFS)","featured":true,"category":"Flight & Avionics","role":"Core Systems & Avionics Engineer","company":"FlightSim Studio AG","timeline":"2020 - Present (4+ Years)","tags":["FMS","Autopilot","Flight Dynamics","Avionics","C++","Cockpit Systems","MSFS SDK"],"summary":"Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.","highlights":["Flight Management System (FMS): Waypoint sequencing, lateral/vertical navigation, NavData ARINC-424 cycle parsing, and takeoff/climb performance calculation (V1, VR, V2, thrust limits).","Autopilot & Autoflight Management: Pitch/Roll guidance (LNAV, VNAV PTH/FLCH), ILS/Autoland CAT II/III approach tracking, and autothrottle system.","Cockpit Display Vector Rendering: Primary Flight Display (PFD) speed/altitude tapes, Multi-Function Display (MFD) moving map, and EICAS engine and alert messaging.","Deep Systems Simulation: Multi-bus AC/DC electrical distribution with bus tie logic, 3-circuit hydraulic system with engine/electric pumps and PTU, and pneumatic/pressurization loops."],"images":[],"links":[{"label":"FlightSim Studio","url":"https://www.flightsim-studio.com"}],"timespan":"2020 - Present (4+ Years)","_folder":"data/fss/fss-ejet"},{"id":"fss-a330","title":"Aerosoft Airbus A330 — Flight Management System (FMS) Core","featured":true,"category":"Flight & Avionics","role":"FMS Core Systems Architect & Engineer","company":"Contracted / Aerosoft & FlightSim Studio AG","timeline":"2022 – 2023","tags":["FMS","Avionics","C++","ARINC-424","LNAV/VNAV","Airbus A330","MSFS SDK"],"summary":"Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.","highlights":["Engineered real-time lateral navigation (LNAV) trajectory generation and ARINC-424 leg resolution (IF, TF, CF, DF, RF).","Developed Airbus MCDU (Multifunction Control and Display Unit) flight planning pages (F-PLN, INIT, PERF, DIR TO).","Vertical navigation (VNAV) profile solver: top-of-descent (TOD) calculation, step climbs, fuel burn estimation, and speed/altitude constraint adherence."],"images":["data/fss/aerosoft-a330/Screenshot 2026-09-09 005607.webp","data/fss/aerosoft-a330/Screenshot 2026-09-09 005710.webp"],"links":[],"timespan":"2022 – 2023","_folder":"data/fss/aerosoft-a330"},{"id":"asobo-radio-acd57","title":"AIR Avionics ACD-57 Multi-Function Radio & Altimeter (Official MSFS / Asobo)","featured":false,"category":"Flight & Avionics","role":"Avionics Device Software Engineer","company":"FlightSim Studio AG (Contracted to Asobo Studio)","timeline":"2022","tags":["Avionics","MSFS SDK","Asobo Studio","Radio Navigation","C++ / JS","Altimeter"],"summary":"Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.","highlights":["Modeled authentic 57mm round display combining 8.33 kHz VHF COM transceiver, barometric altimeter tape, and transponder display.","Engineered barometric pressure calibration (hPa / inHg), altitude alert warnings, and flight level (FL) readouts.","Integrated menu navigation, frequency databases, and direct SimVar telemetry coupling for official MSFS aircraft."],"images":["data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 003849.webp","data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004035.webp","data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004055.webp","data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004138.webp","data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004210.webp"],"links":[],"timespan":"2022","_folder":"data/fss/asobo-radio-ACD57"},{"id":"asobo-radio-ar6201","title":"Becker AR6201 VHF Transceiver (Official MSFS / Asobo)","featured":false,"category":"Flight & Avionics","role":"Avionics Device Software Engineer","company":"FlightSim Studio AG (Contracted to Asobo Studio)","timeline":"2022","tags":["Avionics","MSFS SDK","Asobo Studio","VHF Radio","8.33 kHz","C++ / JS"],"summary":"Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.","highlights":["Faithfully simulated the certified Becker AR6201 8.33 kHz / 25 kHz VHF communications transceiver.","Engineered active/standby frequency exchange, dual concentric rotary tuning, memory channels, and squelch control.","Integrated power supply voltage monitoring, inter-communication (IC) modes, and MSFS SimVar two-way binding."],"images":["data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004716.webp","data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004451.webp","data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004516.webp","data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004610.webp","data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004655.webp","data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 003929.webp"],"links":[],"timespan":"2022","_folder":"data/fss/asobo-radio-AR6201"},{"id":"asobo-radio-vt02","title":"Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo)","featured":false,"category":"Flight & Avionics","role":"Avionics Device Software Engineer","company":"FlightSim Studio AG (Contracted to Asobo Studio)","timeline":"2022","tags":["Avionics","MSFS SDK","Asobo Studio","Transponder","Mode S","C++ / JS"],"summary":"Engineered the authentic Garrecht VT-02 Mode S / ADS-B transponder instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.","highlights":["Simulated certified Mode A/C/S transponder with active (>1234) and standby (SBY 0022) squawk code registers.","Integrated pressure altitude encoder displaying real-time Flight Level (FL000) telemetry.","Implemented authentic green backlit dot-matrix LCD display, VFR quick-select, and IDENT pulse transmission."],"images":["data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004009.webp","data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004810.webp","data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004844.webp"],"links":[],"timespan":"2022","_folder":"data/fss/asobo-radio-VT02"},{"id":"asobo-glider-taurus","title":"Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)","featured":false,"category":"Flight & Avionics","role":"Subsystems & Retraction Mechanism Engineer","company":"FlightSim Studio AG (Co-Development with Asobo Studio)","timeline":"2022","tags":["MSFS SDK","Asobo Studio","Pipistrel Taurus","Glider Systems","Mechanical Animation","Flight Sim"],"summary":"Co-development of the official Pipistrel Taurus self-launching motorized glider for Microsoft Flight Simulator under contract with Asobo Studio, engineering the retractable dorsal propeller mast deployment sequence, engine systems, and soaring instruments.","highlights":["Engineered the electro-mechanical retraction and deployment sequencer for the retractable dorsal engine and propeller mast.","Modeled engine start/stop interlocks, propeller positioning brake, and aerodynamic drag penalty during mast extension.","Integrated soaring instruments, electrical bus switching, and engine telemetry gauges for official MSFS default aircraft."],"images":["data/fss/asobo-glider-taurus/Screenshot 2026-09-09 005452.webp"],"links":[],"timespan":"2022","_folder":"data/fss/asobo-glider-taurus"},{"id":"fss-searey","title":"SeaRey Elite Light Sport Amphibian Seaplane (MSFS)","featured":false,"category":"Flight & Avionics","role":"Avionics & Systems Integration Engineer","company":"FlightSim Studio AG","timeline":"2022","tags":["MSFS SDK","Avionics Integration","Garmin G3X","Systems Simulation","Flight Sim"],"summary":"Avionics and systems integration for the SeaRey Elite amphibious light sport seaplane in Microsoft Flight Simulator, integrating built-in MSFS glass cockpit avionics, electrical logic, and flight deck systems.","highlights":["Integrated MSFS built-in avionics suite with custom Garmin G3X glass cockpit layout and engine instrumentation.","Engineered electrical system logic, amphibious landing gear / bilge pump controls, and instrument bus switching.","Configured custom flight deck interaction models and calibrated real-time telemetry."],"images":["data/fss/fss-searey/Screenshot 2026-09-09 005332.webp"],"links":[],"timespan":"2022","_folder":"data/fss/fss-searey"},{"id":"chiagen","title":"chiagen - Standalone Chia Plotter & Event-Driven Plot Manager","featured":true,"category":"Systems & Infrastructure","role":"Systems Programmer & Performance Engineer","tags":["C++","Chia Network","Proof of Space","Multithreading","Dear ImGui","Systems Programming","Crypto","Performance Optimization"],"summary":"High-performance native C++ standalone Chia generator and event-driven plot manager integrating madMAx43v3r and reference chiapos plotters in-process with real-time hardware telemetry and custom job scheduling.","highlights":["Direct in-process multithreaded compilation of madMAx43v3r and chiapos plotters, eliminating external process wrappers and enabling granular phase interception and pause/resume control.","Event-driven plot orchestration engine enabling reactive multi-stage pipelines that trigger staggered jobs upon specific phase completions or disk transfers.","Dual-mode interface providing an immediate-mode GUI (Dear ImGui) with real-time CPU/RAM/Disk I/O telemetry graphs alongside a full CLI mode for headless automated farming servers."],"images":["data/crypto/chiagen/screenshot.webp","data/crypto/chiagen/screenshot2.webp"],"links":[{"label":"GitHub","url":"https://github.com/uraymeiviar/chiagen"}],"timeline":"2021","timespan":"2021","_folder":"data/crypto/chiagen"},{"id":"cryptolet","title":"Cryptolet - ESP32 Crypto Ticker & Portfolio Hardware","featured":true,"category":"Hardware & Maker","role":"Embedded Systems Engineer & Hardware Maker","tags":["ESP32","Embedded C++","IoT","Hardware","Crypto","SPIFFS","REST API"],"summary":"Custom ESP32-based handheld and desktop hardware ticker with color TFT LCD displaying live cryptocurrency prices, multi-exchange candlestick charts, and captive portal Wi-Fi configuration.","highlights":["Dual-core 240MHz ESP32 firmware written in C++ rendering real-time candlestick charts, moving averages, and multi-currency portfolio tracking.","Integrated SoftAP captive portal and SPIFFS flash filesystem for seamless over-the-air Wi-Fi and custom API endpoint setup.","Hardware user interface featuring tactile push-buttons, low-latency JSON REST parsing, and NTP time synchronization."],"images":["data/crypto/cryptolet/IMG_0040.webp","data/crypto/cryptolet/IMG_0041.webp"],"links":[],"timeline":"2019 – 2020","timespan":"2019 – 2020","_folder":"data/crypto/cryptolet"},{"id":"netengine","title":"netEngine - High-Performance Reliable UDP Engine","featured":true,"category":"Systems & Enterprise","role":"Network Architect (Freelance for Agate Studio)","tags":["C#","Networking","UDP","Unity","Game Dev"],"summary":"High-performance multiplayer networking engine designed in C# for Unity, implementing a custom reliable UDP protocol layer with zero-allocation buffers.","highlights":["Custom reliability layer over UDP with sliding-window ACK/NACK, packet sequencing, and congestion control.","Zero-garbage fixed memory buffer allocation preventing garbage collection hiccups during intense multiplayer matches.","Built-in NAT punchthrough and connection migration handling."],"images":["data/netengine/105551411-452a9300-5d35-11eb-807a-d721e8954bb9.webp"],"links":[],"timeline":"2019 – 2020","timespan":"2019 – 2020","_folder":"data/netengine"},{"id":"bri-rkb","title":"RKB Mobile Application","category":"Systems & Enterprise","role":"Mobile Developer & Architect","tags":["Flutter","Dart","Mobile","Fintech","Enterprise"],"summary":"Mobile application developed in Flutter for Bank Rakyat Indonesia (BRI) supporting SME business ecosystem empowerment.","highlights":["Cross-platform mobile architecture with reactive state management.","Secure API integration with enterprise core banking backends."],"images":["data/bri/IMG_20191107_170846.webp"],"links":[],"timeline":"2019 – 2020","timespan":"2019 – 2020","_folder":"data/bri"},{"id":"tabulampot-aeroponics","title":"High-Tech IoT Aeroponics & Carolina Reaper Lab","category":"Hardware & Maker","role":"Designer, Hardware Engineer & Embedded Architect","tags":["IoT","Embedded","Aeroponics","Arduino","Sensors","Hardware Hacking","Maker"],"summary":"Automated indoor aeroponic cultivation chamber engineered for Carolina Reaper peppers, featuring ultrasonic misting, custom liquid Peltier chillers, and closed-loop microcontroller environmental telemetry.","highlights":["Cultivated imported Carolina Reaper chili peppers using soil-less ultrasonic high-frequency mist atomization.","Engineered custom nutrient chiller combining Peltier thermoelectric plates with PC CPU liquid cooling waterblocks.","Automated photoperiod and closed-loop environmental controls (temperature, pH, humidity) with Arduino and SBC relays."],"images":["data/tabulampot/IMG_20180814_222848.webp","data/tabulampot/IMG_20180526_004433.webp","data/tabulampot/IMG_20180608_213512.webp","data/tabulampot/IMG_20180719_051935.webp","data/tabulampot/IMG_20180719_052143.webp","data/tabulampot/IMG_20180602_042601.webp","data/tabulampot/IMG_20180609_231552.webp"],"links":[],"timeline":"2018","timespan":"2018","_folder":"data/tabulampot"},{"id":"kci","title":"KCI Commuter Train Driving Simulator","featured":true,"category":"Civilian & Transit","role":"Lead Systems Integration Architect","company":"PT. Technology & Engineering Simulation (T&E)","customer":"PT Kereta Commuter Indonesia (PT KCI / PT KAI)","tags":["C++","Transit Sim","Real-Time","Redis","Railway Engineering","Parametric CAD","Safety Systems"],"summary":"Clean-sheet civilian transit driving simulator developed for PT Kereta Commuter Indonesia (KCI) in a record 12-month turnaround, featuring parametric railway track authoring, Russian rolling stock dynamics integration, and Redis state distribution.","highlights":["Pioneered entry into civilian rail simulation following military defense contracts, delivered in a record 1-year timeframe.","Integrated specialized Russian train dynamics software with 100% in-house physical hardware cabs, visual displays, and CommSystem audio.","Engineered custom web-based Railway Editor generating parametric, georeferenced rail splines (curvature, banking, micro-vibrations) over surveyed terrain.","Architected lightweight Redis in-memory backend for low-latency track geometry and train telemetry distribution along the route."],"images":["data/T&E/KCI/05.webp","data/T&E/KCI/09.webp","data/T&E/KCI/IMG_20171107_150227.webp","data/T&E/KCI/Screenshot 2026-09-06 191201.webp"],"links":[],"timeline":"2017 – 2018","timespan":"2017 – 2018","_folder":"data/T&E/KCI"},{"id":"nvstat","title":"nvstat - Linux NVIDIA GPU State & BIOS Telemetry CLI","featured":true,"category":"Systems & Infrastructure","role":"Systems Programmer & Linux Infrastructure Engineer","tags":["Linux","NVIDIA","GPU","C/C++","Hardware Telemetry","Systems Programming","Crypto"],"summary":"Lightweight high-performance Linux CLI utility querying NVIDIA driver ioctls, NVML, and PCIe VBIOS subsystem descriptors to report real-time GPU power, thermals, clocks, and exact vendor hardware names.","highlights":["Sub-millisecond execution replacing sluggish `nvidia-smi` queries for high-frequency cluster monitoring and automated watchdogs.","Direct PCIe subsystem vendor ID and VBIOS parsing to extract exact AIB partner board identities (MSI, ZOTAC, Founders Edition).","Color-coded ANSI terminal matrix displaying real-time power limits, fan speeds, core/memory clocks, and thermal warnings across 12+ GPU multi-card rigs."],"images":["data/crypto/nvstat/nvstat-screenshot.webp"],"links":[],"timeline":"2017 – 2018","timespan":"2017 – 2018","_folder":"data/crypto/nvstat"},{"id":"house-3d","title":"Architectural 3D CAD & Construction","category":"Hardware & Maker","role":"Designer & Project Lead","tags":["CAD/3D","Architecture","Design","Maker"],"summary":"First-principles architectural design, 3D CAD modeling in Blender, and structural construction execution of a two-story home in Bandung.","highlights":["Self-taught architectural drafting and 3D structural modeling designed completely from scratch in Blender.","Engineered on-site construction realization on an 8x12-meter plot without formal architectural credentials.","Complete building lifecycle: engineered as a 330 kVA GPU datacenter, now thriving as a family-friendly home."],"images":["data/house/render-rumah3.webp","data/house/image-floor.webp","data/house/DSC_0007.webp","data/house/IMG_20180113_165436.webp","data/house/IMG_20180113_165504.webp","data/house/IMG_20180814_162103.webp","data/house/IMG_5966.webp","data/house/IMG20230317102353.webp"],"links":[],"timeline":"2013 – 2018","timespan":"2013 – 2018","_folder":"data/house"},{"id":"mining-rigs","title":"High-Density GPU Computing Rigs","category":"Systems & Infrastructure","role":"Hardware & Systems Architect","tags":["Hardware","Crypto","Power Systems","Linux"],"summary":"330 kVA industrial-grade multi-GPU computing cluster engineered in a private Bandung facility with custom power distribution and high-velocity ventilation.","highlights":["330 kVA 3-phase industrial power drop with balanced phase distribution and server PSU DC rails.","Custom slotted-angle steel racking with high-flow negative-pressure industrial window ventilation.","Zero-touch stateless recovery combined with CryptoSlax across hundreds of 24/7 compute GPUs."],"images":["data/crypto/miningRigs/gpu-frame.webp","data/crypto/miningRigs/minig-server.webp","data/crypto/miningRigs/IMG_20170521_155702.webp","data/crypto/miningRigs/IMG_20171217_232535.webp","data/crypto/miningRigs/IMG_20180510_163853.webp","data/crypto/miningRigs/IMG_20180510_163931.webp","data/crypto/miningRigs/IMG_20190428_164537.webp","data/crypto/miningRigs/rig2.webp"],"links":[],"timeline":"2013 – 2018","timespan":"2013 – 2018","_folder":"data/crypto/miningRigs"},{"id":"burst-pool","title":"Burstcoin Mining Pool & Cloud Infrastructure","featured":true,"category":"Distributed Systems & Cloud","role":"Distributed Systems Engineer & Cloud Architect","tags":["Blockchain","Proof-of-Capacity","AWS","Google Cloud","C++","Node.js","High Availability","Crypto"],"summary":"Multi-tenant Proof-of-Capacity mining pool aggregating global hard-drive deadlines, running high-performance C++ plotters, and orchestrating automated proportional payouts on AWS/GCP dual-cloud infrastructure.","highlights":["Multi-region AWS EC2 and GCP Compute Engine infrastructure delivering sub-25ms global miner latency and 99.99% uptime.","Automated Proof-of-Capacity deadline aggregation engine filtering lowest submitted disk nonces to forge blocks on-chain.","Proportional dividend payout engine distributing block rewards to hundreds of worldwide miners via automated RPC daemon scripts."],"images":["data/crypto/burst/burstPool/udFKiTX.webp","data/crypto/burst/burstPool/nXdP7x1.webp"],"links":[],"timeline":"2014 – 2017","timespan":"2014 – 2017","_folder":"data/crypto/burst/burstPool"},{"id":"rtos","title":"RTOS - Real-Time Linux Simulation Environment","category":"Defense & Combat Simulation","role":"Systems & Kernel Engineer","company":"PT. T&E Simulation","tags":["Linux Kernel","Real-Time","C","x86","Operating Systems"],"summary":"Custom x86 Linux kernel distribution patched with PREEMPT_RT to provide deterministic soft real-time execution for high-frequency simulation loops.","highlights":["Configured and tuned PREEMPT_RT kernel patches for low-jitter scheduling on commodity x86 hardware.","Dedicated CPU pinning and real-time thread priority scheduling for 60Hz/100Hz flight physics and I/O polling.","Eliminated non-deterministic latency spikes for mission-critical training devices."],"images":["data/T&E/rtos/IMG20151118163323.webp","data/T&E/rtos/IMG20151118163346.webp"],"links":[],"timeline":"2014 – 2017","timespan":"2014 – 2017","_folder":"data/T&E/rtos"},{"id":"soyut","title":"SOYUT Integrated Joint Battle Management Platform","featured":true,"category":"Defense & Combat Simulation","role":"Systems Architect & Battle Management Engineer","company":"PT. T&E Simulation","tags":["C++","DIS/HLA","Tactical Systems","Networking","Distributed Systems"],"summary":"Comprehensive joint battle management simulation platform integrating Air, Land, and Maritime forces in unified operational theater exercises.","highlights":["Joint theater command & control (C2) simulation connecting multi-domain operational units.","Distributed mission scenario execution with tactical radar, sensor, and reconnaissance data feeds.","Large-scale entity state synchronization across multi-station tactical command centers."],"images":["data/T&E/soyut/IMG_20170419_235959.webp","data/T&E/soyut/IMG_20170420_025133.webp"],"links":[],"timeline":"2014 – 2017","timespan":"2014 – 2017","_folder":"data/T&E/soyut"},{"id":"mcf-itb","title":"Mathematics Challenge Festival (MCF)","category":"Academic & Speaking","role":"Guest Speaker","tags":["Mathematics","Academic","Speaking","Algorithms"],"summary":"Invited guest speaker at the Mathematics Challenge Festival at Institut Teknologi Bandung (ITB), sharing software engineering and algorithmic applications of mathematics.","highlights":["Presented real-world applications of applied mathematics in software systems and simulation.","Engaged with students and faculty on computational mathematics in industry."],"images":["data/mcf/IMG20160925065308.webp","data/mcf/IMG20160925085952.webp","data/mcf/IMG_1286.webp"],"links":[],"timeline":"2016","timespan":"2016","_folder":"data/mcf"},{"id":"burst-explorer","title":"Burstcoin Blockchain Explorer","featured":true,"category":"Distributed Systems & Cloud","role":"Full-Stack Blockchain Engineer & Cloud Architect","tags":["Blockchain","Node.js","JavaScript","AWS","High Availability","Crypto"],"summary":"High-throughput real-time blockchain telemetry and asset ledger explorer parsing block generation deadlines, smart tokens, and global transaction metrics.","highlights":["Real-time daemon RPC ingestion and parsing of 256-bit Shabal-hash Proof-of-Capacity block payloads.","Decentralized on-chain asset exchange tracking, token transfer indexing, and rich address telemetry.","Global high-availability multi-region cloud deployment on AWS EC2 and Google Cloud Platform."],"images":["data/crypto/burst/burstExplorer/0A5BOVN.webp","data/crypto/burst/burstExplorer/1amoyJj.webp","data/crypto/burst/burstExplorer/4x5RIWA.webp"],"links":[],"timeline":"2014 – 2016","timespan":"2014 – 2016","_folder":"data/crypto/burst/burstExplorer"},{"id":"burst-web-wallet","title":"Burstcoin Web Wallet & Decentralized Asset Exchange","featured":true,"category":"Distributed Systems & Cloud","role":"Full-Stack Web3 Engineer & Cryptographic Architect","tags":["Blockchain","Cryptography","Curve25519","JavaScript","DeX","Web3","Security","Crypto"],"summary":"Zero-trust client-side browser wallet and on-chain decentralized asset exchange (DEX) interface enabling instant user onboarding with in-memory Curve25519 signing.","highlights":["Zero-trust in-browser cryptography: client-side passphrase hashing via Curve25519 and SHA-256 ensuring private keys never leave local browser memory.","Decentralized Asset Exchange (DEX) orderbook interface supporting custom token issuance (BCPT) and automated profit-sharing dividends.","Eliminated cumbersome full-node synchronization requirements, drastically lowering onboarding friction for the Proof-of-Capacity cryptocurrency."],"images":["data/crypto/burst/burstWebWallet/BEE5I2k.webp","data/crypto/burst/burstWebWallet/uidAvpZ - Imgur.webp"],"links":[],"timeline":"2014 – 2016","timespan":"2014 – 2016","_folder":"data/crypto/burst/burstWebWallet"},{"id":"cryptoslax","title":"CryptoSlax - Custom Linux Distribution","featured":true,"category":"Systems & Infrastructure","role":"Systems & OS Engineer","tags":["Linux Kernel","Operating Systems","Crypto","Hardware"],"summary":"Customized, ultra-lightweight (~100 MB) stateless Linux distribution engineered for PXE network boot, RAM execution, and 24/7 autonomous GPU clusters.","highlights":["100% diskless architecture booting via PXE/TFTP directly into volatile RAM with zero local storage.","Modular SquashFS and OverlayFS layer stacking for kernel, AMD/NVIDIA drivers, and mining binaries.","Complete immunity to hard power cuts and filesystem corruption; direct architectural prototype for Project SOYUT."],"images":["data/crypto/cryptoslax/5642i21 (1).webp","data/crypto/cryptoslax/B9m2DbB.webp","data/crypto/cryptoslax/DSC_0003.webp"],"links":[],"timeline":"2013 – 2016","timespan":"2013 – 2016","_folder":"data/crypto/cryptoslax"},{"id":"f16-ftd","title":"F-16 Full Mission Flight Training Device (FTD)","featured":true,"category":"Flight & Avionics","role":"Senior Simulator Systems Engineer","company":"PT. T&E Simulation","tags":["C++","Flight Simulator","Cockpit Avionics","Real-Time","DIS/HLA"],"summary":"High-fidelity supersonic fighter simulator replicating flight handling qualities, tactical cockpit avionics, and mission systems.","highlights":["Real-time cockpit avionics, Heads-Up Display (HUD), and multi-function display simulation.","Hardware-in-the-loop (HIL) interface bridging physical cockpit instruments, stick, and throttle controls.","Multi-channel curved visual projection alignment and mission scenario injection."],"images":["data/T&E/F16-FTD/_MG_5349.webp","data/T&E/F16-FTD/_MG_5350.webp"],"links":[],"timeline":"2013 – 2014","timespan":"2013 – 2014","_folder":"data/T&E/F16-FTD"},{"id":"codegraph","title":"CodeGraph - Visual Logic & State Graph Tool","category":"Defense & Combat Simulation","role":"Software Tools Engineer","company":"PT. T&E Simulation","tags":["C++","Tools","Visual Programming","Architecture"],"summary":"In-house node-based visual programming environment built to rapidly author and inspect state machines and simulation logic.","highlights":["Graph-based editor for defining logic trees, avionics mode transitions, and electrical switch paths.","Exported real-time executable bytecode/C++ logic executed directly by simulator cores."],"images":["data/T&E/codegraph/IMG_20130624_114947.webp"],"links":[],"timeline":"2012 – 2014","timespan":"2012 – 2014","_folder":"data/T&E/codegraph"},{"id":"commsystem","title":"Tactical Intercom & Radio Simulation System","category":"Defense & Combat Simulation","role":"Communications Systems Engineer","company":"PT. T&E Simulation","tags":["C++","Audio/DSP","Networking","Tactical Systems"],"summary":"Integrated voice communication system simulating tactical radio channels, intercom hot-mics, frequency modulation, and radio propagation noise.","highlights":["Simulated UHF/VHF military radio networks with line-of-sight attenuation and frequency selection.","Low-latency VoIP streaming with push-to-talk (PTT) hardware switch integration.","Multi-crew cockpit intercom with selectable voice isolation modes."],"images":["data/T&E/commSystem/IMG-20131023-WA0004.webp","data/T&E/commSystem/IMG_20110202_143357.webp","data/T&E/commSystem/IMG_20131001_123617.webp"],"links":[],"timeline":"2012 – 2014","timespan":"2012 – 2014","_folder":"data/T&E/commSystem"},{"id":"broken-glass-shader","title":"Broken Glass Shader - Refraction & Diffraction Optical Surface","featured":true,"category":"Game Engine & Tools","role":"Graphics & Shader Programmer","tags":["Unity3D","ShaderLab","CG/HLSL","Graphics Programming","Refraction","Asset Store","Game Development"],"summary":"Physically-inspired real-time broken glass surface shader for Unity3D featuring normal-mapped shattered crack patterns, optical refraction, chromatic diffraction, and Fresnel specular highlights.","highlights":["Realistic light refraction and chromatic diffraction driven by custom normal map displacement textures.","Adjustable glass tint, specular reflection falloff, and Fresnel sheen accentuating shattered shard edges and radial impact points.","Published on the Unity Asset Store as a lightweight, drop-in material compatible with forward and deferred rendering pipelines."],"images":["data/unity/broken-glass-shader/broken-glass-preview.webp"],"links":[],"timeline":"2012","timespan":"2012","_folder":"data/unity/broken-glass-shader"},{"id":"object-browser","title":"ObjectBrowser - Unity Reflection & Type Inspector","featured":true,"category":"Game Engine & Tools","role":"Unity Tool Developer & Systems Programmer","tags":["Unity3D","C#",".NET Reflection","Unity Editor Extensions","Asset Store","Developer Tools"],"summary":"Deep runtime and editor reflection inspector for Unity3D, exposing all properties, fields, methods, and complete base class inheritance hierarchies for any selected scene GameObject or project asset.","highlights":["Real-time deep .NET reflection across selected scene GameObjects and project assets, inspecting active components, properties, and methods.","Comprehensive inheritance chain visualization tracing hierarchy back through UnityEngine.Object to System.Object.","Method signature inspection extracting complete ParameterInfo, return types, and member flags directly within a docked Unity EditorWindow."],"images":["data/unity/object-browser/object-browser-gameobject.webp","data/unity/object-browser/object-browser-asset.webp"],"links":[],"timeline":"2012","timespan":"2012","_folder":"data/unity/object-browser"},{"id":"stmr","title":"STMR Multi-Type Armored Platoon Simulator","featured":true,"category":"Defense & Combat Simulation","role":"Lead Distributed Simulation Architect","company":"PT. T&E Simulation","tags":["C++","DIS/HLA","Networking","Real-Time","Combat Sim"],"summary":"Multi-vehicle tactical simulator simulating three distinct tank classes interoperating in unified platoon and team combat formations.","highlights":["Multi-type armored vehicle simulation with synchronized gunner, driver, and commander stations.","Real-time inter-vehicle networking enabling cooperative platoon tactics in shared virtual terrain.","Ballistic trajectory computation, line-of-sight targeting, and damage modeling."],"images":["data/T&E/stmr/DSC_0006.webp","data/T&E/stmr/IMG_20130618_105956.webp","data/T&E/stmr/IMG_20130618_110333.webp","data/T&E/stmr/IMG_20130618_115027.webp","data/T&E/stmr/IMG_20130622_031654.webp","data/T&E/stmr/ios2.webp","data/T&E/stmr/tumblr_merup6area1ru2qado1_1280.webp"],"links":[],"timeline":"2010 – 2012","timespan":"2010 – 2012","_folder":"data/T&E/stmr"},{"id":"nas332","title":"NAS332 Super Puma Helicopter Simulator","category":"Flight & Avionics","role":"Lead Systems & Flight Dynamics Engineer","company":"PT. T&E Simulation","tags":["C++","Rotorcraft","Flight Dynamics","Cockpit Avionics","Real-Time"],"summary":"Full-scale multi-mission tactical transport helicopter simulator with realistic rotor aerodynamics and cockpit systems.","highlights":["Rotorcraft aerodynamic simulation including ground effect, autorotation, and torque response.","Complete cockpit switchology, overhead electrical/fuel panels, and dual-pilot flight controls.","Motion and visual integration for low-altitude tactical navigation and landing operations."],"images":["data/T&E/NAS332/IMG_1630.webp","data/T&E/NAS332/IMG_2244.webp"],"links":[],"timeline":"2008 – 2010","timespan":"2008 – 2010","_folder":"data/T&E/NAS332"},{"id":"hawk","title":"BAe Hawk 209 Combat Trainer Simulator","featured":true,"category":"Flight & Avionics","role":"Systems & Avionics Simulation Engineer","company":"PT. T&E Simulation","tags":["C++","Flight Simulator","Cockpit Displays","Real-Time","Avionics"],"summary":"Tactical jet trainer simulator designed for advanced pilot operational training, combat readiness, and emergency procedures.","highlights":["Simulated cockpit instrumentation, navigation displays, and weapons delivery profiles.","Interfaced physical cockpit panels and flight control linkages with real-time math models.","Instructor Operator Station (IOS) control for failure injection, weather, and mission scenarios."],"images":["data/T&E/hawk/IMG_20120426_114205.webp","data/T&E/hawk/IMG_20120426_120352.webp","data/T&E/hawk/IMG_20120426_121749.webp","data/T&E/hawk/IMG_20130110_142735.webp","data/T&E/hawk/11357611_459578634196777_582338419_n.webp","data/T&E/hawk/IMG_20120426_092959.webp","data/T&E/hawk/tumblr_m36rqcw5011ru2qado1_1280.webp"],"links":[],"timeline":"2008 – 2009","timespan":"2008 – 2009","_folder":"data/T&E/hawk"},{"id":"bo105","title":"BO-105 Light Twin Helicopter Simulator","category":"Flight & Avionics","role":"Flight Simulation Software Engineer","company":"PT. T&E Simulation","tags":["C++","Rotorcraft","Flight Simulator","Real-Time","Avionics","Motion Platform","Control Loading"],"summary":"Full flight simulator refurbishment and internal R&D testbed featuring motor control loading, tablet glass cockpit instrumentation, curved visual warping, and a VR-immersed motion platform.","highlights":["Extracted BO-105 flight dynamics model into an internal R&D lab cockpit with iPad/tablet instrument cutouts.","Engineered electric motor control loading (active force feedback) on cyclic and collective sticks.","Integrated custom motion platform with VR visual immersion to evaluate tactile G-force and acceleration cueing."],"images":["data/T&E/BO/helicopter-lab.webp","data/T&E/BO/vr-lab.webp","data/T&E/BO/IMG_20130823_183241.webp"],"links":[],"timeline":"2008 – 2009","timespan":"2008 – 2009","_folder":"data/T&E/BO"},{"id":"numpadkey","title":"NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)","featured":true,"category":"Mobile & Operating Systems","role":"Mobile Systems & Android Java Developer","tags":["Android 1.0","Java","HTC Dream / G1","IME / Virtual Keyboard","T9 Keypad","Mobile UI","Early Android"],"summary":"Pioneering T9-style on-screen virtual keyboard for Android 1.0 on the historic HTC Dream (T-Mobile G1), enabling rapid one-handed touch typing on early small capacitive displays without sliding out the physical keyboard.","highlights":["Engineered natively in pure Java for Android 1.0, developed before Google released official system IME / virtual keyboard frameworks in Android 1.5 Cupcake.","Intuitive 3x4 / 4x4 alphanumeric T9 keypad layout with multi-tap cycling, long-press accent/symbol popups, and dedicated punctuation.","Bypassed the need to open the bulky physical slider keyboard on the HTC Dream, enabling seamless one-handed messaging and text entry."],"images":["data/numpadKey/beta2-screenshot.webp"],"links":[],"timeline":"2008 – 2009","timespan":"2008 – 2009","_folder":"data/numpadKey"},{"id":"acv300","title":"ACV-300 Armored Combat Vehicle Simulator","category":"Defense & Combat Simulation","role":"Simulation Systems Engineer","company":"PT. T&E Simulation","tags":["C++","Combat Sim","Real-Time","Hardware-in-the-Loop"],"summary":"Tracked armored combat vehicle simulator designed for crew coordination, combat driving, turret operation, and tactical engagement.","highlights":["Vehicle dynamics across complex cross-country terrains, obstacles, and gradient inclines.","Integrated driver cockpit controls and commander sights.","Networked participation in joint maneuvers via standardized simulation protocols."],"images":["data/T&E/acv/DSC_0701.webp","data/T&E/acv/DSC_1082.webp"],"links":[],"timeline":"2007 – 2008","timespan":"2007 – 2008","_folder":"data/T&E/acv"},{"id":"libdis","title":"libDIS - IEEE 1278 Protocol Engine","category":"Defense & Combat Simulation","role":"Protocol Architect & Author","company":"PT. T&E Simulation","tags":["C++","DIS/HLA","Networking","Protocols","Real-Time"],"summary":"In-house C++ library implementing the IEEE 1278 Distributed Interactive Simulation (DIS) protocol for low-latency networked simulation.","highlights":["Full PDU serialization/deserialization (Entity State, Fire, Detonation, Collision, Radio Communications).","Dead reckoning algorithms (position, velocity, dead-reckoning extrapolation) for smooth cross-network entity movement.","Serves as the mission-critical networking backbone connecting aircraft, tank, and joint command simulators."],"images":["data/T&E/libDIS/DSC_1033.webp"],"links":[],"timeline":"2007 – 2008","timespan":"2007 – 2008","_folder":"data/T&E/libDIS"},{"id":"g1","title":"Project G1 - 3D Anti-Gravity Tunnel Racing Engine","featured":true,"category":"Simulation & Defense","role":"Lead Graphics & Engine Programmer (PT. T&E Simulation R&D)","tags":["C++","DirectX 9","HLSL","3D Engine","Physics","R&D"],"summary":"State-of-the-art anti-gravity space tunnel racing prototype engine written from scratch in C++ and DirectX 9 with custom HLSL shaders and procedural spline geometry.","highlights":["Clean-sheet 3D rendering pipeline using DirectX 9 and custom HLSL vertex/pixel shaders.","Procedural 3D tunnel geometry generation with dynamic lighting and wireframe energy rails.","Real-time camera spline interpolation with centrifugal roll and tilt dynamics.","In-cockpit futuristic HUD displaying dynamic targeting reticles and velocity vectors."],"images":["data/G1/preview.webp"],"links":[],"timeline":"2006 – 2007","timespan":"2006 – 2007","_folder":"data/G1"}]</script>
+  <!-- SSG_DATA_END -->
   <script src="js/app.js"></script>
   <!-- WebMCP (In-Browser AI Tools via navigator.modelContext) -->
   <script>
