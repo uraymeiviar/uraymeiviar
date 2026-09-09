@@ -1,0 +1,169 @@
+# Global rules
+/*
+  Access-Control-Allow-Origin: *
+
+# Technical LLM Index
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+# Markdown documents served as plain text for AI crawlers
+/README.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/G1/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/BO/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/F16-FTD/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/KCI/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/NAS332/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/acv/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/codegraph/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/commSystem/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/hawk/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/libDIS/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/rtos/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/soyut/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/T&E/stmr/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/bri/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/burst/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/burst/burstExplorer/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/burst/burstPool/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/burst/burstWebWallet/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/chiagen/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/cryptolet/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/cryptoslax/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/miningRigs/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/crypto/nvstat/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/aerosoft-a330/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/asobo-glider-taurus/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/asobo-radio-ACD57/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/asobo-radio-AR6201/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/asobo-radio-VT02/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/fss-ejet/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/fss/fss-searey/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/guitar/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/house/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/mcf/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/netengine/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/numpadKey/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/profile/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/tabulampot/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/unity/broken-glass-shader/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
+
+/data/unity/object-browser/DESC.md
+  Content-Type: text/plain; charset=utf-8
+  Access-Control-Allow-Origin: *
