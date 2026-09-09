@@ -1,0 +1,64 @@
+{
+  "issuer": "https://cv.uray.dev",
+  "authorization_endpoint": "https://cv.uray.dev/oauth/authorize",
+  "token_endpoint": "https://cv.uray.dev/oauth/token",
+  "service_documentation": "https://cv.uray.dev/auth.md",
+  "op_policy_uri": "https://cv.uray.dev/",
+  "op_tos_uri": "https://cv.uray.dev/",
+  "ui_locales_supported": [
+    "en"
+  ],
+  "scopes_supported": [
+    "read:profile",
+    "read:projects",
+    "read:memoir"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "grant_types_supported": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "none"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ],
+  "protected_resources": [
+    "https://cv.uray.dev"
+  ],
+  "agent_auth": {
+    "skill": "https://cv.uray.dev/auth.md",
+    "documentation_uri": "https://cv.uray.dev/auth.md",
+    "register_uri": "https://cv.uray.dev/auth.md",
+    "claim_uri": "https://cv.uray.dev/auth.md",
+    "revocation_uri": "https://cv.uray.dev/auth.md",
+    "contact": "me@uray.dev",
+    "identity_types_supported": [
+      "anonymous",
+      "identity_assertion"
+    ],
+    "anonymous": {
+      "credential_types_supported": [
+        "api_key"
+      ]
+    },
+    "identity_assertion": {
+      "assertion_types_supported": [
+        "urn:ietf:params:oauth:token-type:id-jag",
+        "verified_email"
+      ],
+      "credential_types_supported": [
+        "api_key"
+      ]
+    },
+    "supported_identity_types": [
+      "anonymous",
+      "identity_assertion"
+    ],
+    "credentials_note": "Public read-only portfolio. No credential required."
+  }
+}

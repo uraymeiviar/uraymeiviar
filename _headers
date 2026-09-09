@@ -17,6 +17,13 @@
 /auth.md
   Content-Type: text/markdown; charset=utf-8
 
+# OAuth Discovery & Protected Resource Metadata (RFC 8414 & RFC 9728)
+/.well-known/oauth-protected-resource
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/oauth-authorization-server
+  Content-Type: application/json; charset=utf-8
+
 
 /data/profile/DESC.txt
   Content-Type: text/plain; charset=utf-8
