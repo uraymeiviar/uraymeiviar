@@ -11,6 +11,10 @@
   <link rel="alternate" type="text/plain" href="/data/profile/DESC.txt" title="Comprehensive Technical Biography & Memoir (Text)">
   <link rel="alternate" type="text/plain" href="/data/profile/DESC.md" title="Comprehensive Technical Biography & Memoir (Markdown)">
   <link rel="api-catalog" type="application/linkset+json" href="/.well-known/api-catalog">
+  <link rel="ai-catalog" type="application/json" href="/.well-known/ai-catalog.json">
+  <link rel="service-meta" type="application/json" href="/.well-known/mcp/server-card.json" title="MCP Server Card">
+  <link rel="service-meta" type="application/json" href="/.well-known/agent-card.json" title="A2A Agent Card">
+  <link rel="agent-skills" type="application/json" href="/.well-known/agent-skills/index.json">
   <link rel="author" type="text/markdown" href="/auth.md">
 </head>
 <body>
@@ -441,5 +445,53 @@
   </footer>
 
   <script src="js/app.js"></script>
+  <!-- WebMCP (In-Browser AI Tools via navigator.modelContext) -->
+  <script>
+    (function() {
+      if (typeof window !== 'undefined' && window.navigator && window.navigator.modelContext && typeof window.navigator.modelContext.provideContext === 'function') {
+        try {
+          window.navigator.modelContext.provideContext({
+            tools: [
+              {
+                name: 'get_profile',
+                description: 'Get biography, core competencies, and career history of Uray Meiviar.',
+                inputSchema: { type: 'object', properties: {} },
+                execute: async function() {
+                  const res = await fetch('/llms.txt');
+                  return { profile: await res.text() };
+                }
+              },
+              {
+                name: 'get_projects',
+                description: 'List flight simulation (Boeing 737, F-16, Hawk, NAS332), avionics (A330, E-Jets), and RTOS software architectures.',
+                inputSchema: { type: 'object', properties: {} },
+                execute: async function() {
+                  const res = await fetch('/llms.txt');
+                  return { projects: await res.text() };
+                }
+              },
+              {
+                name: 'get_memoir',
+                description: 'Retrieve the comprehensive 800+ line technical engineering memoir of Uray Meiviar.',
+                inputSchema: { type: 'object', properties: {} },
+                execute: async function() {
+                  const res = await fetch('/data/profile/DESC.txt');
+                  return { memoir: await res.text() };
+                }
+              },
+              {
+                name: 'get_contact',
+                description: 'Get verified contact channels for engineering consultation and inquiries.',
+                inputSchema: { type: 'object', properties: {} },
+                execute: async function() {
+                  return { email: 'me@uray.dev', website: 'https://uray.dev', portfolio: 'https://cv.uray.dev' };
+                }
+              }
+            ]
+          });
+        } catch (e) {}
+      }
+    })();
+  </script>
 </body>
 </html>

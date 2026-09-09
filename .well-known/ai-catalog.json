@@ -1,0 +1,37 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "cv.uray.dev",
+    "identifier": "cv.uray.dev"
+  },
+  "entries": [
+    {
+      "identifier": "urn:ai:cv.uray.dev:mcp-server:cv-mcp",
+      "displayName": "cv.uray.dev MCP Server",
+      "type": "application/mcp-server+json",
+      "url": "https://cv.uray.dev/.well-known/mcp/server-card.json",
+      "description": "Public read-only MCP server card declaring tools and schemas for Uray Meiviar's portfolio."
+    },
+    {
+      "identifier": "urn:ai:cv.uray.dev:agent:a2a",
+      "displayName": "cv.uray.dev A2A Agent",
+      "type": "application/a2a-agent-card+json",
+      "url": "https://cv.uray.dev/.well-known/agent-card.json",
+      "description": "A2A agent card describing cv.uray.dev's read-only agent persona and skills."
+    },
+    {
+      "identifier": "urn:ai:cv.uray.dev:api:catalog",
+      "displayName": "cv.uray.dev API Catalog",
+      "type": "application/linkset+json",
+      "url": "https://cv.uray.dev/.well-known/api-catalog",
+      "description": "RFC 9727 API Catalog for cv.uray.dev."
+    },
+    {
+      "identifier": "urn:ai:cv.uray.dev:skills:index",
+      "displayName": "cv.uray.dev Agent Skills",
+      "type": "application/agent-skills+json",
+      "url": "https://cv.uray.dev/.well-known/agent-skills/index.json",
+      "description": "Index of agent skills published by cv.uray.dev."
+    }
+  ]
+}

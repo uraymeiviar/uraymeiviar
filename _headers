@@ -4,10 +4,10 @@
 
 # Agent Readiness Link Headers on Homepage (RFC 8288 & RFC 9727)
 /
-  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby"
+  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby", </.well-known/ai-catalog.json>; rel="ai-catalog", </.well-known/mcp/server-card.json>; rel="service-meta", </.well-known/agent-card.json>; rel="service-meta", </.well-known/agent-skills/index.json>; rel="agent-skills", </auth.md>; rel="agent-registration"
 
 /index.html
-  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby"
+  Link: </.well-known/api-catalog>; rel="api-catalog", </llms.txt>; rel="service-doc", </data/profile/DESC.txt>; rel="describedby", </.well-known/ai-catalog.json>; rel="ai-catalog", </.well-known/mcp/server-card.json>; rel="service-meta", </.well-known/agent-card.json>; rel="service-meta", </.well-known/agent-skills/index.json>; rel="agent-skills", </auth.md>; rel="agent-registration"
 
 # API Catalog per RFC 9727
 /.well-known/api-catalog
@@ -23,6 +23,25 @@
 
 /.well-known/oauth-authorization-server
   Content-Type: application/json; charset=utf-8
+
+# Level 3 Discovery: MCP, A2A, Agent Skills & AI Catalog
+/.well-known/mcp/server-card.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/mcp.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-card.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/ai-catalog.json
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/*/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
 
 
 /data/profile/DESC.txt

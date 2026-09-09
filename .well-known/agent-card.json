@@ -1,0 +1,75 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "cv.uray.dev",
+  "description": "Public read-only agent interface for Uray Meiviar's portfolio, flight simulation engineering specifications, and technical memoirs.",
+  "url": "https://cv.uray.dev",
+  "preferredTransport": "HTTP+JSON",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "Uray Meiviar",
+    "url": "https://uray.dev/"
+  },
+  "documentationUrl": "https://cv.uray.dev/llms.txt",
+  "supportedInterfaces": [
+    {
+      "url": "https://cv.uray.dev",
+      "transport": "HTTP+JSON"
+    }
+  ],
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "flight-simulation",
+      "name": "Flight Simulation Systems",
+      "description": "Architecture, dynamics, avionics, and visual/audio subsystems for military and commercial flight simulators (Boeing 737, F-16 FTD, Hawk, NAS332 Super Puma).",
+      "tags": [
+        "simulation",
+        "aerospace",
+        "avionics",
+        "rtos"
+      ]
+    },
+    {
+      "id": "avionics-fms",
+      "name": "Avionics & Flight Management Systems",
+      "description": "Commercial transport aircraft systems including Aerosoft A330 and FSS E-Jets FMS, ARINC 424 navigation database parsing, and autopilot integration.",
+      "tags": [
+        "avionics",
+        "fms",
+        "aerosoft",
+        "navigation"
+      ]
+    },
+    {
+      "id": "engineering-memoir",
+      "name": "Technical Engineering Memoir",
+      "description": "Chronicle of 20+ years in systems software, RTOS, STMR Ethernet architectures, and distributed defense protocols (IEEE 1278 DIS).",
+      "tags": [
+        "memoir",
+        "systems",
+        "architecture"
+      ]
+    },
+    {
+      "id": "contact-info",
+      "name": "Contact Channels",
+      "description": "Direct communication channels and consultation inquiry pathways for Uray Meiviar.",
+      "tags": [
+        "contact",
+        "inquiry"
+      ]
+    }
+  ]
+}

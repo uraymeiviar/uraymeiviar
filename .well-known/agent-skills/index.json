@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "portfolio-query",
+      "type": "skill-md",
+      "description": "Query technical projects, flight simulation architectures, and engineering dossier of Uray Meiviar.",
+      "url": "/.well-known/agent-skills/portfolio-query/SKILL.md",
+      "digest": "sha256:66545221fe967c45e0de62b1d7b9d112dbeff68872593e6cd1b1c22ae73098e1"
+    },
+    {
+      "name": "flight-simulation",
+      "type": "skill-md",
+      "description": "Evaluate real-time flight simulation software, flight dynamics, and avionics architectures.",
+      "url": "/.well-known/agent-skills/flight-simulation/SKILL.md",
+      "digest": "sha256:229ce764f342a2b6cafcf33caecdc5b5766852e13550596e6f8499f139b0fb78"
+    },
+    {
+      "name": "contact-info",
+      "type": "skill-md",
+      "description": "Discover verified contact channels and inquiry pathways for Uray Meiviar.",
+      "url": "/.well-known/agent-skills/contact-info/SKILL.md",
+      "digest": "sha256:84a8aaffdd95b424f760c34016d18cc2f5b0cf535f928aee9c679ae14fa55d58"
+    }
+  ]
+}

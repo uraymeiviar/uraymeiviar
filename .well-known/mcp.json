@@ -1,0 +1,52 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json",
+  "name": "uray.dev/cv-mcp",
+  "title": "Uray Meiviar - Systems Engineering Portfolio",
+  "description": "Read-only MCP server card declaring tools and resources for Uray Meiviar's systems engineering portfolio, flight simulation architectures, and technical memoirs.",
+  "version": "1.0.0",
+  "websiteUrl": "https://cv.uray.dev/",
+  "repository": {
+    "url": "https://github.com/uraymeiviar/uraymeiviar",
+    "source": "github"
+  },
+  "serverInfo": {
+    "name": "cv-uray-mcp",
+    "title": "cv.uray.dev",
+    "version": "1.0.0",
+    "description": "Public read-only MCP server card for cv.uray.dev. Exposes tools to query technical dossiers, flight simulation projects, avionics architectures, and engineering memoirs."
+  },
+  "capabilities": {
+    "tools": {
+      "listChanged": false
+    },
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    }
+  },
+  "tools": [
+    {
+      "name": "get_profile",
+      "description": "Get summary biography, core competencies, and career history of Uray Meiviar."
+    },
+    {
+      "name": "get_projects",
+      "description": "List technical projects across flight simulation (Boeing 737, F-16, Hawk, NAS332), commercial avionics (Aerosoft A330, FSS E-Jets), and real-time systems."
+    },
+    {
+      "name": "get_memoir",
+      "description": "Retrieve comprehensive 800+ line technical memoir detailing 20+ years of engineering history."
+    },
+    {
+      "name": "get_contact",
+      "description": "Get official contact channels and engineering inquiry pathways."
+    }
+  ],
+  "_meta": {
+    "homepage": "https://cv.uray.dev/",
+    "llmsTxt": "https://cv.uray.dev/llms.txt",
+    "authMd": "https://cv.uray.dev/auth.md",
+    "apiCatalog": "https://cv.uray.dev/.well-known/api-catalog",
+    "contact": "me@uray.dev"
+  }
+}

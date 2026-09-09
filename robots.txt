@@ -18,4 +18,6 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
+Sitemap: https://cv.uray.dev/sitemap.xml
 Sitemap: https://uray.dev/sitemap.xml
+Agentmap: https://cv.uray.dev/.well-known/ai-catalog.json
