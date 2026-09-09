@@ -1,4 +1,4 @@
-# Authentication & Access Instructions for AI Agents
+# Auth.md - Authentication & Access Instructions for AI Agents
 
 This website (https://cv.uray.dev) is the public portfolio, curriculum vitae, and engineering archive of Uray Meiviar.
 
