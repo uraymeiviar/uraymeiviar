@@ -8,8 +8,8 @@
 
 ## Detailed Project Specifications & Architecture Documents
 
-- [Custom Guitar Electronics & Craft](/data/guitar/DESC.md): Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.
 - [Embraer E-Jets Family (MSFS)](/data/fss/fss-ejet/DESC.md): Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.
+- [Custom Guitar Electronics & Craft](/data/guitar/DESC.md): Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.
 - [Aerosoft Airbus A330 — Flight Management System (FMS) Core](/data/fss/aerosoft-a330/DESC.md): Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.
 - [AIR Avionics ACD-57 Multi-Function Radio & Altimeter (Official MSFS / Asobo)](/data/fss/asobo-radio-ACD57/DESC.md): Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.
 - [Becker AR6201 VHF Transceiver (Official MSFS / Asobo)](/data/fss/asobo-radio-AR6201/DESC.md): Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.

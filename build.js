@@ -380,14 +380,16 @@ function build() {
   });
   projectGridHtml += '      ';
 
-  // 8. Injected JSON data script (without internal sorting flags)
+  // 8. Write standalone catalog.json for asynchronous client hydration
   const cleanProjectsData = projects.map(p => {
     const clean = { ...p };
     delete clean._startYear;
     delete clean._endYear;
     return clean;
   });
-  const jsonDataScript = `<script id="projects-data" type="application/json">${JSON.stringify(cleanProjectsData)}</script>`;
+  const catalogPath = path.join(__dirname, 'data', 'catalog.json');
+  fs.writeFileSync(catalogPath, JSON.stringify(cleanProjectsData, null, 2), 'utf8');
+
 
   // 9. Update index.html using robust SSG comment markers
   let indexHtml = fs.readFileSync(INDEX_HTML_PATH, 'utf8');
@@ -432,21 +434,82 @@ function build() {
     indexHtml = indexHtml.replace(gridMarkerRegex, `<!-- SSG_PROJECT_CARDS_START -->${projectGridHtml}<!-- SSG_PROJECT_CARDS_END -->`);
   }
 
-  // Inject or replace #projects-data script
+  // Remove legacy inline #projects-data script to keep HTML payload lightweight (~40 KB saved)
   const dataMarkerRegex = /<!-- SSG_DATA_START -->[\s\S]*?<!-- SSG_DATA_END -->/;
   if (dataMarkerRegex.test(indexHtml)) {
-    indexHtml = indexHtml.replace(dataMarkerRegex, `<!-- SSG_DATA_START -->\n  ${jsonDataScript}\n  <!-- SSG_DATA_END -->`);
-  } else {
-    const dataRegex = /<script id="projects-data" type="application\/json">.*?<\/script>/s;
-    if (dataRegex.test(indexHtml)) {
-      indexHtml = indexHtml.replace(dataRegex, jsonDataScript);
-    } else {
-      indexHtml = indexHtml.replace('  <script src="js/app.js"></script>', `  ${jsonDataScript}\n  <script src="js/app.js"></script>`);
-    }
+    indexHtml = indexHtml.replace(dataMarkerRegex, `<!-- SSG_DATA_START -->\n  <!-- Data loaded asynchronously via data/catalog.json -->\n  <!-- SSG_DATA_END -->`);
   }
+  const dataRegex = /<script id="projects-data" type="application\/json">.*?<\/script>/s;
+  if (dataRegex.test(indexHtml)) {
+    indexHtml = indexHtml.replace(dataRegex, '');
+  }
+
 
   fs.writeFileSync(INDEX_HTML_PATH, indexHtml, 'utf8');
   console.log(`✅ Pre-rendered index.html with ${projects.length} project cards, categories, and tags.`);
+
+  // 9b. Generate lightweight, high-density ai-index.html for AI web crawlers (Gemini, Googlebot, ChatGPT)
+  let aiIndexHtml = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uray Meiviar | Senior Simulation & Systems Engineer</title>
+  <meta name="description" content="Portfolio and CV of Uray Meiviar — Systems & Software Architect specializing in real-time flight simulators, Avionics, RTOS, Networking, and high-performance software.">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Technical Index">
+  <link rel="alternate" type="text/plain" href="/data/profile/DESC.txt" title="Technical Biography & Memoir">
+</head>
+<body style="font-family: system-ui, sans-serif; max-width: 800px; margin: 0 auto; padding: 1.5rem; line-height: 1.6;">
+  <header>
+    <h1>Uray Meiviar</h1>
+    <p><strong>Senior Simulation & Systems Software Engineer | Software Architect</strong></p>
+    <p>20+ years of engineering experience across real-time military and civilian flight simulators, commercial transport aircraft avionics (FMS), real-time operating systems (RTOS), and distributed simulation protocols (IEEE 1278 DIS).</p>
+    <nav>
+      <p><strong>Key Entrypoints:</strong></p>
+      <ul>
+        <li>Technical Index (LLM-optimized): <a href="/llms.txt">https://cv.uray.dev/llms.txt</a></li>
+        <li>Comprehensive Technical Memoir (Text): <a href="/data/profile/DESC.txt">https://cv.uray.dev/data/profile/DESC.txt</a></li>
+        <li>Engineering Memoir Reader: <a href="/story.html">https://cv.uray.dev/story.html</a></li>
+        <li>Email: <a href="mailto:me@uray.dev">me@uray.dev</a> | Website: <a href="https://uray.dev">https://uray.dev</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr>
+
+  <section id="experience">
+    <h2>Career Experience Summary</h2>
+    <ul>
+      <li><strong>FlightSim Studio AG (2020 – Present):</strong> Core Systems & Avionics Engineer (Embraer E-Jets, Aerosoft Airbus A330 FMS core, Asobo MSFS avionics).</li>
+      <li><strong>PT. Technology & Engineering Simulation (T&E) (2007 – 2018):</strong> Senior Simulator Systems Engineer & Architect (Boeing 737 FTD, F-16 FTD, Hawk 209, NAS332 Super Puma, KCI train simulator, SOYUT C4 battle management, RTOS Linux kernel, libDIS).</li>
+      <li><strong>Independent Systems, Cloud & Cryptographic Architecture (2013 – Present):</strong> High-density GPU clusters, custom Linux distributions (CryptoSlax), Burstcoin infrastructure, and native C++ tools.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <section id="projects">
+    <h2>Complete Engineering Projects Catalog (${projects.length} Projects)</h2>
+`;
+
+  for (const p of projects) {
+    const tags = (p.tags || []).join(', ');
+    const summary = p.summary || '';
+    aiIndexHtml += `    <article style="margin-bottom: 1.5rem;">
+      <h3>${escapeHtml(p.title || '')}</h3>
+      <p><strong>Category:</strong> ${escapeHtml(p.category || 'Engineering')} | <strong>Role:</strong> ${escapeHtml(p.role || '')} | <strong>Timeline:</strong> ${escapeHtml(p.timeline || '')}</p>
+      <p>${escapeHtml(summary)}</p>
+      <p><small><strong>Tags:</strong> ${escapeHtml(tags)}</small></p>
+    </article>\n`;
+  }
+
+  aiIndexHtml += `  </section>
+</body>
+</html>
+`;
+
+  fs.writeFileSync(path.join(__dirname, 'ai-index.html'), aiIndexHtml, 'utf8');
+  console.log(`✅ Generated ai-index.html (${Math.round(aiIndexHtml.length / 1024)} KB) for AI agent crawlers.`);
 
   // 10. SSG story.html (Pre-render biography / engineering memoir)
   if (fs.existsSync(STORY_HTML_PATH) && fs.existsSync(PROFILE_DESC_PATH)) {

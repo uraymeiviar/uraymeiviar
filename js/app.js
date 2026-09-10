@@ -77,21 +77,33 @@
     const grid = document.getElementById('project-grid');
     if (!grid) return;
 
-    // 1. Attempt SSG Hydration from embedded #projects-data
-    const prebakedScript = document.getElementById('projects-data');
-    if (prebakedScript) {
-      try {
-        allProjects = JSON.parse(prebakedScript.textContent || '[]');
-      } catch (err) {
-        console.warn('Failed parsing embedded projects-data', err);
-      }
-    }
-
     const preRenderedCards = grid.querySelectorAll('.project-card');
-    if (allProjects.length > 0 && preRenderedCards.length > 0) {
+
+    // 1. SSG Mode: Cards are already pre-rendered in the DOM
+    if (preRenderedCards.length > 0) {
       initCategoryFilterListeners();
       initTagFilterListeners();
-      hydrateProjectCards();
+
+      // Check for legacy embedded #projects-data
+      const prebakedScript = document.getElementById('projects-data');
+      if (prebakedScript) {
+        try {
+          allProjects = JSON.parse(prebakedScript.textContent || '[]');
+          hydrateProjectCards();
+          return;
+        } catch (err) {}
+      }
+
+      // Fetch catalog.json asynchronously for modal gallery interactions
+      try {
+        const res = await fetch('data/catalog.json');
+        if (res.ok) {
+          allProjects = await res.json();
+          hydrateProjectCards();
+        }
+      } catch (err) {
+        console.warn('Failed loading data/catalog.json', err);
+      }
       return;
     }
 

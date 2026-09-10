@@ -1,0 +1,1144 @@
+[
+  {
+    "id": "fss-ejet",
+    "title": "Embraer E-Jets Family (MSFS)",
+    "featured": true,
+    "category": "Flight & Avionics",
+    "role": "Core Systems & Avionics Engineer",
+    "company": "FlightSim Studio AG",
+    "timeline": "2020 - Present (4+ Years)",
+    "tags": [
+      "FMS",
+      "Autopilot",
+      "Flight Dynamics",
+      "Avionics",
+      "C++",
+      "Cockpit Systems",
+      "MSFS SDK"
+    ],
+    "summary": "Comprehensive systems, FMS navigation, autopilot flight director laws, and cockpit display engineering for the E170, E175, E190, E195, and E-Freighter.",
+    "highlights": [
+      "Flight Management System (FMS): Waypoint sequencing, lateral/vertical navigation, NavData ARINC-424 cycle parsing, and takeoff/climb performance calculation (V1, VR, V2, thrust limits).",
+      "Autopilot & Autoflight Management: Pitch/Roll guidance (LNAV, VNAV PTH/FLCH), ILS/Autoland CAT II/III approach tracking, and autothrottle system.",
+      "Cockpit Display Vector Rendering: Primary Flight Display (PFD) speed/altitude tapes, Multi-Function Display (MFD) moving map, and EICAS engine and alert messaging.",
+      "Deep Systems Simulation: Multi-bus AC/DC electrical distribution with bus tie logic, 3-circuit hydraulic system with engine/electric pumps and PTU, and pneumatic/pressurization loops."
+    ],
+    "images": [],
+    "links": [
+      {
+        "label": "FlightSim Studio",
+        "url": "https://www.flightsim-studio.com"
+      }
+    ],
+    "timespan": "2020 - Present (4+ Years)",
+    "_folder": "data/fss/fss-ejet"
+  },
+  {
+    "id": "custom-guitar",
+    "title": "Custom Guitar Electronics & Craft",
+    "category": "Hardware & Maker",
+    "role": "Maker & Electronics Craft",
+    "tags": [
+      "Hardware",
+      "Electronics",
+      "Audio/DSP",
+      "Maker"
+    ],
+    "summary": "Custom electric guitar builds, point-to-point hand-wiring, shielding, custom coil-split/series-parallel switching circuits.",
+    "highlights": [
+      "Precision star grounding and copper cavity shielding for ultra-low noise floor.",
+      "Custom wiring schematics with high-tolerance CTS potentiometers and orange drop capacitors."
+    ],
+    "images": [
+      "data/guitar/wiring.webp",
+      "data/guitar/20250830_040754.webp",
+      "data/guitar/20250905_163617.webp",
+      "data/guitar/20251012_183213.webp",
+      "data/guitar/mid-july.webp",
+      "data/guitar/Screenshot 2026-09-06 184819.webp"
+    ],
+    "links": [],
+    "timeline": "2024 – 2025",
+    "timespan": "2024 – 2025",
+    "_folder": "data/guitar"
+  },
+  {
+    "id": "fss-a330",
+    "title": "Aerosoft Airbus A330 — Flight Management System (FMS) Core",
+    "featured": true,
+    "category": "Flight & Avionics",
+    "role": "FMS Core Systems Architect & Engineer",
+    "company": "Contracted / Aerosoft & FlightSim Studio AG",
+    "timeline": "2022 – 2023",
+    "tags": [
+      "FMS",
+      "Avionics",
+      "C++",
+      "ARINC-424",
+      "LNAV/VNAV",
+      "Airbus A330",
+      "MSFS SDK"
+    ],
+    "summary": "Architected and engineered the core Flight Management System (FMS) navigation computation, ARINC-424 leg parsing, flight plan sequencing, and MCDU lateral/vertical flight guidance for the flagship Aerosoft Airbus A330 in Microsoft Flight Simulator.",
+    "highlights": [
+      "Engineered real-time lateral navigation (LNAV) trajectory generation and ARINC-424 leg resolution (IF, TF, CF, DF, RF).",
+      "Developed Airbus MCDU (Multifunction Control and Display Unit) flight planning pages (F-PLN, INIT, PERF, DIR TO).",
+      "Vertical navigation (VNAV) profile solver: top-of-descent (TOD) calculation, step climbs, fuel burn estimation, and speed/altitude constraint adherence."
+    ],
+    "images": [
+      "data/fss/aerosoft-a330/Screenshot 2026-09-09 005607.webp",
+      "data/fss/aerosoft-a330/Screenshot 2026-09-09 005710.webp"
+    ],
+    "links": [],
+    "timespan": "2022 – 2023",
+    "_folder": "data/fss/aerosoft-a330"
+  },
+  {
+    "id": "asobo-radio-acd57",
+    "title": "AIR Avionics ACD-57 Multi-Function Radio & Altimeter (Official MSFS / Asobo)",
+    "featured": false,
+    "category": "Flight & Avionics",
+    "role": "Avionics Device Software Engineer",
+    "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+    "timeline": "2022",
+    "tags": [
+      "Avionics",
+      "MSFS SDK",
+      "Asobo Studio",
+      "Radio Navigation",
+      "C++ / JS",
+      "Altimeter"
+    ],
+    "summary": "Engineered the authentic AIR Avionics / Dittel ACD-57 multi-function 57mm round cockpit instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+    "highlights": [
+      "Modeled authentic 57mm round display combining 8.33 kHz VHF COM transceiver, barometric altimeter tape, and transponder display.",
+      "Engineered barometric pressure calibration (hPa / inHg), altitude alert warnings, and flight level (FL) readouts.",
+      "Integrated menu navigation, frequency databases, and direct SimVar telemetry coupling for official MSFS aircraft."
+    ],
+    "images": [
+      "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 003849.webp",
+      "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004035.webp",
+      "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004055.webp",
+      "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004138.webp",
+      "data/fss/asobo-radio-ACD57/Screenshot 2026-09-09 004210.webp"
+    ],
+    "links": [],
+    "timespan": "2022",
+    "_folder": "data/fss/asobo-radio-ACD57"
+  },
+  {
+    "id": "asobo-radio-ar6201",
+    "title": "Becker AR6201 VHF Transceiver (Official MSFS / Asobo)",
+    "featured": false,
+    "category": "Flight & Avionics",
+    "role": "Avionics Device Software Engineer",
+    "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+    "timeline": "2022",
+    "tags": [
+      "Avionics",
+      "MSFS SDK",
+      "Asobo Studio",
+      "VHF Radio",
+      "8.33 kHz",
+      "C++ / JS"
+    ],
+    "summary": "Engineered the authentic Becker Avionics AR6201 compact VHF aviation transceiver under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+    "highlights": [
+      "Faithfully simulated the certified Becker AR6201 8.33 kHz / 25 kHz VHF communications transceiver.",
+      "Engineered active/standby frequency exchange, dual concentric rotary tuning, memory channels, and squelch control.",
+      "Integrated power supply voltage monitoring, inter-communication (IC) modes, and MSFS SimVar two-way binding."
+    ],
+    "images": [
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004716.webp",
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004451.webp",
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004516.webp",
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004610.webp",
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 004655.webp",
+      "data/fss/asobo-radio-AR6201/Screenshot 2026-09-09 003929.webp"
+    ],
+    "links": [],
+    "timespan": "2022",
+    "_folder": "data/fss/asobo-radio-AR6201"
+  },
+  {
+    "id": "asobo-radio-vt02",
+    "title": "Garrecht VT-02 Mode S Transponder (Official MSFS / Asobo)",
+    "featured": false,
+    "category": "Flight & Avionics",
+    "role": "Avionics Device Software Engineer",
+    "company": "FlightSim Studio AG (Contracted to Asobo Studio)",
+    "timeline": "2022",
+    "tags": [
+      "Avionics",
+      "MSFS SDK",
+      "Asobo Studio",
+      "Transponder",
+      "Mode S",
+      "C++ / JS"
+    ],
+    "summary": "Engineered the authentic Garrecht VT-02 Mode S / ADS-B transponder instrument under contract from Asobo Studio for integration into official default aircraft in Microsoft Flight Simulator.",
+    "highlights": [
+      "Simulated certified Mode A/C/S transponder with active (>1234) and standby (SBY 0022) squawk code registers.",
+      "Integrated pressure altitude encoder displaying real-time Flight Level (FL000) telemetry.",
+      "Implemented authentic green backlit dot-matrix LCD display, VFR quick-select, and IDENT pulse transmission."
+    ],
+    "images": [
+      "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004009.webp",
+      "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004810.webp",
+      "data/fss/asobo-radio-VT02/Screenshot 2026-09-09 004844.webp"
+    ],
+    "links": [],
+    "timespan": "2022",
+    "_folder": "data/fss/asobo-radio-VT02"
+  },
+  {
+    "id": "asobo-glider-taurus",
+    "title": "Pipistrel Taurus Motorized Glider (Official MSFS / Asobo Studio)",
+    "featured": false,
+    "category": "Flight & Avionics",
+    "role": "Subsystems & Retraction Mechanism Engineer",
+    "company": "FlightSim Studio AG (Co-Development with Asobo Studio)",
+    "timeline": "2022",
+    "tags": [
+      "MSFS SDK",
+      "Asobo Studio",
+      "Pipistrel Taurus",
+      "Glider Systems",
+      "Mechanical Animation",
+      "Flight Sim"
+    ],
+    "summary": "Co-development of the official Pipistrel Taurus self-launching motorized glider for Microsoft Flight Simulator under contract with Asobo Studio, engineering the retractable dorsal propeller mast deployment sequence, engine systems, and soaring instruments.",
+    "highlights": [
+      "Engineered the electro-mechanical retraction and deployment sequencer for the retractable dorsal engine and propeller mast.",
+      "Modeled engine start/stop interlocks, propeller positioning brake, and aerodynamic drag penalty during mast extension.",
+      "Integrated soaring instruments, electrical bus switching, and engine telemetry gauges for official MSFS default aircraft."
+    ],
+    "images": [
+      "data/fss/asobo-glider-taurus/Screenshot 2026-09-09 005452.webp"
+    ],
+    "links": [],
+    "timespan": "2022",
+    "_folder": "data/fss/asobo-glider-taurus"
+  },
+  {
+    "id": "fss-searey",
+    "title": "SeaRey Elite Light Sport Amphibian Seaplane (MSFS)",
+    "featured": false,
+    "category": "Flight & Avionics",
+    "role": "Avionics & Systems Integration Engineer",
+    "company": "FlightSim Studio AG",
+    "timeline": "2022",
+    "tags": [
+      "MSFS SDK",
+      "Avionics Integration",
+      "Garmin G3X",
+      "Systems Simulation",
+      "Flight Sim"
+    ],
+    "summary": "Avionics and systems integration for the SeaRey Elite amphibious light sport seaplane in Microsoft Flight Simulator, integrating built-in MSFS glass cockpit avionics, electrical logic, and flight deck systems.",
+    "highlights": [
+      "Integrated MSFS built-in avionics suite with custom Garmin G3X glass cockpit layout and engine instrumentation.",
+      "Engineered electrical system logic, amphibious landing gear / bilge pump controls, and instrument bus switching.",
+      "Configured custom flight deck interaction models and calibrated real-time telemetry."
+    ],
+    "images": [
+      "data/fss/fss-searey/Screenshot 2026-09-09 005332.webp"
+    ],
+    "links": [],
+    "timespan": "2022",
+    "_folder": "data/fss/fss-searey"
+  },
+  {
+    "id": "chiagen",
+    "title": "chiagen - Standalone Chia Plotter & Event-Driven Plot Manager",
+    "featured": true,
+    "category": "Systems & Infrastructure",
+    "role": "Systems Programmer & Performance Engineer",
+    "tags": [
+      "C++",
+      "Chia Network",
+      "Proof of Space",
+      "Multithreading",
+      "Dear ImGui",
+      "Systems Programming",
+      "Crypto",
+      "Performance Optimization"
+    ],
+    "summary": "High-performance native C++ standalone Chia generator and event-driven plot manager integrating madMAx43v3r and reference chiapos plotters in-process with real-time hardware telemetry and custom job scheduling.",
+    "highlights": [
+      "Direct in-process multithreaded compilation of madMAx43v3r and chiapos plotters, eliminating external process wrappers and enabling granular phase interception and pause/resume control.",
+      "Event-driven plot orchestration engine enabling reactive multi-stage pipelines that trigger staggered jobs upon specific phase completions or disk transfers.",
+      "Dual-mode interface providing an immediate-mode GUI (Dear ImGui) with real-time CPU/RAM/Disk I/O telemetry graphs alongside a full CLI mode for headless automated farming servers."
+    ],
+    "images": [
+      "data/crypto/chiagen/screenshot.webp",
+      "data/crypto/chiagen/screenshot2.webp"
+    ],
+    "links": [
+      {
+        "label": "GitHub",
+        "url": "https://github.com/uraymeiviar/chiagen"
+      }
+    ],
+    "timeline": "2021",
+    "timespan": "2021",
+    "_folder": "data/crypto/chiagen"
+  },
+  {
+    "id": "cryptolet",
+    "title": "Cryptolet - ESP32 Crypto Ticker & Portfolio Hardware",
+    "featured": true,
+    "category": "Hardware & Maker",
+    "role": "Embedded Systems Engineer & Hardware Maker",
+    "tags": [
+      "ESP32",
+      "Embedded C++",
+      "IoT",
+      "Hardware",
+      "Crypto",
+      "SPIFFS",
+      "REST API"
+    ],
+    "summary": "Custom ESP32-based handheld and desktop hardware ticker with color TFT LCD displaying live cryptocurrency prices, multi-exchange candlestick charts, and captive portal Wi-Fi configuration.",
+    "highlights": [
+      "Dual-core 240MHz ESP32 firmware written in C++ rendering real-time candlestick charts, moving averages, and multi-currency portfolio tracking.",
+      "Integrated SoftAP captive portal and SPIFFS flash filesystem for seamless over-the-air Wi-Fi and custom API endpoint setup.",
+      "Hardware user interface featuring tactile push-buttons, low-latency JSON REST parsing, and NTP time synchronization."
+    ],
+    "images": [
+      "data/crypto/cryptolet/IMG_0040.webp",
+      "data/crypto/cryptolet/IMG_0041.webp"
+    ],
+    "links": [],
+    "timeline": "2019 – 2020",
+    "timespan": "2019 – 2020",
+    "_folder": "data/crypto/cryptolet"
+  },
+  {
+    "id": "netengine",
+    "title": "netEngine - High-Performance Reliable UDP Engine",
+    "featured": true,
+    "category": "Systems & Enterprise",
+    "role": "Network Architect (Freelance for Agate Studio)",
+    "tags": [
+      "C#",
+      "Networking",
+      "UDP",
+      "Unity",
+      "Game Dev"
+    ],
+    "summary": "High-performance multiplayer networking engine designed in C# for Unity, implementing a custom reliable UDP protocol layer with zero-allocation buffers.",
+    "highlights": [
+      "Custom reliability layer over UDP with sliding-window ACK/NACK, packet sequencing, and congestion control.",
+      "Zero-garbage fixed memory buffer allocation preventing garbage collection hiccups during intense multiplayer matches.",
+      "Built-in NAT punchthrough and connection migration handling."
+    ],
+    "images": [
+      "data/netengine/105551411-452a9300-5d35-11eb-807a-d721e8954bb9.webp"
+    ],
+    "links": [],
+    "timeline": "2019 – 2020",
+    "timespan": "2019 – 2020",
+    "_folder": "data/netengine"
+  },
+  {
+    "id": "bri-rkb",
+    "title": "RKB Mobile Application",
+    "category": "Systems & Enterprise",
+    "role": "Mobile Developer & Architect",
+    "tags": [
+      "Flutter",
+      "Dart",
+      "Mobile",
+      "Fintech",
+      "Enterprise"
+    ],
+    "summary": "Mobile application developed in Flutter for Bank Rakyat Indonesia (BRI) supporting SME business ecosystem empowerment.",
+    "highlights": [
+      "Cross-platform mobile architecture with reactive state management.",
+      "Secure API integration with enterprise core banking backends."
+    ],
+    "images": [
+      "data/bri/IMG_20191107_170846.webp"
+    ],
+    "links": [],
+    "timeline": "2019 – 2020",
+    "timespan": "2019 – 2020",
+    "_folder": "data/bri"
+  },
+  {
+    "id": "tabulampot-aeroponics",
+    "title": "High-Tech IoT Aeroponics & Carolina Reaper Lab",
+    "category": "Hardware & Maker",
+    "role": "Designer, Hardware Engineer & Embedded Architect",
+    "tags": [
+      "IoT",
+      "Embedded",
+      "Aeroponics",
+      "Arduino",
+      "Sensors",
+      "Hardware Hacking",
+      "Maker"
+    ],
+    "summary": "Automated indoor aeroponic cultivation chamber engineered for Carolina Reaper peppers, featuring ultrasonic misting, custom liquid Peltier chillers, and closed-loop microcontroller environmental telemetry.",
+    "highlights": [
+      "Cultivated imported Carolina Reaper chili peppers using soil-less ultrasonic high-frequency mist atomization.",
+      "Engineered custom nutrient chiller combining Peltier thermoelectric plates with PC CPU liquid cooling waterblocks.",
+      "Automated photoperiod and closed-loop environmental controls (temperature, pH, humidity) with Arduino and SBC relays."
+    ],
+    "images": [
+      "data/tabulampot/IMG_20180814_222848.webp",
+      "data/tabulampot/IMG_20180526_004433.webp",
+      "data/tabulampot/IMG_20180608_213512.webp",
+      "data/tabulampot/IMG_20180719_051935.webp",
+      "data/tabulampot/IMG_20180719_052143.webp",
+      "data/tabulampot/IMG_20180602_042601.webp",
+      "data/tabulampot/IMG_20180609_231552.webp"
+    ],
+    "links": [],
+    "timeline": "2018",
+    "timespan": "2018",
+    "_folder": "data/tabulampot"
+  },
+  {
+    "id": "kci",
+    "title": "KCI Commuter Train Driving Simulator",
+    "featured": true,
+    "category": "Civilian & Transit",
+    "role": "Lead Systems Integration Architect",
+    "company": "PT. Technology & Engineering Simulation (T&E)",
+    "customer": "PT Kereta Commuter Indonesia (PT KCI / PT KAI)",
+    "tags": [
+      "C++",
+      "Transit Sim",
+      "Real-Time",
+      "Redis",
+      "Railway Engineering",
+      "Parametric CAD",
+      "Safety Systems"
+    ],
+    "summary": "Clean-sheet civilian transit driving simulator developed for PT Kereta Commuter Indonesia (KCI) in a record 12-month turnaround, featuring parametric railway track authoring, Russian rolling stock dynamics integration, and Redis state distribution.",
+    "highlights": [
+      "Pioneered entry into civilian rail simulation following military defense contracts, delivered in a record 1-year timeframe.",
+      "Integrated specialized Russian train dynamics software with 100% in-house physical hardware cabs, visual displays, and CommSystem audio.",
+      "Engineered custom web-based Railway Editor generating parametric, georeferenced rail splines (curvature, banking, micro-vibrations) over surveyed terrain.",
+      "Architected lightweight Redis in-memory backend for low-latency track geometry and train telemetry distribution along the route."
+    ],
+    "images": [
+      "data/T&E/KCI/05.webp",
+      "data/T&E/KCI/09.webp",
+      "data/T&E/KCI/IMG_20171107_150227.webp",
+      "data/T&E/KCI/Screenshot 2026-09-06 191201.webp"
+    ],
+    "links": [],
+    "timeline": "2017 – 2018",
+    "timespan": "2017 – 2018",
+    "_folder": "data/T&E/KCI"
+  },
+  {
+    "id": "nvstat",
+    "title": "nvstat - Linux NVIDIA GPU State & BIOS Telemetry CLI",
+    "featured": true,
+    "category": "Systems & Infrastructure",
+    "role": "Systems Programmer & Linux Infrastructure Engineer",
+    "tags": [
+      "Linux",
+      "NVIDIA",
+      "GPU",
+      "C/C++",
+      "Hardware Telemetry",
+      "Systems Programming",
+      "Crypto"
+    ],
+    "summary": "Lightweight high-performance Linux CLI utility querying NVIDIA driver ioctls, NVML, and PCIe VBIOS subsystem descriptors to report real-time GPU power, thermals, clocks, and exact vendor hardware names.",
+    "highlights": [
+      "Sub-millisecond execution replacing sluggish `nvidia-smi` queries for high-frequency cluster monitoring and automated watchdogs.",
+      "Direct PCIe subsystem vendor ID and VBIOS parsing to extract exact AIB partner board identities (MSI, ZOTAC, Founders Edition).",
+      "Color-coded ANSI terminal matrix displaying real-time power limits, fan speeds, core/memory clocks, and thermal warnings across 12+ GPU multi-card rigs."
+    ],
+    "images": [
+      "data/crypto/nvstat/nvstat-screenshot.webp"
+    ],
+    "links": [],
+    "timeline": "2017 – 2018",
+    "timespan": "2017 – 2018",
+    "_folder": "data/crypto/nvstat"
+  },
+  {
+    "id": "house-3d",
+    "title": "Architectural 3D CAD & Construction",
+    "category": "Hardware & Maker",
+    "role": "Designer & Project Lead",
+    "tags": [
+      "CAD/3D",
+      "Architecture",
+      "Design",
+      "Maker"
+    ],
+    "summary": "First-principles architectural design, 3D CAD modeling in Blender, and structural construction execution of a two-story home in Bandung.",
+    "highlights": [
+      "Self-taught architectural drafting and 3D structural modeling designed completely from scratch in Blender.",
+      "Engineered on-site construction realization on an 8x12-meter plot without formal architectural credentials.",
+      "Complete building lifecycle: engineered as a 330 kVA GPU datacenter, now thriving as a family-friendly home."
+    ],
+    "images": [
+      "data/house/render-rumah3.webp",
+      "data/house/image-floor.webp",
+      "data/house/DSC_0007.webp",
+      "data/house/IMG_20180113_165436.webp",
+      "data/house/IMG_20180113_165504.webp",
+      "data/house/IMG_20180814_162103.webp",
+      "data/house/IMG_5966.webp",
+      "data/house/IMG20230317102353.webp"
+    ],
+    "links": [],
+    "timeline": "2013 – 2018",
+    "timespan": "2013 – 2018",
+    "_folder": "data/house"
+  },
+  {
+    "id": "mining-rigs",
+    "title": "High-Density GPU Computing Rigs",
+    "category": "Systems & Infrastructure",
+    "role": "Hardware & Systems Architect",
+    "tags": [
+      "Hardware",
+      "Crypto",
+      "Power Systems",
+      "Linux"
+    ],
+    "summary": "330 kVA industrial-grade multi-GPU computing cluster engineered in a private Bandung facility with custom power distribution and high-velocity ventilation.",
+    "highlights": [
+      "330 kVA 3-phase industrial power drop with balanced phase distribution and server PSU DC rails.",
+      "Custom slotted-angle steel racking with high-flow negative-pressure industrial window ventilation.",
+      "Zero-touch stateless recovery combined with CryptoSlax across hundreds of 24/7 compute GPUs."
+    ],
+    "images": [
+      "data/crypto/miningRigs/gpu-frame.webp",
+      "data/crypto/miningRigs/minig-server.webp",
+      "data/crypto/miningRigs/IMG_20170521_155702.webp",
+      "data/crypto/miningRigs/IMG_20171217_232535.webp",
+      "data/crypto/miningRigs/IMG_20180510_163853.webp",
+      "data/crypto/miningRigs/IMG_20180510_163931.webp",
+      "data/crypto/miningRigs/IMG_20190428_164537.webp",
+      "data/crypto/miningRigs/rig2.webp"
+    ],
+    "links": [],
+    "timeline": "2013 – 2018",
+    "timespan": "2013 – 2018",
+    "_folder": "data/crypto/miningRigs"
+  },
+  {
+    "id": "burst-pool",
+    "title": "Burstcoin Mining Pool & Cloud Infrastructure",
+    "featured": true,
+    "category": "Distributed Systems & Cloud",
+    "role": "Distributed Systems Engineer & Cloud Architect",
+    "tags": [
+      "Blockchain",
+      "Proof-of-Capacity",
+      "AWS",
+      "Google Cloud",
+      "C++",
+      "Node.js",
+      "High Availability",
+      "Crypto"
+    ],
+    "summary": "Multi-tenant Proof-of-Capacity mining pool aggregating global hard-drive deadlines, running high-performance C++ plotters, and orchestrating automated proportional payouts on AWS/GCP dual-cloud infrastructure.",
+    "highlights": [
+      "Multi-region AWS EC2 and GCP Compute Engine infrastructure delivering sub-25ms global miner latency and 99.99% uptime.",
+      "Automated Proof-of-Capacity deadline aggregation engine filtering lowest submitted disk nonces to forge blocks on-chain.",
+      "Proportional dividend payout engine distributing block rewards to hundreds of worldwide miners via automated RPC daemon scripts."
+    ],
+    "images": [
+      "data/crypto/burst/burstPool/udFKiTX.webp",
+      "data/crypto/burst/burstPool/nXdP7x1.webp"
+    ],
+    "links": [],
+    "timeline": "2014 – 2017",
+    "timespan": "2014 – 2017",
+    "_folder": "data/crypto/burst/burstPool"
+  },
+  {
+    "id": "rtos",
+    "title": "RTOS - Real-Time Linux Simulation Environment",
+    "category": "Defense & Combat Simulation",
+    "role": "Systems & Kernel Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "Linux Kernel",
+      "Real-Time",
+      "C",
+      "x86",
+      "Operating Systems"
+    ],
+    "summary": "Custom x86 Linux kernel distribution patched with PREEMPT_RT to provide deterministic soft real-time execution for high-frequency simulation loops.",
+    "highlights": [
+      "Configured and tuned PREEMPT_RT kernel patches for low-jitter scheduling on commodity x86 hardware.",
+      "Dedicated CPU pinning and real-time thread priority scheduling for 60Hz/100Hz flight physics and I/O polling.",
+      "Eliminated non-deterministic latency spikes for mission-critical training devices."
+    ],
+    "images": [
+      "data/T&E/rtos/IMG20151118163323.webp",
+      "data/T&E/rtos/IMG20151118163346.webp"
+    ],
+    "links": [],
+    "timeline": "2014 – 2017",
+    "timespan": "2014 – 2017",
+    "_folder": "data/T&E/rtos"
+  },
+  {
+    "id": "soyut",
+    "title": "SOYUT Integrated Joint Battle Management Platform",
+    "featured": true,
+    "category": "Defense & Combat Simulation",
+    "role": "Systems Architect & Battle Management Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "DIS/HLA",
+      "Tactical Systems",
+      "Networking",
+      "Distributed Systems"
+    ],
+    "summary": "Comprehensive joint battle management simulation platform integrating Air, Land, and Maritime forces in unified operational theater exercises.",
+    "highlights": [
+      "Joint theater command & control (C2) simulation connecting multi-domain operational units.",
+      "Distributed mission scenario execution with tactical radar, sensor, and reconnaissance data feeds.",
+      "Large-scale entity state synchronization across multi-station tactical command centers."
+    ],
+    "images": [
+      "data/T&E/soyut/IMG_20170419_235959.webp",
+      "data/T&E/soyut/IMG_20170420_025133.webp"
+    ],
+    "links": [],
+    "timeline": "2014 – 2017",
+    "timespan": "2014 – 2017",
+    "_folder": "data/T&E/soyut"
+  },
+  {
+    "id": "mcf-itb",
+    "title": "Mathematics Challenge Festival (MCF)",
+    "category": "Academic & Speaking",
+    "role": "Guest Speaker",
+    "tags": [
+      "Mathematics",
+      "Academic",
+      "Speaking",
+      "Algorithms"
+    ],
+    "summary": "Invited guest speaker at the Mathematics Challenge Festival at Institut Teknologi Bandung (ITB), sharing software engineering and algorithmic applications of mathematics.",
+    "highlights": [
+      "Presented real-world applications of applied mathematics in software systems and simulation.",
+      "Engaged with students and faculty on computational mathematics in industry."
+    ],
+    "images": [
+      "data/mcf/IMG20160925065308.webp",
+      "data/mcf/IMG20160925085952.webp",
+      "data/mcf/IMG_1286.webp"
+    ],
+    "links": [],
+    "timeline": "2016",
+    "timespan": "2016",
+    "_folder": "data/mcf"
+  },
+  {
+    "id": "burst-explorer",
+    "title": "Burstcoin Blockchain Explorer",
+    "featured": true,
+    "category": "Distributed Systems & Cloud",
+    "role": "Full-Stack Blockchain Engineer & Cloud Architect",
+    "tags": [
+      "Blockchain",
+      "Node.js",
+      "JavaScript",
+      "AWS",
+      "High Availability",
+      "Crypto"
+    ],
+    "summary": "High-throughput real-time blockchain telemetry and asset ledger explorer parsing block generation deadlines, smart tokens, and global transaction metrics.",
+    "highlights": [
+      "Real-time daemon RPC ingestion and parsing of 256-bit Shabal-hash Proof-of-Capacity block payloads.",
+      "Decentralized on-chain asset exchange tracking, token transfer indexing, and rich address telemetry.",
+      "Global high-availability multi-region cloud deployment on AWS EC2 and Google Cloud Platform."
+    ],
+    "images": [
+      "data/crypto/burst/burstExplorer/0A5BOVN.webp",
+      "data/crypto/burst/burstExplorer/1amoyJj.webp",
+      "data/crypto/burst/burstExplorer/4x5RIWA.webp"
+    ],
+    "links": [],
+    "timeline": "2014 – 2016",
+    "timespan": "2014 – 2016",
+    "_folder": "data/crypto/burst/burstExplorer"
+  },
+  {
+    "id": "burst-web-wallet",
+    "title": "Burstcoin Web Wallet & Decentralized Asset Exchange",
+    "featured": true,
+    "category": "Distributed Systems & Cloud",
+    "role": "Full-Stack Web3 Engineer & Cryptographic Architect",
+    "tags": [
+      "Blockchain",
+      "Cryptography",
+      "Curve25519",
+      "JavaScript",
+      "DeX",
+      "Web3",
+      "Security",
+      "Crypto"
+    ],
+    "summary": "Zero-trust client-side browser wallet and on-chain decentralized asset exchange (DEX) interface enabling instant user onboarding with in-memory Curve25519 signing.",
+    "highlights": [
+      "Zero-trust in-browser cryptography: client-side passphrase hashing via Curve25519 and SHA-256 ensuring private keys never leave local browser memory.",
+      "Decentralized Asset Exchange (DEX) orderbook interface supporting custom token issuance (BCPT) and automated profit-sharing dividends.",
+      "Eliminated cumbersome full-node synchronization requirements, drastically lowering onboarding friction for the Proof-of-Capacity cryptocurrency."
+    ],
+    "images": [
+      "data/crypto/burst/burstWebWallet/BEE5I2k.webp",
+      "data/crypto/burst/burstWebWallet/uidAvpZ - Imgur.webp"
+    ],
+    "links": [],
+    "timeline": "2014 – 2016",
+    "timespan": "2014 – 2016",
+    "_folder": "data/crypto/burst/burstWebWallet"
+  },
+  {
+    "id": "cryptoslax",
+    "title": "CryptoSlax - Custom Linux Distribution",
+    "featured": true,
+    "category": "Systems & Infrastructure",
+    "role": "Systems & OS Engineer",
+    "tags": [
+      "Linux Kernel",
+      "Operating Systems",
+      "Crypto",
+      "Hardware"
+    ],
+    "summary": "Customized, ultra-lightweight (~100 MB) stateless Linux distribution engineered for PXE network boot, RAM execution, and 24/7 autonomous GPU clusters.",
+    "highlights": [
+      "100% diskless architecture booting via PXE/TFTP directly into volatile RAM with zero local storage.",
+      "Modular SquashFS and OverlayFS layer stacking for kernel, AMD/NVIDIA drivers, and mining binaries.",
+      "Complete immunity to hard power cuts and filesystem corruption; direct architectural prototype for Project SOYUT."
+    ],
+    "images": [
+      "data/crypto/cryptoslax/5642i21 (1).webp",
+      "data/crypto/cryptoslax/B9m2DbB.webp",
+      "data/crypto/cryptoslax/DSC_0003.webp"
+    ],
+    "links": [],
+    "timeline": "2013 – 2016",
+    "timespan": "2013 – 2016",
+    "_folder": "data/crypto/cryptoslax"
+  },
+  {
+    "id": "f16-ftd",
+    "title": "F-16 Full Mission Flight Training Device (FTD)",
+    "featured": true,
+    "category": "Flight & Avionics",
+    "role": "Senior Simulator Systems Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Flight Simulator",
+      "Cockpit Avionics",
+      "Real-Time",
+      "DIS/HLA"
+    ],
+    "summary": "High-fidelity supersonic fighter simulator replicating flight handling qualities, tactical cockpit avionics, and mission systems.",
+    "highlights": [
+      "Real-time cockpit avionics, Heads-Up Display (HUD), and multi-function display simulation.",
+      "Hardware-in-the-loop (HIL) interface bridging physical cockpit instruments, stick, and throttle controls.",
+      "Multi-channel curved visual projection alignment and mission scenario injection."
+    ],
+    "images": [
+      "data/T&E/F16-FTD/_MG_5349.webp",
+      "data/T&E/F16-FTD/_MG_5350.webp"
+    ],
+    "links": [],
+    "timeline": "2013 – 2014",
+    "timespan": "2013 – 2014",
+    "_folder": "data/T&E/F16-FTD"
+  },
+  {
+    "id": "codegraph",
+    "title": "CodeGraph - Visual Logic & State Graph Tool",
+    "category": "Defense & Combat Simulation",
+    "role": "Software Tools Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Tools",
+      "Visual Programming",
+      "Architecture"
+    ],
+    "summary": "In-house node-based visual programming environment built to rapidly author and inspect state machines and simulation logic.",
+    "highlights": [
+      "Graph-based editor for defining logic trees, avionics mode transitions, and electrical switch paths.",
+      "Exported real-time executable bytecode/C++ logic executed directly by simulator cores."
+    ],
+    "images": [
+      "data/T&E/codegraph/IMG_20130624_114947.webp"
+    ],
+    "links": [],
+    "timeline": "2012 – 2014",
+    "timespan": "2012 – 2014",
+    "_folder": "data/T&E/codegraph"
+  },
+  {
+    "id": "commsystem",
+    "title": "Tactical Intercom & Radio Simulation System",
+    "category": "Defense & Combat Simulation",
+    "role": "Communications Systems Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Audio/DSP",
+      "Networking",
+      "Tactical Systems"
+    ],
+    "summary": "Integrated voice communication system simulating tactical radio channels, intercom hot-mics, frequency modulation, and radio propagation noise.",
+    "highlights": [
+      "Simulated UHF/VHF military radio networks with line-of-sight attenuation and frequency selection.",
+      "Low-latency VoIP streaming with push-to-talk (PTT) hardware switch integration.",
+      "Multi-crew cockpit intercom with selectable voice isolation modes."
+    ],
+    "images": [
+      "data/T&E/commSystem/IMG-20131023-WA0004.webp",
+      "data/T&E/commSystem/IMG_20110202_143357.webp",
+      "data/T&E/commSystem/IMG_20131001_123617.webp"
+    ],
+    "links": [],
+    "timeline": "2012 – 2014",
+    "timespan": "2012 – 2014",
+    "_folder": "data/T&E/commSystem"
+  },
+  {
+    "id": "broken-glass-shader",
+    "title": "Broken Glass Shader - Refraction & Diffraction Optical Surface",
+    "featured": true,
+    "category": "Game Engine & Tools",
+    "role": "Graphics & Shader Programmer",
+    "tags": [
+      "Unity3D",
+      "ShaderLab",
+      "CG/HLSL",
+      "Graphics Programming",
+      "Refraction",
+      "Asset Store",
+      "Game Development"
+    ],
+    "summary": "Physically-inspired real-time broken glass surface shader for Unity3D featuring normal-mapped shattered crack patterns, optical refraction, chromatic diffraction, and Fresnel specular highlights.",
+    "highlights": [
+      "Realistic light refraction and chromatic diffraction driven by custom normal map displacement textures.",
+      "Adjustable glass tint, specular reflection falloff, and Fresnel sheen accentuating shattered shard edges and radial impact points.",
+      "Published on the Unity Asset Store as a lightweight, drop-in material compatible with forward and deferred rendering pipelines."
+    ],
+    "images": [
+      "data/unity/broken-glass-shader/broken-glass-preview.webp"
+    ],
+    "links": [],
+    "timeline": "2012",
+    "timespan": "2012",
+    "_folder": "data/unity/broken-glass-shader"
+  },
+  {
+    "id": "object-browser",
+    "title": "ObjectBrowser - Unity Reflection & Type Inspector",
+    "featured": true,
+    "category": "Game Engine & Tools",
+    "role": "Unity Tool Developer & Systems Programmer",
+    "tags": [
+      "Unity3D",
+      "C#",
+      ".NET Reflection",
+      "Unity Editor Extensions",
+      "Asset Store",
+      "Developer Tools"
+    ],
+    "summary": "Deep runtime and editor reflection inspector for Unity3D, exposing all properties, fields, methods, and complete base class inheritance hierarchies for any selected scene GameObject or project asset.",
+    "highlights": [
+      "Real-time deep .NET reflection across selected scene GameObjects and project assets, inspecting active components, properties, and methods.",
+      "Comprehensive inheritance chain visualization tracing hierarchy back through UnityEngine.Object to System.Object.",
+      "Method signature inspection extracting complete ParameterInfo, return types, and member flags directly within a docked Unity EditorWindow."
+    ],
+    "images": [
+      "data/unity/object-browser/object-browser-gameobject.webp",
+      "data/unity/object-browser/object-browser-asset.webp"
+    ],
+    "links": [],
+    "timeline": "2012",
+    "timespan": "2012",
+    "_folder": "data/unity/object-browser"
+  },
+  {
+    "id": "stmr",
+    "title": "STMR Multi-Type Armored Platoon Simulator",
+    "featured": true,
+    "category": "Defense & Combat Simulation",
+    "role": "Lead Distributed Simulation Architect",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "DIS/HLA",
+      "Networking",
+      "Real-Time",
+      "Combat Sim"
+    ],
+    "summary": "Multi-vehicle tactical simulator simulating three distinct tank classes interoperating in unified platoon and team combat formations.",
+    "highlights": [
+      "Multi-type armored vehicle simulation with synchronized gunner, driver, and commander stations.",
+      "Real-time inter-vehicle networking enabling cooperative platoon tactics in shared virtual terrain.",
+      "Ballistic trajectory computation, line-of-sight targeting, and damage modeling."
+    ],
+    "images": [
+      "data/T&E/stmr/DSC_0006.webp",
+      "data/T&E/stmr/IMG_20130618_105956.webp",
+      "data/T&E/stmr/IMG_20130618_110333.webp",
+      "data/T&E/stmr/IMG_20130618_115027.webp",
+      "data/T&E/stmr/IMG_20130622_031654.webp",
+      "data/T&E/stmr/ios2.webp",
+      "data/T&E/stmr/tumblr_merup6area1ru2qado1_1280.webp"
+    ],
+    "links": [],
+    "timeline": "2010 – 2012",
+    "timespan": "2010 – 2012",
+    "_folder": "data/T&E/stmr"
+  },
+  {
+    "id": "tdr",
+    "title": "TDR RadarView - Legacy Military Radar Telemetry Acquisition & TCP Relay",
+    "featured": true,
+    "category": "Defense & Combat Simulation",
+    "role": "Systems & Telemetry Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C/C++",
+      "Win32",
+      "RS-232 / Serial",
+      "TCP/IP Sockets",
+      "Radar Telemetry",
+      "Defense",
+      "PPI Display",
+      "Hardware Reverse Engineering"
+    ],
+    "summary": "Reverse-engineered telemetry acquisition and Plan Position Indicator (PPI) software replacing obsolete, non-functional military radar receiver computers by decoding raw RS-232 serial streams from the radar pedestal and relaying track vectors over TCP to upstream command systems.",
+    "highlights": [
+      "Intercepted and decoded raw asynchronous RS-232 serial datastreams (4800 bps) from an operational military radar pedestal whose original receiver computer had suffered permanent hardware failure.",
+      "Engineered a real-time Plan Position Indicator (PPI) polar radar scope featuring range rings, azimuth sweep lines, georeferenced topographic maps, and Cartesian track coordinates.",
+      "Integrated a multi-threaded TCP server (Port 54321) relaying live target tracks (range, bearing, velocity, heading) to upstream battle management systems alongside a serial modem tactical chat link."
+    ],
+    "images": [
+      "data/T&E/tdr/TDR.webp"
+    ],
+    "links": [],
+    "timeline": "2010 – 2011",
+    "timespan": "2010 – 2011",
+    "_folder": "data/T&E/tdr"
+  },
+  {
+    "id": "nas332",
+    "title": "NAS332 Super Puma Helicopter Simulator",
+    "category": "Flight & Avionics",
+    "role": "Lead Systems & Flight Dynamics Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Rotorcraft",
+      "Flight Dynamics",
+      "Cockpit Avionics",
+      "Real-Time"
+    ],
+    "summary": "Full-scale multi-mission tactical transport helicopter simulator with realistic rotor aerodynamics and cockpit systems.",
+    "highlights": [
+      "Rotorcraft aerodynamic simulation including ground effect, autorotation, and torque response.",
+      "Complete cockpit switchology, overhead electrical/fuel panels, and dual-pilot flight controls.",
+      "Motion and visual integration for low-altitude tactical navigation and landing operations."
+    ],
+    "images": [
+      "data/T&E/NAS332/IMG_1630.webp",
+      "data/T&E/NAS332/IMG_2244.webp"
+    ],
+    "links": [],
+    "timeline": "2008 – 2010",
+    "timespan": "2008 – 2010",
+    "_folder": "data/T&E/NAS332"
+  },
+  {
+    "id": "hawk",
+    "title": "BAe Hawk 209 Combat Trainer Simulator",
+    "featured": true,
+    "category": "Flight & Avionics",
+    "role": "Systems & Avionics Simulation Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Flight Simulator",
+      "Cockpit Displays",
+      "Real-Time",
+      "Avionics"
+    ],
+    "summary": "Tactical jet trainer simulator designed for advanced pilot operational training, combat readiness, and emergency procedures.",
+    "highlights": [
+      "Simulated cockpit instrumentation, navigation displays, and weapons delivery profiles.",
+      "Interfaced physical cockpit panels and flight control linkages with real-time math models.",
+      "Instructor Operator Station (IOS) control for failure injection, weather, and mission scenarios."
+    ],
+    "images": [
+      "data/T&E/hawk/IMG_20120426_114205.webp",
+      "data/T&E/hawk/IMG_20120426_120352.webp",
+      "data/T&E/hawk/IMG_20120426_121749.webp",
+      "data/T&E/hawk/IMG_20130110_142735.webp",
+      "data/T&E/hawk/11357611_459578634196777_582338419_n.webp",
+      "data/T&E/hawk/IMG_20120426_092959.webp",
+      "data/T&E/hawk/tumblr_m36rqcw5011ru2qado1_1280.webp"
+    ],
+    "links": [],
+    "timeline": "2008 – 2009",
+    "timespan": "2008 – 2009",
+    "_folder": "data/T&E/hawk"
+  },
+  {
+    "id": "bo105",
+    "title": "BO-105 Light Twin Helicopter Simulator",
+    "category": "Flight & Avionics",
+    "role": "Flight Simulation Software Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Rotorcraft",
+      "Flight Simulator",
+      "Real-Time",
+      "Avionics",
+      "Motion Platform",
+      "Control Loading"
+    ],
+    "summary": "Full flight simulator refurbishment and internal R&D testbed featuring motor control loading, tablet glass cockpit instrumentation, curved visual warping, and a VR-immersed motion platform.",
+    "highlights": [
+      "Extracted BO-105 flight dynamics model into an internal R&D lab cockpit with iPad/tablet instrument cutouts.",
+      "Engineered electric motor control loading (active force feedback) on cyclic and collective sticks.",
+      "Integrated custom motion platform with VR visual immersion to evaluate tactile G-force and acceleration cueing."
+    ],
+    "images": [
+      "data/T&E/BO/helicopter-lab.webp",
+      "data/T&E/BO/vr-lab.webp",
+      "data/T&E/BO/IMG_20130823_183241.webp"
+    ],
+    "links": [],
+    "timeline": "2008 – 2009",
+    "timespan": "2008 – 2009",
+    "_folder": "data/T&E/BO"
+  },
+  {
+    "id": "numpadkey",
+    "title": "NumpadKey - T9 Virtual Keypad for Android 1.0 (HTC Dream / G1)",
+    "featured": true,
+    "category": "Mobile & Operating Systems",
+    "role": "Mobile Systems & Android Java Developer",
+    "tags": [
+      "Android 1.0",
+      "Java",
+      "HTC Dream / G1",
+      "IME / Virtual Keyboard",
+      "T9 Keypad",
+      "Mobile UI",
+      "Early Android"
+    ],
+    "summary": "Pioneering T9-style on-screen virtual keyboard for Android 1.0 on the historic HTC Dream (T-Mobile G1), enabling rapid one-handed touch typing on early small capacitive displays without sliding out the physical keyboard.",
+    "highlights": [
+      "Engineered natively in pure Java for Android 1.0, developed before Google released official system IME / virtual keyboard frameworks in Android 1.5 Cupcake.",
+      "Intuitive 3x4 / 4x4 alphanumeric T9 keypad layout with multi-tap cycling, long-press accent/symbol popups, and dedicated punctuation.",
+      "Bypassed the need to open the bulky physical slider keyboard on the HTC Dream, enabling seamless one-handed messaging and text entry."
+    ],
+    "images": [
+      "data/numpadKey/beta2-screenshot.webp"
+    ],
+    "links": [],
+    "timeline": "2008 – 2009",
+    "timespan": "2008 – 2009",
+    "_folder": "data/numpadKey"
+  },
+  {
+    "id": "acv300",
+    "title": "ACV-300 Armored Combat Vehicle Simulator",
+    "category": "Defense & Combat Simulation",
+    "role": "Simulation Systems Engineer",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "Combat Sim",
+      "Real-Time",
+      "Hardware-in-the-Loop"
+    ],
+    "summary": "Tracked armored combat vehicle simulator designed for crew coordination, combat driving, turret operation, and tactical engagement.",
+    "highlights": [
+      "Vehicle dynamics across complex cross-country terrains, obstacles, and gradient inclines.",
+      "Integrated driver cockpit controls and commander sights.",
+      "Networked participation in joint maneuvers via standardized simulation protocols."
+    ],
+    "images": [
+      "data/T&E/acv/DSC_0701.webp",
+      "data/T&E/acv/DSC_1082.webp"
+    ],
+    "links": [],
+    "timeline": "2007 – 2008",
+    "timespan": "2007 – 2008",
+    "_folder": "data/T&E/acv"
+  },
+  {
+    "id": "libdis",
+    "title": "libDIS - IEEE 1278 Protocol Engine",
+    "category": "Defense & Combat Simulation",
+    "role": "Protocol Architect & Author",
+    "company": "PT. T&E Simulation",
+    "tags": [
+      "C++",
+      "DIS/HLA",
+      "Networking",
+      "Protocols",
+      "Real-Time"
+    ],
+    "summary": "In-house C++ library implementing the IEEE 1278 Distributed Interactive Simulation (DIS) protocol for low-latency networked simulation.",
+    "highlights": [
+      "Full PDU serialization/deserialization (Entity State, Fire, Detonation, Collision, Radio Communications).",
+      "Dead reckoning algorithms (position, velocity, dead-reckoning extrapolation) for smooth cross-network entity movement.",
+      "Serves as the mission-critical networking backbone connecting aircraft, tank, and joint command simulators."
+    ],
+    "images": [
+      "data/T&E/libDIS/DSC_1033.webp"
+    ],
+    "links": [],
+    "timeline": "2007 – 2008",
+    "timespan": "2007 – 2008",
+    "_folder": "data/T&E/libDIS"
+  },
+  {
+    "id": "g1",
+    "title": "Project G1 - 3D Anti-Gravity Tunnel Racing Engine",
+    "featured": true,
+    "category": "Simulation & Defense",
+    "role": "Lead Graphics & Engine Programmer (PT. T&E Simulation R&D)",
+    "tags": [
+      "C++",
+      "DirectX 9",
+      "HLSL",
+      "3D Engine",
+      "Physics",
+      "R&D"
+    ],
+    "summary": "State-of-the-art anti-gravity space tunnel racing prototype engine written from scratch in C++ and DirectX 9 with custom HLSL shaders and procedural spline geometry.",
+    "highlights": [
+      "Clean-sheet 3D rendering pipeline using DirectX 9 and custom HLSL vertex/pixel shaders.",
+      "Procedural 3D tunnel geometry generation with dynamic lighting and wireframe energy rails.",
+      "Real-time camera spline interpolation with centrifugal roll and tilt dynamics.",
+      "In-cockpit futuristic HUD displaying dynamic targeting reticles and velocity vectors."
+    ],
+    "images": [
+      "data/G1/preview.webp"
+    ],
+    "links": [],
+    "timeline": "2006 – 2007",
+    "timespan": "2006 – 2007",
+    "_folder": "data/G1"
+  }
+]
