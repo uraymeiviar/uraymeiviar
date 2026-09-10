@@ -5,7 +5,17 @@
 **Origin:** Bandung, West Java, Indonesia (Born 1983)  
 **Education:** B.Sc. in Mathematics, Institut Teknologi Bandung (ITB)  
 **Disciplines:** Software Architecture, Real-Time Simulation, Operating Systems, Distributed Protocols (IEEE 1278 DIS), Avionics & FMS  
-**Personal Motto:** *"I never apply for a job; jobs come looking for me."*
+**Personal Motto:** *"For every complex problem, there is a solution that is simple, fast, and wrong."*  
+**Document Version:** 2.4 · **Last Updated:** September 2026  
+
+---
+
+### Executive Fact Sheet & AI Ingestion Summary
+> - **Document Type:** First-Person Technical Memoir & Systems Architecture Chronicle
+> - **Current Primary Role:** Senior Aircraft Systems & Simulation Engineer / FMS Architect (FlightSim Studio AG / Aerosoft / Asobo contracts)
+> - **Core Engineering Stack:** C/C++ (C11, Modern C++17/20), C# (.NET), Python, Linux Kernel (PREEMPT_RT, LFS, OverlayFS), WebAssembly, CoherentGT, WGS-84 / ECEF Geodetic Math
+> - **Primary Engineering Domains:** Commercial Airliner Avionics (ARINC-424, Airbus MCDU, VNAV/TOD Solver), Full-Scope Military Flight & Armored Vehicle Simulators, Distributed Protocol Engines (IEEE 1278 DIS), Stateless Operating Systems & High-Density Compute
+> - **Availability:** Available for select high-impact systems architecture, avionics modeling, and deterministic real-time engineering consulting.
 
 ---
 
@@ -134,20 +144,20 @@ I was solving differential equations during the day and debugging Linux kernel n
 
 ## Act III: The Gateway to Defense Simulation & Project G1
 
-### 3.1 "Jobs Looking for Me": Joining PT. T&E Simulation
-Throughout my entire career, I have never submitted a resume or applied for an open job posting. Opportunities have always found me through reputation, technical proof, and peer networks.
+### 3.1 Joining PT. T&E Simulation: When Word-of-Mouth Replaced Resumes
+At that point in my journey, I did not have to submit traditional resumes or apply through open job listings. Opportunities came about through reputation, practical proof-of-work, and close peer networks.
 
 A high school friend of mine was also a programmer, and his father owned **PT. Technology & Engineering Simulation (T&E)**—a private Indonesian engineering company building military and civilian simulators. 
 
 Knowing my background in low-level C programming, network infrastructure, and mathematical modeling, they approached me and asked me to join the company before I had even formally graduated from ITB.
 
 ### 3.2 Project G1: My 3D Anti-Gravity Tunnel Racing Sandbox
-Before throwing our young engineering team into high-stakes client deliverables, the company gave us an open R&D period. The goal was to build a state-of-the-art 3D graphics and physics prototype to push the limits of modern PC hardware.
+Before throwing our young engineering team into high-stakes client deliverables, the company gave us an open R&D period. The goal was to build a capable 3D graphics and physics prototype to explore the limits of modern PC hardware.
 
 That project was **G1**:
 - It was a high-speed, anti-gravity 3D space tunnel racing engine built from scratch in C++ using **DirectX 9** with custom HLSL vertex and pixel shaders.
 - I built procedural 3D tunnel geometry, real-time camera spline interpolation with centrifugal tilt, dynamic wireframe energy rails, and an in-cockpit HUD with targeting reticles and velocity vectors.
-- It proved that our team could take raw math and DirectX and build a world-class real-time 3D simulation engine. The sandbox phase was complete; real defense contracts were next.
+- It proved that our team could take raw math and DirectX to build a responsive, production-ready 3D simulation engine from scratch. The sandbox phase was complete; real defense contracts were next.
 
 ![Project G1: Real-time Anti-Gravity Space Tunnel Racing Engine Prototype (C++ / DirectX 9 / HLSL)](../G1/G1.mp4)
 
@@ -681,11 +691,11 @@ This lighthearted maker experiment proved that the core tenets of engineering re
 ### 8.11 The Direct Architectural Lineage to Project SOYUT
 This intense multi-domain crucible—combining operating system internals, custom GPU compute kernels, fault-tolerant cloud backends, physical structural engineering, and embedded IoT environmental control—was far more than a collection of hobbies: **it was the technological foundation that defined my architectural maturity.**
 
-When the Indonesian Armed Forces High Command (TNI) approached us with the classified requirements for **Project SOYUT**—demanding zero data exfiltration risks, zero local storage, absolute immunity from client-side tampering, and dynamic military role switching across hundreds of client workstations—other defense contractors were paralyzed by the architectural complexity.
+When the █████████ Armed Forces Joint Command approached us with the classified requirements for **Project SOYUT**—demanding zero data exfiltration risks, zero local storage, absolute immunity from client-side tampering, and dynamic military role switching across hundreds of client workstations—other defense contractors were paralyzed by the architectural complexity.
 
 I was not. I did not have to speculate or experiment with unproven concepts.
 
-I had already spent years running a 330 kVA industrial computing cluster powered by diskless, read-only, PXE-booted Linux nodes executing out of volatile RAM with OverlayFS module injection, supported by high-availability distributed backends and automated microcontrollers. I took that exact, battle-hardened architectural blueprint, ported it to a custom Linux From Scratch (LFS) base, hardened it with cryptographic verification, stripped USB mass storage drivers at the kernel level, and delivered a military-grade RTOS for the nation's highest-ranking military commanders.
+I had already spent years running a 330 kVA industrial computing cluster powered by diskless, read-only, PXE-booted Linux nodes executing out of volatile RAM with OverlayFS module injection, supported by high-availability distributed backends and automated microcontrollers. I took that exact, battle-hardened architectural blueprint, ported it to a custom Linux From Scratch (LFS) base, hardened it with cryptographic verification, stripped USB mass storage drivers at the kernel level, and delivered a military-grade RTOS for the armed forces general staff.
 
 ---
 
@@ -695,24 +705,24 @@ I had already spent years running a 330 kVA industrial computing cluster powered
 All our prior simulators were **tactical**: they simulated the immediate physical reality of an individual vehicle—the stick forces of an F-16, the torque of a Super Puma turbine, the turret rotation of a Scorpion tank. The physics were bounded by flight manuals, real-world operators sat in the cockpits, and the mathematical laws were deterministic.
 
 **Project SOYUT (Sistem Olah Yudha Terpadu — Integrated War Game Simulation System)** was fundamentally different:
-- **Customer:** The Indonesian Joint Armed Forces High Command (TNI: Air Force, Army, and Navy Joint Chiefs of Staff).
+- **Customer:** The █████████ Armed Forces Joint Command (Air Force, Army, and Navy Joint General Staff).
 - **Scope:** A national **C4 (Command, Control, Communications, and Computers)** strategic joint war campaign simulator.
-- **Role:** Rather than training junior pilots or drivers, SOYUT was operated by **High-Ranking Military Generals, Admirals, and Strategic Planners** to simulate theater-level warfare across the Indonesian archipelago.
+- **Role:** Rather than training junior pilots or drivers, SOYUT was operated by **Senior General Staff and Strategic Planners** to simulate theater-level warfare across the archipelago.
 - **Simulated Operations:**
   - Joint troop movements across multi-island maritime theaters.
   - Multi-echelon logistics, supply chain replenishment, and ammunition/fuel depletion rates.
   - Strategic transport scheduling (C-130 Hercules transport flights, naval landing craft, rail logistics).
   - Radar coverage boundaries, electronic warfare jamming, encrypted command channels, and signaling.
-  - Vague, subjective operational parameters: unlike flight simulators with rigid aerodynamic charts, military generals had subjective tactical doctrines with no pre-existing software specifications.
+  - Vague, subjective operational parameters: unlike flight simulators with rigid aerodynamic charts, military planners had subjective tactical doctrines with no pre-existing software specifications.
 
 ### 9.2 The Classified Security Dilemma & 3-Year Deadline
 SOYUT operated under severe constraints:
-- **Absolute Secrecy:** Because it modeled actual national defense war plans, contingency operations, and strategic theater deployments, zero foreign software or third-party contractors were permitted. Commercial solutions (such as MÄK software) were legally prohibited.
+- **Absolute Secrecy:** Because it modeled actual national defense contingency operations and strategic theater deployments, zero foreign software or third-party contractors were permitted. Commercial off-the-shelf defense simulation packages were legally prohibited.
 - **Strict Delivery Horizon:** Typical defense simulation programs took 2 to 3 years; SOYUT was held to the same rigid schedule despite having no commercial baseline to build upon.
-- **Massive Distributed Deployment:** The software was not intended for a single room; it had to be deployed across hundreds of client workstations distributed throughout various armed forces branch headquarters.
+- **Massive Distributed Deployment:** The software was not intended for a single room; it had to be deployed across hundreds of client workstations distributed throughout various command facilities.
 
 ### 9.3 My "RTOS" Solution: The Diskless Zero-Trust Linux Stack
-Maintaining hundreds of classified client workstations across military headquarters posed a fatal administrative problem. If each workstation ran a standard desktop OS (Windows or standard Linux):
+Maintaining hundreds of classified client workstations across military command centers posed a fatal administrative problem. If each workstation ran a standard desktop OS (Windows or standard Linux):
 - Dedicated sysadmins would be required at every facility to patch, configure, and troubleshoot client machines.
 - Military operators might attempt to install unauthorized software, alter drivers, or compromise security.
 - Physical theft or extraction of a hard drive could compromise classified tactical data.
@@ -740,32 +750,32 @@ Drawing directly upon the proven architecture of **CryptoSlax**, I engineered a 
 1. **Linux From Scratch (LFS):** Rather than stripping down an existing distribution (such as Ubuntu or CentOS), I compiled an entire Linux operating system from source using the Linux From Scratch methodology. Every kernel module, the glibc C runtime, device drivers, and minimal core utilities were compiled specifically for our target hardware.
 2. **Zero Local Storage (Diskless PXE Network Boot):** Client workstations contained **no hard drives, no SSDs, and no local magnetic media**. Upon power-up, the network interface card (NIC) booted via PXE over the local military network, pulling down a cryptographically verified kernel image directly into system RAM.
 3. **Hardware-Level Air-Gapping:** USB storage drivers were stripped from the kernel configuration. Inserting a USB flash drive resulted in zero system recognition, physically neutralizing data exfiltration risks.
-4. **Dynamic Layered Filesystems (AUFS / OverlayFS):** The base Linux image ran in volatile, read-only memory. To handle different military roles (Air Force Command, Naval Logistics, Artillery Intelligence), I deployed **AUFS / OverlayFS**. Depending on the authenticated officer's login credentials and station ID, application layers were dynamically mounted over the network into system memory, ensuring strict least-privilege security.
+4. **Dynamic Layered Filesystems (AUFS / OverlayFS):** The base Linux image ran in volatile, read-only memory. To handle different operational roles (Air Command, Naval Logistics, Artillery Intelligence), I deployed **AUFS / OverlayFS**. Depending on the authenticated officer's login credentials and station ID, application layers were dynamically mounted over the network into system memory, ensuring strict least-privilege security.
 
 ### 9.4 Building the Web-First Strategic Command Kiosk
 On the application software side, writing native compiled desktop binaries (C++ / Qt / Win32) for hundreds of distributed military stations would have created an unmaintainable testing nightmare.
 
-I made another visionary architectural choice: **I built the entire SOYUT strategic application as a secure, high-performance web platform executed inside a locked-down browser kiosk on top of the bare-metal Linux OS.**
+I made another deliberate architectural choice: **I built the entire SOYUT strategic application as a secure, high-performance web platform executed inside a locked-down browser kiosk on top of the bare-metal Linux OS.**
 
 In an era when web technologies were largely dismissed as toy platforms for simple websites, I recognized that modern web primitives could deliver military-grade distributed capabilities:
-- **3D Geospatial Visualization (Cesium3D):** I integrated the **Cesium3D WebGL engine** to render the entire Indonesian archipelago and global airspace in 3D, supporting high-resolution satellite imagery, topographic terrain elevation, tactical military icons, and dynamic airspace control sectors.
-- **Encrypted Real-Time Communications (WebRTC):** I deployed **WebRTC** data and media streams, enabling instantaneous, encrypted peer-to-peer voice communications between commanding generals and operational theater staff without relying on external telephony servers.
+- **3D Geospatial Visualization (Cesium3D):** I integrated the **Cesium3D WebGL engine** to render the entire theater and airspace in 3D, supporting high-resolution satellite imagery, topographic terrain elevation, tactical military icons, and dynamic airspace control sectors.
+- **Encrypted Real-Time Communications (WebRTC):** I deployed **WebRTC** data and media streams, enabling instantaneous, encrypted peer-to-peer voice communications between commanding officers and operational theater staff without relying on external telephony servers.
 - **Sub-Second State Streaming (WebSockets):** I engineered bidirectional **WebSocket channels** streaming tactical events, order-of-battle updates, unit positions, and supply status across hundreds of concurrent clients with sub-second latency.
 - **High-Concurrency Microservices (Node.js + Redis):** The backend was engineered as high-throughput **Node.js microservices** backed by **Redis** as an in-memory data store and pub/sub broker. Redis handled live tactical state caching, while Node.js coordinated war game logic, supply consumption formulas, and operational scheduling.
 
-SOYUT proved to be a triumph of systems design: a zero-maintenance, diskless, military-grade joint war game simulator that solved hardware security, administrative overhead, and real-time strategic synchronization in a single stroke.
+SOYUT delivered on its core objectives: a zero-maintenance, diskless joint war game simulator that solved hardware security, administrative overhead, and real-time strategic synchronization in a single stroke.
 
 ---
 
 ## Act X: Stepping into the Civilian Market — The KCI Commuter Train Simulator
 
 ### 10.1 The Dilemma of Defense Engineering: Escaping the NDA Shadow
-By the time **Project SOYUT** was operational across the armed forces high command, our company had achieved technical maturity that rivaled international simulation prime contractors. We had built supersonic fighter jet trainers, multi-mission combat helicopters, multi-type armored cavalry simulators, and archipelago-scale strategic war games.
+By the time **Project SOYUT** was operational across the armed forces joint command, our company had achieved technical maturity that rivaled international simulation contractors. We had built supersonic fighter jet trainers, multi-mission combat helicopters, multi-type armored cavalry simulators, and archipelago-scale strategic war games.
 
 Yet military defense engineering carries an inherent, frustrating paradox: **you can never publicly talk about what you build.**
-- Defense contracts are bound by strict Non-Disclosure Agreements (NDAs), classified security clearances, and sensitive political agreements.
+- Defense contracts are bound by strict Non-Disclosure Agreements (NDAs), security classifications, and sensitive political agreements.
 - Outside the secure perimeter of military bases, the general public—and the wider software engineering community—did not even know our company existed.
-- We were invisible architects: delivering world-class distributed systems, yet unable to show our work or celebrate our achievements with the public of our own country.
+- We were invisible architects: delivering complex distributed systems, yet unable to show our work or discuss our achievements with the public.
 
 To break out of the defense confidentiality shadow, our executive leadership made a strategic gamble: **we decided to enter the civilian transit simulation market.**
 
@@ -815,12 +825,12 @@ I architected the simulator backend around a lightweight **Redis in-memory datab
 
 ![High-fidelity night view pulling into an illuminated commuter rail station platform with passenger crowds and tactile platform edges](../T&E/KCI/09.webp)
 
-### 10.5 The Record-Breaking Turnaround: Delivered in 1 Year
+### 10.5 The Record Turnaround: Delivered in 1 Year
 Typical military full-mission simulator programs took 2 to 3 years. The commercial contract with PT Kereta Commuter Indonesia came with an aggressive, non-negotiable constraint: **the entire simulator had to be completed and operational in just 1 year (12 months)!**
 
-Delivering a clean-sheet transit simulator in an unfamiliar vehicle domain within 12 months was the fastest record turnaround in our company's history. We achieved it by refusing to reinvent the wheel: integrating the Russian dynamics solver, automating track generation with `railroad-editor-web`, and deploying our reusable in-house platform engines (**`CommSystem`** for cab intercoms and train sound, and **Redis** for state distribution).
+Delivering a clean-sheet transit simulator in an unfamiliar vehicle domain within 12 months was the fastest turnaround in our company's history. We achieved it by refusing to reinvent the wheel: integrating the Russian dynamics solver, automating track generation with `railroad-editor-web`, and deploying our reusable in-house platform engines (**`CommSystem`** for cab intercoms and train sound, and **Redis** for state distribution).
 
-The KCI project was a triumph: proof that the engineering discipline honed in defense simulation could cross into civilian transit and deliver with speed and precision.
+The KCI project was a vital validation: proof that the engineering discipline honed in defense simulation could cross into civilian transit and deliver with speed and precision.
 
 ---
 
@@ -846,7 +856,7 @@ Our company was trapped:
 - With government procurement frozen and zero incoming cash flow, the financial hemorrhage was unsustainable.
 - There was no safety net: **operations were halted, the entire engineering roster was laid off indefinitely, and corporate facilities and offices were liquidated and sold.**
 
-Just like that, the elite engineering team that had revolutionized Indonesian defense simulation—building everything from supersonic jet cockpits to classified archipelago war games—was disbanded.
+Just like that, the dedicated engineering team that had developed F-16 flight training devices, Super Puma full-flight simulators, and joint war games was disbanded.
 
 ### 11.3 The Diaspora: Surviving in the Freelance Wilderness
 The sudden collapse scattered our team into the cold realities of the private freelance market. 
@@ -1016,9 +1026,9 @@ I coupled the FMS flight plan trajectory directly to the cockpit glass displays 
 ### 12.5 The Horizon: The Embraer E-Jets Family at FlightSim Studio AG
 The success of the SeaRey, the official Asobo avionics instruments, the Pipistrel Taurus glider, and the Aerosoft A330 FMS core solidified our team's position on the global simulation stage. 
 
-It set the stage for our crowning, ongoing masterwork: **The Embraer E-Jets Family (E170, E175, E190, E195, and E-Freighters)** for Microsoft Flight Simulator. 
+It set the stage for our most comprehensive ongoing undertaking: **The Embraer E-Jets Family (E170, E175, E190, E195, and E-Freighters)** for Microsoft Flight Simulator. 
 
-Representing the ultimate convergence of everything I have engineered over twenty-five years—from deep coordinate math and custom RTOS kernels to ARINC-424 navigation engines, fly-by-wire autoflight laws, and full-cockpit glass display architectures—the E-Jets project is our ongoing flagship enterprise. I will chronicle the detailed architectural story of this program in the upcoming chapter.
+Representing the convergence of everything I have engineered over twenty-five years—from deep coordinate math and custom RTOS kernels to ARINC-424 navigation engines, fly-by-wire autoflight laws, and full-cockpit glass display architectures—the E-Jets project is our ongoing flagship enterprise. I will chronicle the detailed architectural story of this program in the upcoming chapter.
 
 ---
 
@@ -1039,7 +1049,7 @@ From my early days with `int 33h` to the deployment of `libDIS` and single-cable
 Storage is brittle. Filesystems corrupt, flash sectors degrade, and persistent configurations drift into chaos under the stress of 24/7/365 operational reality. By enforcing strict statelessness—booting diskless systems over PXE, loading immutable squashfs modules into volatile RAM, and layering transient states with OverlayFS—you make hardware indestructible to hard power cuts, thermal crashes, and operator tampering. This principle governed both my 330 kVA home GPU datacenter and the joint war game simulator for the Armed Forces High Command.
 
 ### 5. Zero Credentialism, Absolute Competence
-In an industry fixated on resumes, certifications, and enterprise pedigree, true engineering breakthroughs are executed by those who know how the silicon behaves when the lights go out. A career where *"jobs come looking for me"* is the direct consequence of solving impossible problems that established contractors walk away from.
+In an industry fixated on resumes, certifications, and enterprise pedigree, real system stability comes down to understanding how the software and hardware interact when unexpected failures occur. Lasting technical trust is built simply by doing the difficult work: solving complex problems calmly and rigorously from first principles.
 
 ---
 

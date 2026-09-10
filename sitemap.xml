@@ -2,208 +2,213 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://uray.dev/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://uray.dev/llms.txt</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/profile/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://uray.dev/story.html</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/guitar/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/fss-ejet/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/aerosoft-a330/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/asobo-radio-ACD57/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/asobo-radio-AR6201/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/asobo-radio-VT02/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/asobo-glider-taurus/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/fss/fss-searey/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/chiagen/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/cryptolet/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/netengine/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/bri/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/tabulampot/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/KCI/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/nvstat/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/house/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/miningRigs/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/burst/burstPool/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/rtos/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/soyut/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/mcf/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/burst/burstExplorer/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/burst/burstWebWallet/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/crypto/cryptoslax/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/F16-FTD/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/codegraph/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/commSystem/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/unity/broken-glass-shader/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/unity/object-browser/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/stmr/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://uray.dev/data/T&E/tdr/DESC.md</loc>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/NAS332/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/hawk/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/BO/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/numpadKey/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/acv/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/T&E/libDIS/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://uray.dev/data/G1/DESC.md</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <priority>0.8</priority>
   </url>
 </urlset>

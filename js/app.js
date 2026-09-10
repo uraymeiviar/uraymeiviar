@@ -16,6 +16,7 @@
     initProfile();
     initProjects();
     initModalHandlers();
+    initMessageModalHandlers();
     initPrintCV();
     initFilterToggle();
   });
@@ -759,6 +760,176 @@
     });
     await Promise.all(promises);
     await new Promise(r => setTimeout(r, 200));
+  }
+
+  /* -------------------------------------------------------------------------- */
+  /* 8. Message Me Modal & Google Sheets Webhook Dispatch                       */
+  /* -------------------------------------------------------------------------- */
+  // Paste your Google Apps Script Web App URL below:
+  const GOOGLE_SHEET_WEBHOOK_URL = 'https://script.google.com/macros/s/AKfycbylz-3qLb8Mf-TGOjj0mogyAzAdLpQye_UwSSGlkUbI0fnH9t0NIa69zEAfwf1rIHdZyw/exec';
+
+  function initMessageModalHandlers() {
+    const modal = document.getElementById('message-modal');
+    const openBtns = document.querySelectorAll('.message-me-btn, #open-message-btn, #footer-open-message-link');
+    const closeBtn = document.getElementById('message-modal-close-btn');
+    const successCloseBtn = document.getElementById('contact-success-close-btn');
+    const form = document.getElementById('contact-form');
+    const successView = document.getElementById('contact-success');
+    const feedback = document.getElementById('form-feedback');
+    let modalOpenedAt = 0;
+
+    function openMessageModal() {
+      if (!modal) return;
+      modalOpenedAt = Date.now();
+      if (form) form.style.display = 'flex';
+      if (successView) successView.style.display = 'none';
+      if (feedback) feedback.style.display = 'none';
+      modal.classList.add('open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+      const firstInput = document.getElementById('contact-name');
+      setTimeout(() => firstInput?.focus(), 100);
+    }
+
+    function closeMessageModal() {
+      if (!modal) return;
+      modal.classList.remove('open');
+      modal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    openBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        openMessageModal();
+      });
+    });
+
+    closeBtn?.addEventListener('click', closeMessageModal);
+    successCloseBtn?.addEventListener('click', closeMessageModal);
+
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) closeMessageModal();
+    });
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && modal?.classList.contains('open')) {
+        closeMessageModal();
+      }
+    });
+
+    form?.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const submitBtn = document.getElementById('contact-submit-btn');
+      const honeypot = (document.getElementById('contact-hp-field')?.value || '').trim();
+      const name = document.getElementById('contact-name')?.value.trim() || '';
+      const contact = document.getElementById('contact-info')?.value.trim() || '';
+      const subject = document.getElementById('contact-subject')?.value.trim() || '';
+      const message = document.getElementById('contact-message')?.value.trim() || '';
+
+      // 1. Honeypot check: If the hidden bot field is filled, silently discard
+      if (honeypot !== '') {
+        console.warn('Bot detected via honeypot trap.');
+        if (form) {
+          form.reset();
+          form.style.display = 'none';
+        }
+        if (successView) successView.style.display = 'block';
+        return;
+      }
+
+      // 2. Submission velocity check (less than 1.8s is inhumanly fast for filling a form)
+      const elapsed = Date.now() - modalOpenedAt;
+      if (modalOpenedAt > 0 && elapsed < 1800) {
+        if (feedback) {
+          feedback.textContent = 'Submission was too fast. Please take a moment and try again.';
+          feedback.className = 'form-feedback error';
+          feedback.style.display = 'block';
+        }
+        return;
+      }
+
+      // 3. Client cooldown / rate limit (45s cooldown)
+      const lastSent = parseInt(localStorage.getItem('uray_msg_cooldown') || '0', 10);
+      const now = Date.now();
+      if (now - lastSent < 45000) {
+        const waitSec = Math.ceil((45000 - (now - lastSent)) / 1000);
+        if (feedback) {
+          feedback.textContent = `Please wait ${waitSec}s before sending another inquiry.`;
+          feedback.className = 'form-feedback error';
+          feedback.style.display = 'block';
+        }
+        return;
+      }
+
+      if (!name || !contact || !message) {
+        if (feedback) {
+          feedback.textContent = 'Please fill in all required fields (Name, Contact, and Message).';
+          feedback.className = 'form-feedback error';
+          feedback.style.display = 'block';
+        }
+        return;
+      }
+
+      if (feedback) feedback.style.display = 'none';
+      const origBtnHtml = submitBtn ? submitBtn.innerHTML : '';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<span class="btn-spinner"></span> <span>Sending...</span>';
+      }
+
+      const payload = {
+        timestamp: new Date().toISOString(),
+        _hp_website: honeypot,
+        name,
+        contact,
+        subject,
+        message,
+        userAgent: navigator.userAgent
+      };
+
+      // Always save locally to localStorage as persistent fallback
+      try {
+        const saved = JSON.parse(localStorage.getItem('uray_dev_inquiries') || '[]');
+        saved.push(payload);
+        localStorage.setItem('uray_dev_inquiries', JSON.stringify(saved));
+        localStorage.setItem('uray_msg_cooldown', now.toString());
+      } catch (err) {}
+
+      // If Google Sheet Webhook URL is configured, send via POST
+      if (GOOGLE_SHEET_WEBHOOK_URL && GOOGLE_SHEET_WEBHOOK_URL.trim() !== '') {
+        try {
+          const body = new URLSearchParams(payload);
+          await fetch(GOOGLE_SHEET_WEBHOOK_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: body.toString()
+          });
+        } catch (err) {
+          console.warn('Google Sheets webhook dispatch encountered an error:', err);
+        }
+      } else {
+        console.info('Message stored locally in localStorage. To forward directly to Google Sheets, configure GOOGLE_SHEET_WEBHOOK_URL in js/app.js.');
+      }
+
+      await new Promise(r => setTimeout(r, 600));
+
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = origBtnHtml;
+      }
+
+      if (form) {
+        form.reset();
+        form.style.display = 'none';
+      }
+      if (successView) {
+        successView.style.display = 'block';
+      }
+    });
   }
 
   function getProjectEndYear(p) {

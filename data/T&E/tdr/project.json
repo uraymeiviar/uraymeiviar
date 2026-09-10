@@ -1,0 +1,30 @@
+{
+  "id": "tdr",
+  "title": "TDR RadarView - Legacy Military Radar Telemetry Acquisition & TCP Relay",
+  "featured": true,
+  "category": "Defense & Combat Simulation",
+  "role": "Systems & Telemetry Engineer",
+  "company": "PT. T&E Simulation",
+  "tags": [
+    "C/C++",
+    "Win32",
+    "RS-232 / Serial",
+    "TCP/IP Sockets",
+    "Radar Telemetry",
+    "Defense",
+    "PPI Display",
+    "Hardware Reverse Engineering"
+  ],
+  "summary": "Reverse-engineered telemetry acquisition and Plan Position Indicator (PPI) software replacing obsolete, non-functional military radar receiver computers by decoding raw RS-232 serial streams from the radar pedestal and relaying track vectors over TCP to upstream command systems.",
+  "highlights": [
+    "Intercepted and decoded raw asynchronous RS-232 serial datastreams (4800 bps) from an operational military radar pedestal whose original receiver computer had suffered permanent hardware failure.",
+    "Engineered a real-time Plan Position Indicator (PPI) polar radar scope featuring range rings, azimuth sweep lines, georeferenced topographic maps, and Cartesian track coordinates.",
+    "Integrated a multi-threaded TCP server (Port 54321) relaying live target tracks (range, bearing, velocity, heading) to upstream battle management systems alongside a serial modem tactical chat link."
+  ],
+  "images": [
+    "TDR.webp"
+  ],
+  "links": [],
+  "timeline": "2010 – 2011",
+  "timespan": "2010 – 2011"
+}
